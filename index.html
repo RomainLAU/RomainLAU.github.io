@@ -31,19 +31,22 @@
         <h2>Qui suis-je</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae incidunt voluptatum dolorum harum, voluptatem blanditiis accusamus molestias vitae reiciendis ea omnis. Non nulla explicabo dicta repellendus ratione sit quidem rem?Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae incidunt voluptatum dolorum harum, voluptatem blanditiis accusamus molestias vitae reiciendis ea omnis. Non nulla explicabo dicta repellendus ratione sit quidem rem?Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae incidunt voluptatum dolorum harum, voluptatem blanditiis accusamus molestias vitae reiciendis ea omnis. Non nulla explicabo dicta repellendus ratione sit quidem rem?Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae incidunt voluptatum dolorum harum, voluptatem blanditiis accusamus molestias vitae reiciendis ea omnis. Non nulla explicabo dicta repellendus ratione sit quidem rem?Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae incidunt voluptatum dolorum harum, voluptatem blanditiis accusamus molestias vitae reiciendis ea omnis. Non nulla explicabo dicta repellendus ratione sit quidem rem?</p>
     </div>
-    <div id="contact">
+    <form id="contact" action="sendEmail.php" method="POST">
         <div class="contact__content">
             <p class="contact__title">Contact</p>
-            <!-- <p class="contact__info">Vous pouvez m'envoyer un mail ici.</p> -->
             <div class="contact__small-inputs">
-                <input class="contact__small-input" type="text" placeholder="Votre Nom">
-                <input class="contact__small-input" type="text" placeholder="Votre Email">
+                <input class="contact__small-input" type="text" placeholder="Votre Nom / Prénom" name="lastnameFirstname" id="lastFirstname">
+                <div id="lastFirstnameError"></div>
+                <input class="contact__small-input" type="email" placeholder="Votre Email" name="email" id="email">
+                <div id="emailError"></div>
             </div>
-            <input class="contact__title-input" type="text" placeholder="Votre Titre">
-            <textarea class="contact__comment-input" placeholder="Votre Commentaire" rows="25" cols="20"></textarea>
+            <input class="contact__title-input" type="text" placeholder="Objet du mail" name="mailObject" id="mailObject">
+            <div id="mailObjectError"></div>
+            <textarea class="contact__comment-input" placeholder="Votre Commentaire" rows="25" cols="20" name="mailContent" id="mailContent"></textarea>
+            <div id="mailContentError"></div>
         </div>
-        <button class="contact__button">ENVOYER LE MESSAGE</button>
-    </div>
+        <button class="contact__button" type="submit" id="submit">ENVOYER LE MESSAGE</button>
+    </form>
 
     <script src="particles.js-master/particles.js"></script>
     <script src="particles.js-master/demo/js/app.js"></script>

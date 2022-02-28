@@ -127,27 +127,41 @@ body{
         
             .contact__comment-input {
                 border: none;
-                color: rgb(109, 109, 109);
+                color: black;
+                font-size: 24px;
                 height: 100px;
                 padding: 2%;
                 border-radius: 2px;
                 word-break: break-word;
                 height: 200px;
+
+                &::placeholder{
+                    color: rgb(109, 109, 109);
+                }
             }
         
             .contact__small-input, .contact__title-input {
                 border: none;
-                color: rgb(109, 109, 109);
+                color: black;
+                font-size: 18px;
                 height: 40px;
                 margin-bottom: 25px;
                 padding: 5px 10px 5px 10px;
                 border-radius: 2px;
+
+                &::placeholder{
+                    color: rgb(109, 109, 109);
+                }
             }
         
             .contact__small-inputs{
                 flex-wrap: nowrap;
                 justify-content: space-between;
                 display: flex;
+
+                &::placeholder{
+                    color: rgb(109, 109, 109);
+                }
 
                 .contact__small-input{
                     width: 45%;
@@ -161,7 +175,7 @@ body{
     }
 
     .contact__button{
-        background-color: black;
+        background-color: $blue;
         border: none;
         border-radius: 5px;
         width: 175px;

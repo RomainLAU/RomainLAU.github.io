@@ -111,25 +111,36 @@ body #contact .contact__content .contact__inputs {
 }
 body #contact .contact__content .contact__comment-input {
   border: none;
-  color: #6d6d6d;
+  color: black;
+  font-size: 24px;
   height: 100px;
   padding: 2%;
   border-radius: 2px;
   word-break: break-word;
   height: 200px;
 }
+body #contact .contact__content .contact__comment-input::placeholder {
+  color: #6d6d6d;
+}
 body #contact .contact__content .contact__small-input, body #contact .contact__content .contact__title-input {
   border: none;
-  color: #6d6d6d;
+  color: black;
+  font-size: 18px;
   height: 40px;
   margin-bottom: 25px;
   padding: 5px 10px 5px 10px;
   border-radius: 2px;
 }
+body #contact .contact__content .contact__small-input::placeholder, body #contact .contact__content .contact__title-input::placeholder {
+  color: #6d6d6d;
+}
 body #contact .contact__content .contact__small-inputs {
   flex-wrap: nowrap;
   justify-content: space-between;
   display: flex;
+}
+body #contact .contact__content .contact__small-inputs::placeholder {
+  color: #6d6d6d;
 }
 body #contact .contact__content .contact__small-inputs .contact__small-input {
   width: 45%;
@@ -138,7 +149,7 @@ body #contact .contact__content .contact__small-inputs .contact__comment-input {
   padding-bottom: 200px;
 }
 body .contact__button {
-  background-color: black;
+  background-color: #232338;
   border: none;
   border-radius: 5px;
   width: 175px;
