@@ -59,6 +59,36 @@ body #sticky ul:nth-child(1) {
 body #sticky ul:nth-child(2) {
   margin-right: 80px;
 }
+@media screen and (max-width: 765px) {
+  body #sticky ul:nth-child(2) {
+    display: none;
+  }
+}
+body #sticky #little-menu {
+  display: none;
+  color: white;
+  margin-right: 40px;
+  position: relative;
+}
+@media screen and (max-width: 765px) {
+  body #sticky #little-menu:hover li ul {
+    display: block;
+  }
+}
+@media screen and (max-width: 765px) {
+  body #sticky #little-menu li ul #little-menu:hover {
+    display: block;
+    display: flex;
+    position: absolute;
+    top: 10;
+    left: 50;
+  }
+}
+@media screen and (max-width: 765px) {
+  body #sticky #little-menu {
+    display: block;
+  }
+}
 body #particles-js {
   max-width: 100%;
   height: 100vh;
@@ -101,9 +131,11 @@ body #contact {
 }
 body #contact #contact__title {
   margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: bold;
 }
 body #contact .contact__content {
-  width: 40%;
+  min-width: 40%;
   height: 80%;
   display: grid;
   grid-template-rows: repeat(2, 0.25fr) 1fr;
