@@ -1,4 +1,4 @@
-# RomainLAU.github.io
+# RomainLAU.github.io / www.romain-laurent.live/
 
 It's basically just my portfolio, it's in construction so if you have any suggestions : PR are opened 😜
 
