@@ -186,18 +186,18 @@ body #contact .contact__content .contact__small-inputs .inputs__column .contact_
   padding-left: 5px;
 }
 body #contact .contact__content .contact__small-inputs .inputs__column #lastFirstname {
-  border-radius: 6px 0px 0px 0px;
-  -webkit-border-radius: 6px 0px 0px 0px;
-  -moz-border-radius: 6px 0px 0px 0px;
-  -ms-border-radius: 6px 0px 0px 0px;
-  -o-border-radius: 6px 0px 0px 0px;
+  border-radius: 6px 6px 0px 0px;
+  -webkit-border-radius: 6px 6px 0px 0px;
+  -moz-border-radius: 6px 6px 0px 0px;
+  -ms-border-radius: 6px 6px 0px 0px;
+  -o-border-radius: 6px 6px 0px 0px;
 }
 body #contact .contact__content .contact__small-inputs .inputs__column #email {
-  border-radius: 0px 6px 0px 0px;
-  -webkit-border-radius: 0px 6px 0px 0px;
-  -moz-border-radius: 0px 6px 0px 0px;
-  -ms-border-radius: 0px 6px 0px 0px;
-  -o-border-radius: 0px 6px 0px 0px;
+  border-radius: 0px 0px 0px 0px;
+  -webkit-border-radius: 0px 0px 0px 0px;
+  -moz-border-radius: 0px 0px 0px 0px;
+  -ms-border-radius: 0px 0px 0px 0px;
+  -o-border-radius: 0px 0px 0px 0px;
 }
 @media screen and (max-width: 765px) {
   body #contact .contact__content .contact__small-inputs {
@@ -258,6 +258,7 @@ body #contact button:hover {
 @media screen and (max-width: 765px) {
   body #contact button {
     margin-top: 0px;
+    align-self: center;
   }
 }
 @media screen and (max-width: 765px) {
