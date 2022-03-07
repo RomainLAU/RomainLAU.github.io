@@ -16,11 +16,9 @@ body textarea {
   padding: 0;
 }
 body #sticky {
-  z-index: 100;
   position: sticky;
   height: 50px;
   top: 30px;
-  overflow: hidden;
   margin-top: 30px;
   max-width: 100%;
   display: flex;
@@ -73,15 +71,24 @@ body #sticky #little-menu {
 @media screen and (max-width: 765px) {
   body #sticky #little-menu:hover li ul {
     display: block;
+    position: absolute;
+    background-color: rgba(38, 38, 71, 0.9);
+    border-radius: 10px;
+    top: 45px;
+    right: -120px;
+    padding: 10px;
+    line-height: 24px;
   }
 }
 @media screen and (max-width: 765px) {
   body #sticky #little-menu li ul #little-menu:hover {
-    display: block;
     display: flex;
     position: absolute;
     top: 10;
     left: 50;
+  }
+  body #sticky #little-menu li ul #little-menu:hover ul li {
+    background-color: rgba(38, 38, 71, 0.9);
   }
 }
 @media screen and (max-width: 765px) {
@@ -108,8 +115,6 @@ body #second-page {
   max-width: 100%;
   min-height: 100vh;
   padding: 100px;
-  padding-top: 100px;
-  padding-bottom: 100px;
   background-color: #232338;
 }
 body #second-page h2 {
@@ -120,19 +125,26 @@ body #second-page p {
   font-size: 24px;
   line-height: 36px;
 }
+@media screen and (max-width: 765px) {
+  body #second-page {
+    padding: 50px;
+    padding-top: 75px;
+  }
+}
 body #contact {
   padding: 100px;
   max-width: 100%;
   height: 500px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 body #contact #contact__title {
   margin-bottom: 25px;
   font-size: 24px;
   font-weight: bold;
+  text-align: center;
 }
 body #contact .contact__content {
   min-width: 40%;
@@ -176,6 +188,12 @@ body #contact .contact__content .contact__small-inputs .inputs__column #email {
   -ms-border-radius: 0px 6px 0px 0px;
   -o-border-radius: 0px 6px 0px 0px;
 }
+@media screen and (max-width: 765px) {
+  body #contact .contact__content .contact__small-inputs {
+    grid-template-columns: 1fr;
+    gap: 10px 0px;
+  }
+}
 body #contact .contact__content .inputs__column {
   padding: 0;
   margin: 0;
@@ -198,6 +216,17 @@ body #contact .contact__content .inputs__column #contact__comment-input {
   -ms-border-radius: 0px 0px 6px 6px;
   -o-border-radius: 0px 0px 6px 6px;
 }
+@media screen and (max-width: 765px) {
+  body #contact .contact__content .inputs__column #contact__comment-input {
+    height: 75%;
+  }
+}
+@media screen and (max-width: 765px) {
+  body #contact .contact__content {
+    grid-template-rows: repeat(2, 0.25fr) 0.5fr;
+    height: 65%;
+  }
+}
 body #contact button {
   height: 60px;
   background-color: white;
@@ -214,6 +243,18 @@ body #contact button:hover {
   background-color: black;
   color: white;
   border-color: white;
+}
+@media screen and (max-width: 765px) {
+  body #contact button {
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 765px) {
+  body #contact {
+    padding-top: 80px;
+    padding-bottom: 20px;
+    align-items: inherit;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -20,11 +20,9 @@ body{
     }
 
     #sticky{
-        z-index: 100;
         position: sticky;
         height: 50px;
         top: 30px;
-        overflow: hidden;
         margin-top: 30px;
         max-width: 100%;
         display: flex;
@@ -82,6 +80,13 @@ body{
                     ul{
                         @media screen and (max-width: 765px) {
                             display: block;
+                            position: absolute;
+                            background-color: rgba(38, 38, 71, 0.9);
+                            border-radius: 10px;
+                            top: 45px;
+                            right: -120px;
+                            padding: 10px;
+                            line-height: 24px;
                         }
                     }
                 }
@@ -91,11 +96,17 @@ body{
                 ul{
                     @media screen and (max-width: 765px) {
                         #little-menu:hover{
-                            display: block;
+                            // display: block;
                             display: flex;
                             position: absolute;
                             top: 10;
                             left: 50;
+
+                            ul{
+                                li{
+                                    background-color: rgba(38, 38, 71, 0.9);
+                                }
+                            }
                         }
                     }
                 }
@@ -133,8 +144,6 @@ body{
         max-width: 100%;
         min-height: 100vh;
         padding: 100px;
-        padding-top: 100px;
-        padding-bottom: 100px;
         background-color: $blue;
 
         h2{
@@ -146,6 +155,11 @@ body{
             font-size: 24px;
             line-height: 36px;
         }
+
+        @media screen and (max-width: 765px) {
+            padding: 50px;
+            padding-top: 75px;
+        }
     }
 
     /* Contact */
@@ -155,14 +169,15 @@ body{
         max-width: 100%;
         height: 500px;
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
         flex-direction: column;
 
         #contact__title{
             margin-bottom: 25px;
             font-size: 24px;
             font-weight: bold;
+            text-align: center;
         }
 
         .contact__content{
@@ -211,6 +226,11 @@ body{
                         -o-border-radius: 0px 6px 0px 0px;
                     }
                 }
+
+                @media screen and (max-width: 765px) {
+                    grid-template-columns: 1fr;
+                    gap: 10px 0px;
+                }
             }
 
             .inputs__column{
@@ -235,7 +255,16 @@ body{
                     -moz-border-radius: 0px 0px 6px 6px;
                     -ms-border-radius: 0px 0px 6px 6px;
                     -o-border-radius: 0px 0px 6px 6px;
+
+                    @media screen and (max-width: 765px) {
+                        height: 75%;
+                    }
                 }
+            }
+
+            @media screen and (max-width: 765px) {
+                grid-template-rows: repeat(2, 0.25fr) 0.5fr;
+                height: 65%;
             }
         }
 
@@ -256,6 +285,16 @@ body{
                 color: white;
                 border-color: white;
             }
+
+            @media screen and (max-width: 765px) {
+                margin-top: 0px;
+            }
+        }
+
+        @media screen and (max-width: 765px) {
+            padding-top: 80px;
+            padding-bottom: 20px;
+            align-items: inherit;
         }
     }
 }
