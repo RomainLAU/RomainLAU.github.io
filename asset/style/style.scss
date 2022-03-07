@@ -2,7 +2,6 @@ $blue : rgb(35, 35, 56);
 
 body{
     font-family: sans-serif;
-    // height: 100vh;
     width: 100%;
     background-color: black;
     color: white;
@@ -75,50 +74,53 @@ body{
             margin-right: 40px;
             position: relative;
 
-            &:hover{
-                li{
-                    ul{
-                        @media screen and (max-width: 765px) {
-                            display: block;
-                            position: absolute;
-                            background-color: rgba(38, 38, 71, 0.9);
-                            border-radius: 10px;
-                            top: 45px;
-                            right: -120px;
-                            padding: 10px;
-                            line-height: 24px;
-                        }
-                    }
+            li{
+                #sub-menu{
+                    display: none;
+                    position: absolute;
+                    background-color: rgba(38, 38, 71, 0.9);
+                    border-radius: 10px;
+                    margin-top: 8px;
+                    right: -120px;
+                    padding: 10px;
+                    line-height: 24px;
+                    width: 100px;
                 }
             }
 
             li{
                 ul{
-                    @media screen and (max-width: 765px) {
-                        #little-menu:hover{
-                            // display: block;
-                            display: flex;
-                            position: absolute;
-                            top: 10;
-                            left: 50;
+                    #little-menu{
+                        display: none;
+                        position: absolute;
+                        top: 0;
+                        left: 50;
 
-                            ul{
-                                li{
-                                    background-color: rgba(38, 38, 71, 0.9);
+                        ul{
+                            li{
+                                background-color: rgba(38, 38, 71, 0.9);
+                                a{
+                                    display: block;
                                 }
                             }
+                        }
+
+                        @media screen and (max-width: 765px) {
+                            display: flex;
                         }
                     }
                 }
             }
 
-            @media screen and (max-width: 765px) {
+            &:hover #sub-menu{
                 display: block;
             }
-        }
 
-        @media screen and (max-width: 536px) {
-            
+            @media screen and (max-width: 765px) {
+                display: flex;
+                height: 100%;
+                align-items: center;
+            }
         }
     }
 
@@ -126,6 +128,7 @@ body{
         max-width: 100%;
         height: 100vh;
         position: relative;
+        z-index: -1000;
         
         div{
             position: absolute;
@@ -148,7 +151,6 @@ body{
 
         h2{
             font-size: 48px;
-            // margin-top: 100px;
         }
         p{
             margin-top: 100px;
