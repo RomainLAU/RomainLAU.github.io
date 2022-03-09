@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&family=Open+Sans:wght@300&display=swap");
 body {
-  font-family: sans-serif;
+  font-family: "Lato", sans-serif;
   width: 100%;
   background-color: black;
   color: white;
@@ -14,6 +15,12 @@ body input {
 body textarea {
   margin: 0;
   padding: 0;
+}
+body b {
+  font-weight: bold;
+}
+body a {
+  text-decoration: none;
 }
 body #sticky {
   position: sticky;
@@ -78,6 +85,7 @@ body #sticky #little-menu li #sub-menu {
   padding: 10px;
   line-height: 24px;
   width: 100px;
+  z-index: 10;
 }
 body #sticky #little-menu li ul #little-menu {
   display: none;
@@ -110,7 +118,7 @@ body #particles-js {
   max-width: 100%;
   height: 100vh;
   position: relative;
-  z-index: -1000;
+  z-index: -10;
 }
 body #particles-js div {
   position: absolute;
@@ -124,22 +132,148 @@ body #particles-js div h1 {
 }
 body #second-page {
   max-width: 100%;
-  min-height: 100vh;
   padding: 100px;
   background-color: #232338;
 }
 body #second-page h2 {
   font-size: 48px;
+  font-weight: 900;
+}
+@media screen and (max-width: 765px) {
+  body #second-page h2 {
+    font-size: 64px;
+  }
 }
 body #second-page p {
   margin-top: 100px;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 32px;
+  line-height: 48px;
+}
+@media screen and (max-width: 765px) {
+  body #second-page p {
+    font-size: 48px;
+    line-height: 64px;
+  }
 }
 @media screen and (max-width: 765px) {
   body #second-page {
     padding: 50px;
     padding-top: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+body #projects {
+  background: linear-gradient(#232338, black);
+  padding: 100px;
+}
+body #projects h2 {
+  font-size: 48px;
+  font-weight: 900;
+}
+@media screen and (max-width: 765px) {
+  body #projects h2 {
+    align-self: center;
+  }
+}
+body #projects #projects-list {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 10%;
+  row-gap: 100px;
+}
+body #projects #projects-list .project {
+  padding: 15px;
+  width: 400px;
+  height: 300px;
+  background: linear-gradient(#313146, #232338);
+  box-shadow: 0px 5px 25px #313146;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body #projects #projects-list .project .project-name {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+body #projects #projects-list .project .project-name .show-project {
+  background-color: rgba(71, 71, 211, 0.9);
+  border-radius: 10px;
+  padding: 4px;
+  font-size: 18px;
+  width: 35%;
+  border: none;
+}
+body #projects #projects-list .project .project-name .show-project a {
+  color: white;
+}
+body #projects #projects-list .project .project-name .show-project:hover {
+  opacity: 0.8;
+}
+@media screen and (max-width: 765px) {
+  body #projects #projects-list .project .project-name .show-project {
+    width: 75%;
+    align-self: center;
+  }
+}
+body #projects #projects-list .project .quick-description {
+  font-size: 18px;
+  line-height: 24px;
+}
+@media screen and (max-width: 765px) {
+  body #projects #projects-list .project .quick-description {
+    text-align: center;
+  }
+}
+body #projects #projects-list .project .technos-used {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 4px;
+  row-gap: 4px;
+}
+body #projects #projects-list .project .technos-used p {
+  background-color: #313146;
+  padding: 6px;
+  border-radius: 10px;
+}
+body #projects #projects-list .project .technos-used p a {
+  color: white;
+}
+body #projects #projects-list .project .technos-used p:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+@media screen and (max-width: 765px) {
+  body #projects #projects-list .project .technos-used {
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 765px) {
+  body #projects #projects-list .project {
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 765px) {
+  body #projects #projects-list {
+    column-gap: 0%;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 765px) {
+  body #projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 }
 body #contact {
@@ -186,18 +320,36 @@ body #contact .contact__content .contact__small-inputs .inputs__column .contact_
   padding-left: 5px;
 }
 body #contact .contact__content .contact__small-inputs .inputs__column #lastFirstname {
-  border-radius: 6px 6px 0px 0px;
-  -webkit-border-radius: 6px 6px 0px 0px;
-  -moz-border-radius: 6px 6px 0px 0px;
-  -ms-border-radius: 6px 6px 0px 0px;
-  -o-border-radius: 6px 6px 0px 0px;
+  border-radius: 6px 0px 0px 0px;
+  -webkit-border-radius: 6px 0px 0px 0px;
+  -moz-border-radius: 6px 0px 0px 0px;
+  -ms-border-radius: 6px 0px 0px 0px;
+  -o-border-radius: 6px 0px 0px 0px;
+}
+@media screen and (max-width: 765px) {
+  body #contact .contact__content .contact__small-inputs .inputs__column #lastFirstname {
+    border-radius: 6px 6px 0px 0px;
+    -webkit-border-radius: 6px 6px 0px 0px;
+    -moz-border-radius: 6px 6px 0px 0px;
+    -ms-border-radius: 6px 6px 0px 0px;
+    -o-border-radius: 6px 6px 0px 0px;
+  }
 }
 body #contact .contact__content .contact__small-inputs .inputs__column #email {
-  border-radius: 0px 0px 0px 0px;
-  -webkit-border-radius: 0px 0px 0px 0px;
-  -moz-border-radius: 0px 0px 0px 0px;
-  -ms-border-radius: 0px 0px 0px 0px;
-  -o-border-radius: 0px 0px 0px 0px;
+  border-radius: 0px 6px 0px 0px;
+  -webkit-border-radius: 0px 6px 0px 0px;
+  -moz-border-radius: 0px 6px 0px 0px;
+  -ms-border-radius: 0px 6px 0px 0px;
+  -o-border-radius: 0px 6px 0px 0px;
+}
+@media screen and (max-width: 765px) {
+  body #contact .contact__content .contact__small-inputs .inputs__column #email {
+    border-radius: 0px 0px 0px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px 0px;
+    -ms-border-radius: 0px 0px 0px 0px;
+    -o-border-radius: 0px 0px 0px 0px;
+  }
 }
 @media screen and (max-width: 765px) {
   body #contact .contact__content .contact__small-inputs {
