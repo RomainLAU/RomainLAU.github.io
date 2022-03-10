@@ -205,6 +205,8 @@ body #projects #projects-list .project .project-name {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+  width: 100%;
+  text-align: center;
 }
 body #projects #projects-list .project .project-name .show-project {
   background-color: rgba(71, 71, 211, 0.9);
@@ -226,7 +228,7 @@ body #projects #projects-list .project .project-name .show-project:hover {
 }
 @media screen and (max-width: 765px) {
   body #projects #projects-list .project .project-name .show-project {
-    width: 75%;
+    width: 40%;
     align-self: center;
   }
 }
@@ -280,6 +282,7 @@ body #projects #projects-list .project .technos-used p:hover {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding: 50px;
   }
 }
 body #contact {
