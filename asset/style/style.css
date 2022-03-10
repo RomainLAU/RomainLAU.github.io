@@ -187,10 +187,9 @@ body #projects #projects-list {
   row-gap: 100px;
 }
 body #projects #projects-list .project {
-  padding: 15px;
-  padding-bottom: 20px;
+  padding: 1.5em;
   width: 400px;
-  max-height: 400px;
+  max-height: 35em;
   background: linear-gradient(#313146, #232338);
   box-shadow: 0px 5px 25px #313146;
   border-radius: 20px;
@@ -199,21 +198,22 @@ body #projects #projects-list .project {
   justify-content: space-between;
 }
 body #projects #projects-list .project .project-name {
-  font-size: 32px;
+  font-size: 2.5em;
   font-weight: 400;
-  margin-bottom: 15px;
+  margin-bottom: 0.5em;
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
+  row-gap: 0.5em;
   width: 100%;
   text-align: center;
 }
 body #projects #projects-list .project .project-name .show-project {
   background-color: rgba(71, 71, 211, 0.9);
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 0.5em;
   width: 35%;
   border: none;
+  align-self: center;
 }
 body #projects #projects-list .project .project-name .show-project a {
   color: white;
@@ -221,7 +221,7 @@ body #projects #projects-list .project .project-name .show-project a {
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 4px;
+  padding: 0.1em;
 }
 body #projects #projects-list .project .project-name .show-project:hover {
   opacity: 0.8;
@@ -233,8 +233,8 @@ body #projects #projects-list .project .project-name .show-project:hover {
   }
 }
 body #projects #projects-list .project .quick-description {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 1.2em;
+  line-height: 1.5em;
 }
 @media screen and (max-width: 765px) {
   body #projects #projects-list .project .quick-description {
@@ -247,6 +247,7 @@ body #projects #projects-list .project .technos-used {
   column-gap: 4px;
   row-gap: 4px;
   margin-top: 10px;
+  align-self: center;
 }
 body #projects #projects-list .project .technos-used p {
   background-color: #313146;
