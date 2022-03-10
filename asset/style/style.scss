@@ -175,13 +175,13 @@ body{
             line-height: 48px;
 
             @media screen and (max-width: 765px) {
-                font-size: 48px;
-                line-height: 64px;
+                font-size: 36px;
+                line-height: 48px;
             }
         }
 
         @media screen and (max-width: 765px) {
-            padding: 50px;
+            padding: 25px;
             padding-top: 75px;
             display: flex;
             flex-direction: column;
@@ -215,8 +215,9 @@ body{
 
             .project{
                 padding: 15px;
+                padding-bottom: 20px;
                 width: 400px;
-                height: 300px;
+                max-height: 400px;
                 background: linear-gradient(rgb(49, 49, 70), $blue);
                 box-shadow: 0px 5px 25px rgb(49, 49, 70);
                 border-radius: 20px;
@@ -273,6 +274,7 @@ body{
                     flex-wrap: wrap;
                     column-gap: 4px;
                     row-gap: 4px;
+                    margin-top: 10px;
 
                     p{
                         background-color: rgb(49, 49, 70);
@@ -464,6 +466,36 @@ body{
             padding-top: 80px;
             padding-bottom: 20px;
             align-items: inherit;
+        }
+    }
+}
+
+// Python Project
+
+#pythonProject{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    max-width: 99%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    iframe{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    a{
+        font-size: 32px;
+        color: white;
+        text-decoration: underline;
+        width: fit-content;
+
+        &:hover{
+            opacity: 0.8;
         }
     }
 }
