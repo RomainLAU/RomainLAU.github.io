@@ -79,8 +79,8 @@ body #sticky #little-menu li #sub-menu {
   position: absolute;
   background-color: rgba(38, 38, 71, 0.9);
   border-radius: 10px;
-  margin-top: 0.55em;
-  right: -7em;
+  margin-top: 12px;
+  right: -95px;
   padding: 0.75em;
   line-height: 24px;
   width: 100px;
@@ -209,24 +209,21 @@ body #projects #projects-list .project .project-name {
   display: flex;
   flex-direction: column;
   row-gap: 0.5em;
-  width: 100%;
   text-align: center;
+  align-items: center;
 }
 body #projects #projects-list .project .project-name .show-project {
+  color: white;
   background-color: rgba(71, 71, 211, 0.9);
   border-radius: 10px;
   font-size: 0.5em;
-  width: 35%;
+  width: fit-content;
   border: none;
-  align-self: center;
-}
-body #projects #projects-list .project .project-name .show-project a {
-  color: white;
-  display: block;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0.1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2em;
+  padding: 0.3em;
 }
 body #projects #projects-list .project .project-name .show-project:hover {
   opacity: 0.8;
@@ -251,7 +248,7 @@ body #projects #projects-list .project .technos-used {
   flex-wrap: wrap;
   column-gap: 0.2em;
   row-gap: 0.2em;
-  margin-top: 0.3em;
+  margin-top: 0.5em;
   align-self: center;
 }
 body #projects #projects-list .project .technos-used p {
@@ -260,6 +257,9 @@ body #projects #projects-list .project .technos-used p {
   border-radius: 10px;
 }
 body #projects #projects-list .project .technos-used p a {
+  color: white;
+}
+body #projects #projects-list .project .technos-used p a button {
   color: white;
 }
 body #projects #projects-list .project .technos-used p:hover {
@@ -299,6 +299,9 @@ body #contact {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+body #contact label {
+  display: none;
 }
 body #contact #contact__title {
   margin-bottom: 1em;
@@ -421,6 +424,7 @@ body #contact button:hover {
   background-color: black;
   color: white;
   border-color: white;
+  cursor: pointer;
 }
 @media screen and (max-width: 765px) {
   body #contact button {
