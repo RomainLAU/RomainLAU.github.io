@@ -134,33 +134,37 @@ body #particles-js div h1 {
     font-size: 4em;
   }
 }
-body #second-page {
+body #presentation {
   max-width: 100%;
   padding: 5em;
   background-color: #232338;
 }
-body #second-page h2 {
+body #presentation h2 {
   font-size: 3em;
   font-weight: 900;
 }
 @media screen and (max-width: 765px) {
-  body #second-page h2 {
+  body #presentation h2 {
     font-size: 64px;
   }
 }
-body #second-page p {
+body #presentation p {
   margin-top: 3em;
   font-size: 2em;
   line-height: 1.5em;
+  letter-spacing: 0.03em;
+}
+body #presentation p strong {
+  font-weight: bold;
 }
 @media screen and (max-width: 765px) {
-  body #second-page p {
+  body #presentation p {
     font-size: 2em;
     line-height: 1.5em;
   }
 }
 @media screen and (max-width: 765px) {
-  body #second-page {
+  body #presentation {
     padding: 2em;
     padding-top: 4em;
     display: flex;
