@@ -159,7 +159,7 @@ body{
 
     // Presentation 
 
-    #second-page{
+    #presentation{
         max-width: 100%;
         padding: 5em;
         background-color: $blue;
@@ -176,6 +176,11 @@ body{
             margin-top: 3em;
             font-size: 2em;
             line-height: 1.5em;
+            letter-spacing: 0.03em;
+
+            strong{
+                font-weight: bold;
+            }
 
             @media screen and (max-width: 765px) {
                 font-size: 2em;
