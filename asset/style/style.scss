@@ -32,7 +32,6 @@ body{
         position: sticky;
         height: 3.5em;
         top: 2em;
-        margin-top: 30px;
         max-width: 100%;
         display: flex;
         align-items: center;
@@ -43,8 +42,8 @@ body{
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
-        margin-right: 4em;
-        margin-left: 4em;
+        margin-right: 3em;
+        margin-left: 3em;
         ul{   
             display: flex;
             column-gap: 3em;
@@ -150,6 +149,10 @@ body{
             h1{
                 font-size: 5em;
                 font-weight: bold;
+
+                @media screen and (max-width: 765px) {
+                    font-size: 4em;
+                }
             }
         }
     }
@@ -324,7 +327,7 @@ body{
     /* Contact */
 
     #contact{
-        padding: 8em;
+        padding: 4em;
         max-width: 100%;
         height: 35em;
         display: flex;
@@ -366,7 +369,7 @@ body{
                         width: 100%;
                         height: 100%;
                         border: none;
-                        padding-left: 0.25em;
+                        padding-left: 0.4em;
                     }
 
                     #lastFirstname{
@@ -417,11 +420,11 @@ body{
                     width: 100%;
                     height: 100%;
                     border: none;
-                    padding-left: 0.25em;
+                    padding-left: 0.4em;
                 }
 
                 #contact__comment-input{
-                    padding-left: 0.25em;
+                    padding-left: 0.4em;
                     padding-top: 0.5em;
                     width: 100%;
                     height: 100%;
