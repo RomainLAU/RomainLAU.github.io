@@ -24,8 +24,8 @@ body a {
 }
 body #sticky {
   position: sticky;
-  height: 50px;
-  top: 30px;
+  height: 3.5em;
+  top: 2em;
   margin-top: 30px;
   max-width: 100%;
   display: flex;
@@ -37,12 +37,12 @@ body #sticky {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  margin-right: 50px;
-  margin-left: 50px;
+  margin-right: 4em;
+  margin-left: 4em;
 }
 body #sticky ul {
   display: flex;
-  column-gap: 40px;
+  column-gap: 3em;
 }
 body #sticky ul li {
   list-style-type: none;
@@ -59,10 +59,10 @@ body #sticky ul li a:hover {
   color: #cccccc;
 }
 body #sticky ul:nth-child(1) {
-  margin-left: 30px;
+  margin-left: 4em;
 }
 body #sticky ul:nth-child(2) {
-  margin-right: 80px;
+  margin-right: 4em;
 }
 @media screen and (max-width: 765px) {
   body #sticky ul:nth-child(2) {
@@ -72,7 +72,7 @@ body #sticky ul:nth-child(2) {
 body #sticky #little-menu {
   display: none;
   color: white;
-  margin-right: 40px;
+  margin-right: 2em;
   position: relative;
 }
 body #sticky #little-menu li #sub-menu {
@@ -80,9 +80,9 @@ body #sticky #little-menu li #sub-menu {
   position: absolute;
   background-color: rgba(38, 38, 71, 0.9);
   border-radius: 10px;
-  margin-top: 8px;
-  right: -120px;
-  padding: 10px;
+  margin-top: 0.55em;
+  right: -7em;
+  padding: 0.75em;
   line-height: 24px;
   width: 100px;
   z-index: 10;
@@ -127,16 +127,16 @@ body #particles-js div {
   width: 100%;
 }
 body #particles-js div h1 {
-  font-size: 64px;
+  font-size: 5em;
   font-weight: bold;
 }
 body #second-page {
   max-width: 100%;
-  padding: 100px;
+  padding: 5em;
   background-color: #232338;
 }
 body #second-page h2 {
-  font-size: 48px;
+  font-size: 3em;
   font-weight: 900;
 }
 @media screen and (max-width: 765px) {
@@ -145,20 +145,20 @@ body #second-page h2 {
   }
 }
 body #second-page p {
-  margin-top: 100px;
-  font-size: 32px;
-  line-height: 48px;
+  margin-top: 3em;
+  font-size: 2em;
+  line-height: 1.5em;
 }
 @media screen and (max-width: 765px) {
   body #second-page p {
-    font-size: 36px;
-    line-height: 48px;
+    font-size: 2em;
+    line-height: 1.5em;
   }
 }
 @media screen and (max-width: 765px) {
   body #second-page {
-    padding: 25px;
-    padding-top: 75px;
+    padding: 2em;
+    padding-top: 4em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -167,10 +167,10 @@ body #second-page p {
 }
 body #projects {
   background: linear-gradient(#232338, black);
-  padding: 100px;
+  padding: 5em;
 }
 body #projects h2 {
-  font-size: 48px;
+  font-size: 3em;
   font-weight: 900;
 }
 @media screen and (max-width: 765px) {
@@ -179,16 +179,17 @@ body #projects h2 {
   }
 }
 body #projects #projects-list {
-  margin-top: 100px;
+  margin-top: 5em;
   display: flex;
+  justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
   column-gap: 10%;
-  row-gap: 100px;
+  row-gap: 4em;
 }
 body #projects #projects-list .project {
   padding: 1.5em;
-  width: 400px;
+  width: 25em;
   max-height: 35em;
   background: linear-gradient(#313146, #232338);
   box-shadow: 0px 5px 25px #313146;
@@ -244,14 +245,14 @@ body #projects #projects-list .project .quick-description {
 body #projects #projects-list .project .technos-used {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 4px;
-  row-gap: 4px;
-  margin-top: 10px;
+  column-gap: 0.2em;
+  row-gap: 0.2em;
+  margin-top: 0.3em;
   align-self: center;
 }
 body #projects #projects-list .project .technos-used p {
   background-color: #313146;
-  padding: 6px;
+  padding: 0.3em;
   border-radius: 10px;
 }
 body #projects #projects-list .project .technos-used p a {
@@ -263,7 +264,7 @@ body #projects #projects-list .project .technos-used p:hover {
 }
 @media screen and (max-width: 765px) {
   body #projects #projects-list .project .technos-used {
-    margin-top: 15px;
+    margin-top: 0.4em;
   }
 }
 @media screen and (max-width: 765px) {
@@ -287,17 +288,17 @@ body #projects #projects-list .project .technos-used p:hover {
   }
 }
 body #contact {
-  padding: 100px;
+  padding: 8em;
   max-width: 100%;
-  height: 500px;
+  height: 35em;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 body #contact #contact__title {
-  margin-bottom: 25px;
-  font-size: 24px;
+  margin-bottom: 1em;
+  font-size: 2em;
   font-weight: bold;
   text-align: center;
 }
@@ -307,17 +308,17 @@ body #contact .contact__content {
   display: grid;
   grid-template-rows: repeat(2, 0.25fr) 1fr;
   grid-template-columns: 1fr;
-  gap: 10px 0px;
+  gap: 0.5em 0px;
 }
 body #contact .contact__content input {
-  padding-left: 3px;
+  padding-left: 0.15em;
 }
 body #contact .contact__content .contact__small-inputs {
   border-radius: 6px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0px 10px;
+  gap: 0em 0.6em;
 }
 body #contact .contact__content .contact__small-inputs .inputs__column {
   display: flex;
@@ -327,7 +328,7 @@ body #contact .contact__content .contact__small-inputs .inputs__column .contact_
   width: 100%;
   height: 100%;
   border: none;
-  padding-left: 5px;
+  padding-left: 0.25em;
 }
 body #contact .contact__content .contact__small-inputs .inputs__column #lastFirstname {
   border-radius: 6px 0px 0px 0px;
@@ -364,7 +365,7 @@ body #contact .contact__content .contact__small-inputs .inputs__column #email {
 @media screen and (max-width: 765px) {
   body #contact .contact__content .contact__small-inputs {
     grid-template-columns: 1fr;
-    gap: 10px 0px;
+    gap: 0.5em 0px;
   }
 }
 body #contact .contact__content .inputs__column {
@@ -376,11 +377,11 @@ body #contact .contact__content .inputs__column #contact__title-input {
   width: 100%;
   height: 100%;
   border: none;
-  padding-left: 5px;
+  padding-left: 0.25em;
 }
 body #contact .contact__content .inputs__column #contact__comment-input {
-  padding-left: 5px;
-  padding-top: 10px;
+  padding-left: 0.25em;
+  padding-top: 0.5em;
   width: 100%;
   height: 100%;
   border-radius: 0px 0px 6px 6px;
@@ -401,10 +402,10 @@ body #contact .contact__content .inputs__column #contact__comment-input {
   }
 }
 body #contact button {
-  height: 60px;
+  height: 5em;
   background-color: white;
   border: solid 1px blue;
-  margin-top: 40px;
+  margin-top: 4em;
   border-radius: 6px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -419,14 +420,14 @@ body #contact button:hover {
 }
 @media screen and (max-width: 765px) {
   body #contact button {
-    margin-top: 0px;
+    margin-top: 0em;
     align-self: center;
   }
 }
 @media screen and (max-width: 765px) {
   body #contact {
-    padding-top: 80px;
-    padding-bottom: 20px;
+    padding-top: 6em;
+    padding-bottom: 2em;
     align-items: inherit;
   }
 }
@@ -447,7 +448,7 @@ body #contact button:hover {
   padding: 0;
 }
 #pythonProject a {
-  font-size: 32px;
+  font-size: 3em;
   color: white;
   text-decoration: underline;
   width: fit-content;
