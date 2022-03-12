@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="I'm Romain Laurent, aka Le Roi Adibou, a french student at Epitech Digital in Web Development and I like APIs (mainly in JavaScript), Python, graphical arts and...">
-    <title>Le Roi Adibou - Romain Laurent - Web Developer</title>
-    <link rel="stylesheet" href="asset/style/reset.css">
+    <title>My Projects</title>
     <link rel="stylesheet" href="asset/style/style.css">
 </head>
-<body>
+<body id="projects-body">
     <nav id="sticky">
         <ul>
             <li><a href="index.html">Romain Laurent</a></li>
         </ul>
         <ul>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
             <li><a href="https://github.com/RomainLAU/">GitHub</a></li>
             <li><a href="https://www.instagram.com/romain_l.r.t/">Instagram</a></li>
             <li><a href="https://twitter.com/LeRoiAdibou">Twitter</a></li>
@@ -25,7 +23,7 @@
             <li>
                 <img src="asset/images/bars.svg" alt="dropdown-menu"/>
                 <ul id="sub-menu">
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
                     <li><a href="https://github.com/RomainLAU/">GitHub</a></li>
                     <li><a href="https://www.instagram.com/romain_l.r.t/">Instagram</a></li>
                     <li><a href="https://twitter.com/LeRoiAdibou">Twitter</a></li>
@@ -34,16 +32,6 @@
             </li>
         </ul>
     </nav>
-    <div id="particles-js">
-        <div>
-            <h1>Web Developer</h1>
-        </div>
-        
-    </div>
-    <div id="presentation">
-        <h2>Who am I</h2>
-        <p>Hi ! I'm <strong>Romain LAURENT</strong>, aka Le Roi Adibou, a french student in web development at <b>Epitech Digital</b> in Paris. I started coding 3 years ago, in 2019, by making little programs in <strong>Python</strong>. In 2020 I discovered the web development -- with <strong>HTML, CSS and PHP</strong> -- and at this moment, I knew that was what I wanted to do later. I love to start new projects where I don't know how I will do it, but I just know I'll do it. I like to work during <b>night</b> to fully be in <b>peace</b>, when nobody can disturb me, and there only are my project and me.</p>
-    </div>
 
     <div id="projects">
         <h2>My Projects</h2>
@@ -126,37 +114,6 @@
                 </div>
             </div>
         </div>
-        <div id="more">
-            <a href="projects.html" id="see-more">See More</a>
-        </div>
     </div>
-
-    <form id="contact" action="https://formspree.io/f/xeqnklnr" method="POST">
-        <h2 id="contact__title">Contact</h2>
-        <div class="contact__content">
-            <div class="contact__small-inputs">
-                <div class="inputs__column">
-                    <label for="lastFirstname">Votre Nom / Prénom</label>
-                    <input class="contact__small-input" type="text" placeholder="Votre Nom / Prénom" name="Nom / Prénom" id="lastFirstname">
-                </div>
-                <div class="inputs__column">
-                    <label for="email">Votre Email</label>
-                    <input type="email" class="contact__small-input"  placeholder="Votre Email" name="Adresse mail" id="email">
-                </div>
-            </div>
-            <div class="inputs__column">
-                <label for="contact__title-input">Objet du mail</label>
-                <input id="contact__title-input" type="text" placeholder="Objet du mail" name="Objet du Mail">
-            </div>
-            <div class="inputs__column">
-                <label for="contact__comment-input">Votre Commentaire</label>
-                <textarea id="contact__comment-input" placeholder="Votre Commentaire" name="Commentaire"></textarea>
-            </div>
-        </div>
-        <button type="submit" id="submit">ENVOYER LE MESSAGE</button>
-    </form>
-    <script src="particles.js-master/particles.min.js"></script>
-    <script src="particles.js-master/app.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>
