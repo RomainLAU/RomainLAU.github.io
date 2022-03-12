@@ -74,6 +74,10 @@ body #sticky #little-menu {
   margin-right: 2em;
   position: relative;
 }
+body #sticky #little-menu li img {
+  width: 30px;
+  height: 30px;
+}
 body #sticky #little-menu li #sub-menu {
   display: none;
   position: absolute;
