@@ -84,6 +84,10 @@ body{
             position: relative;
 
             li{
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
                 #sub-menu{
                     display: none;
                     position: absolute;
