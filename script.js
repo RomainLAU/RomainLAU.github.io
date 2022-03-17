@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', function() {
     let mailContent = document.querySelector('#contact__comment-input')
     let submitButton = document.querySelector('#submit')
 
-    let emailRegex = /[^\s@]+@[^\s@]+\.[^\s@]{2,}/
+    let emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g
 
     submitButton.addEventListener('click', function(event) {
 
@@ -17,7 +17,9 @@ window.addEventListener('DOMContentLoaded', function() {
             lastFirstname.style.border = "none"
         }
 
-        if (!email || email.value.length === 0 || !(email.value.match(emailRegex))) {
+        console.log(email.value.match(emailRegex))
+
+        if (!email.value || email.value.length === 0 || email.value.match(emailRegex) === null) {
             email.style.border = "solid 2px red"
             event.preventDefault()
         } else {
