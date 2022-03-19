@@ -202,7 +202,6 @@ body #projects #projects-list {
 body #projects #projects-list .project {
   padding: 1.5em;
   width: 25em;
-  max-height: 45em;
   background: linear-gradient(#313146, #232338);
   box-shadow: 0px 5px 25px #313146;
   border-radius: 20px;
@@ -230,7 +229,6 @@ body #projects #projects-list .project .project-name .show-project {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 2em;
   padding: 0.3em;
 }
 body #projects #projects-list .project .project-name .show-project:hover {
@@ -238,7 +236,6 @@ body #projects #projects-list .project .project-name .show-project:hover {
 }
 @media screen and (max-width: 765px) {
   body #projects #projects-list .project .project-name .show-project {
-    width: 40%;
     align-self: center;
   }
 }

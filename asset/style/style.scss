@@ -229,7 +229,6 @@ body{
             .project{
                 padding: 1.5em;
                 width: 25em;
-                max-height: 45em;
                 background: linear-gradient(rgb(49, 49, 70), $blue);
                 box-shadow: 0px 5px 25px rgb(49, 49, 70);
                 border-radius: 20px;
@@ -257,7 +256,6 @@ body{
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        height: 2em;
                         padding: 0.3em;
 
                         &:hover{
@@ -265,7 +263,6 @@ body{
                         }
 
                         @media screen and (max-width: 765px) {
-                            width: 40%;
                             align-self: center;
                         }
                     }
