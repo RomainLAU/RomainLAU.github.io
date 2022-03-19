@@ -64,7 +64,7 @@
             <div class="project">
                 <h3 class="project-name">
                     Random Shapes and Colors
-                    <a class="show-project" href="./pythonProject.html" target="blank">Show the project</a>
+                    <a class="show-project" href="https://github.com/RomainLAU/randomShapesGenerator">Show the project</a>
                 </h3>
                 <p class="quick-description">
                     At college I had an art class, and for a project I decided to use <strong>Python</strong> (with turtle module) to build a shape generator, you can decide of the shape (square, circle, triangle or parallelepiped), and the number of turns (the number of shapes drawn), and it will choose randomly a position, a color and a size for each shape.
@@ -118,7 +118,7 @@
                     <a class="show-project" href="https://github.com/RomainLAU/RepoUbuntu/tree/master/EnglishBonusesPenalties" target="blank">Show the project</a>
                 </h3>
                 <p class="quick-description">
-                    Our english teacher put in place a bonus/penalty system in class which makes students get good things or bad things when they get a lot of these. To keep the trace of every student bonuses and penalties, I developped this little <strong>website</strong> that allows me to add bonuses and penalties to any student. I used <strong>PHP</strong> and <strong>MySQL</strong> to update a <strong>database</strong> that contains all the informations about all the students.
+                    Our english teacher put in place a bonus/penalty system in class which makes students get advantages or disadvantages at a certain point of bonuses/penalties. To keep the trace of every student bonuses and penalties, I developped this little <strong>website</strong> that allows me to add bonuses and penalties to any student. I used <strong>PHP</strong> and <strong>MySQL</strong> to update a <strong>database</strong> that contains all the informations about all the students.
                 </p>
                 <div class="technos-used">
                     <p><a href="https://www.php.net//" target="blank">PHP</a></p>
@@ -137,26 +137,26 @@
             <div class="contact__small-inputs">
                 <div class="inputs__column">
                     <label for="lastFirstname">Votre Nom / Prénom</label>
-                    <input class="contact__small-input" type="text" placeholder="Votre Nom / Prénom" name="Nom / Prénom" id="lastFirstname">
+                    <input class="contact__small-input" type="text" placeholder="Votre Nom / Prénom" name="Nom / Prénom" id="lastFirstname" required>
                 </div>
                 <div class="inputs__column">
                     <label for="email">Votre Email</label>
-                    <input type="email" class="contact__small-input"  placeholder="Votre Email" name="Adresse mail" id="email">
+                    <input type="email" class="contact__small-input"  placeholder="Votre Email" name="Adresse mail" id="email" required>
                 </div>
             </div>
             <div class="inputs__column">
                 <label for="contact__title-input">Objet du mail</label>
-                <input id="contact__title-input" type="text" placeholder="Objet du mail" name="Objet du Mail">
+                <input id="contact__title-input" type="text" placeholder="Objet du mail" name="Objet du Mail" required>
             </div>
             <div class="inputs__column">
                 <label for="contact__comment-input">Votre Commentaire</label>
-                <textarea id="contact__comment-input" placeholder="Votre Commentaire" name="Commentaire"></textarea>
+                <textarea id="contact__comment-input" placeholder="Votre Commentaire" name="Commentaire" required></textarea>
             </div>
         </div>
         <button type="submit" id="submit">ENVOYER LE MESSAGE</button>
     </form>
     <script src="particles.js-master/particles.min.js"></script>
-    <script src="particles.js-master/app.js"></script>
+    <script src="particles.js-master/app.js" async></script>
     <script src="script.js"></script>
 </body>
 </html>
