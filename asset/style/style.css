@@ -548,6 +548,7 @@ body #contact button:hover {
   text-align: center;
   align-items: center;
   margin-top: 0;
+  margin-bottom: 0.5em;
 }
 #projects-body #integration-projects #integrations-list .project .project-name .project-buttons {
   display: flex;
