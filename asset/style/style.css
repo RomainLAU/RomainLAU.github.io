@@ -38,6 +38,7 @@ body #sticky {
   -o-border-radius: 10px;
   margin-right: 3em;
   margin-left: 3em;
+  z-index: 10;
 }
 body #sticky ul {
   display: flex;
@@ -88,7 +89,6 @@ body #sticky #little-menu li #sub-menu {
   padding: 0.75em;
   line-height: 1.75em;
   width: 6em;
-  z-index: 10;
 }
 body #sticky #little-menu li ul #little-menu {
   display: none;
@@ -121,7 +121,6 @@ body #particles-js {
   max-width: 100%;
   height: 100vh;
   position: relative;
-  z-index: -10;
 }
 body #particles-js div {
   position: absolute;
@@ -152,19 +151,70 @@ body #presentation h2 {
     font-size: 4em;
   }
 }
-body #presentation p {
+body #presentation #presentation-content {
+  display: flex;
+  column-gap: 5em;
+  flex-wrap: wrap;
+  align-items: center;
+}
+body #presentation #presentation-content p {
   margin-top: 3em;
   font-size: 2em;
   line-height: 1.5em;
   letter-spacing: 0.03em;
+  width: 35em;
 }
-body #presentation p strong {
+body #presentation #presentation-content p strong {
   font-weight: bold;
 }
+@media screen and (max-width: 1843px) {
+  body #presentation #presentation-content p {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 765px) {
-  body #presentation p {
+  body #presentation #presentation-content p {
     font-size: 1.5em;
     line-height: 1.5em;
+    width: 20;
+  }
+}
+body #presentation #presentation-content #profile-picture {
+  width: 30em;
+  height: 30em;
+  border-radius: 50%;
+  border: solid 2px white;
+  overflow: hidden;
+  position: relative;
+}
+body #presentation #presentation-content #profile-picture img {
+  object-fit: cover;
+  transform: scale(0.6);
+  position: absolute;
+  bottom: -230px;
+  left: -400px;
+}
+@media screen and (max-width: 765px) {
+  body #presentation #presentation-content #profile-picture {
+    width: 20em;
+    height: 20em;
+  }
+  body #presentation #presentation-content #profile-picture img {
+    transform: scale(0.4);
+    bottom: -320px;
+    left: -480px;
+  }
+}
+@media screen and (max-width: 1843px) {
+  body #presentation #presentation-content {
+    justify-content: center;
+    row-gap: 1em;
+  }
+}
+@media screen and (max-width: 765px) {
+  body #presentation #presentation-content {
+    justify-content: center;
+    row-gap: 1em;
   }
 }
 @media screen and (max-width: 765px) {
