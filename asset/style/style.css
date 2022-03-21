@@ -493,6 +493,7 @@ body #contact button {
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
   font-weight: bold;
+  padding: 0 10px;
 }
 body #contact button:hover {
   background-color: black;
@@ -512,6 +513,11 @@ body #contact button:hover {
     padding-bottom: 2em;
     align-items: inherit;
   }
+}
+body footer #copyright {
+  display: flex;
+  justify-content: center;
+  padding: 1.5em 0;
 }
 
 #pythonProject {
@@ -636,7 +642,7 @@ body #contact button:hover {
   flex-wrap: wrap;
   column-gap: 0.2em;
   row-gap: 0.2em;
-  margin-top: 0.5em;
+  margin-top: 1.5em;
   align-self: center;
 }
 #projects-body #integration-projects #integrations-list .project .technos-used p {
@@ -656,7 +662,7 @@ body #contact button:hover {
 }
 @media screen and (max-width: 765px) {
   #projects-body #integration-projects #integrations-list .project .technos-used {
-    margin-top: 0.4em;
+    margin-top: 1.5em;
   }
 }
 @media screen and (max-width: 765px) {
@@ -670,22 +676,6 @@ body #contact button:hover {
     column-gap: 0%;
     justify-content: center;
   }
-}
-#projects-body #integration-projects #more {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 3em;
-}
-#projects-body #integration-projects #more #see-more {
-  color: white;
-  text-decoration: underline;
-  font-size: 1.25em;
-  font-weight: 700;
-  text-align: center;
-}
-#projects-body #integration-projects #more #see-more:hover {
-  opacity: 0.8;
 }
 @media screen and (max-width: 765px) {
   #projects-body #integration-projects {
