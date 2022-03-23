@@ -2,6 +2,10 @@ $blue : rgb(35, 35, 56);
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&family=Open+Sans:wght@300&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Lato' , sans-serif;
     width: 100%;
