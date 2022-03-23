@@ -129,7 +129,9 @@ body #particles-js {
 body #particles-js div {
   position: absolute;
   text-align: center;
-  top: 40%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
 }
 body #particles-js div h1 {
@@ -296,6 +298,7 @@ body #projects #projects-list .project .project-name .show-project:hover {
 body #projects #projects-list .project .quick-description {
   font-size: 1.2em;
   line-height: 1.5em;
+  text-align: justify;
 }
 body #projects #projects-list .project .quick-description strong {
   font-weight: bold;
@@ -524,37 +527,6 @@ body footer #copyright {
   padding: 1.5em 0;
 }
 
-#pythonProject {
-  margin: 0;
-  padding: 0;
-  max-width: 100%;
-  overflow-x: hidden;
-}
-#pythonProject #videos {
-  padding-top: 4em;
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#pythonProject #videos iframe {
-  margin: 0;
-  padding: 0;
-  max-width: 100%;
-}
-#pythonProject #videos #see-code {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  font-size: 3em;
-  color: white;
-  text-decoration: underline;
-  width: fit-content;
-  text-align: center;
-}
-#pythonProject #videos #see-code:hover {
-  opacity: 0.8;
-}
-
 #projects-body {
   background-color: #232338;
   font-size: 16px;
@@ -564,6 +536,36 @@ body footer #copyright {
 }
 #projects-body #projects .project .project-name {
   margin: 0;
+}
+#projects-body #projects .project .start-text {
+  display: contents;
+}
+#projects-body #projects .project .dots {
+  display: contents;
+}
+#projects-body #projects .project .end-of-description {
+  display: none;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  text-align: justify;
+}
+#projects-body #projects .project .show-more {
+  align-self: center;
+  margin-top: 1em;
+  color: white;
+  background-color: rgba(71, 71, 211, 0.9);
+  border-radius: 10px;
+  font-size: 1em;
+  width: fit-content;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3em 0.5em;
+  cursor: pointer;
+}
+#projects-body #projects .project .show-more:hover {
+  opacity: 0.8;
 }
 #projects-body #integration-projects {
   background: linear-gradient(#232338, black);
@@ -627,7 +629,7 @@ body footer #copyright {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.3em;
+  padding: 0.3em 0.5em;
 }
 #projects-body #integration-projects #integrations-list .project .project-name .project-buttons .show-project:hover {
   opacity: 0.8;
