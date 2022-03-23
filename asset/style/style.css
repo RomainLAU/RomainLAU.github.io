@@ -158,15 +158,14 @@ body #presentation h2 {
 body #presentation #presentation-content {
   display: flex;
   column-gap: 5em;
-  flex-wrap: wrap;
   align-items: center;
 }
 body #presentation #presentation-content p {
   margin-top: 3em;
-  font-size: 2em;
-  line-height: 1.5em;
+  font-size: 1.4em;
+  line-height: 1.6em;
+  text-align: justify;
   letter-spacing: 0.03em;
-  width: 35em;
 }
 body #presentation #presentation-content p strong {
   font-weight: bold;
@@ -184,7 +183,7 @@ body #presentation #presentation-content p strong {
   }
 }
 body #presentation #presentation-content #profile-picture {
-  width: 30em;
+  min-width: 30em;
   height: 30em;
   border-radius: 50%;
   border: solid 2px white;
@@ -200,7 +199,7 @@ body #presentation #presentation-content #profile-picture img {
 }
 @media screen and (max-width: 765px) {
   body #presentation #presentation-content #profile-picture {
-    width: 20em;
+    min-width: 20em;
     height: 20em;
   }
   body #presentation #presentation-content #profile-picture img {
@@ -209,8 +208,9 @@ body #presentation #presentation-content #profile-picture img {
     left: -480px;
   }
 }
-@media screen and (max-width: 1843px) {
+@media screen and (max-width: 1300px) {
   body #presentation #presentation-content {
+    flex-wrap: wrap;
     justify-content: center;
     row-gap: 1em;
   }
