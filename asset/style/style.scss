@@ -65,9 +65,8 @@ body{
                     text-decoration: none;
                     display: block;
 
-                    img{
-                        height: 32px;
-                        width: 32px;
+                    i{
+                        font-size: 1em;
                     }
 
                     &:hover{
@@ -644,7 +643,7 @@ body{
         color: white;
         align-self: center;
         text-align: center;
-        margin-top: 3em;
+        margin-top: 1em;
         font-weight: bold;
     }
 
@@ -943,4 +942,33 @@ body{
 #skills-body{
     background-color:rgb(35, 35, 56);
     font-size: 16px;
+
+    #skills{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5em;
+        flex-direction: column;
+        row-gap: 5em;
+
+        h1{
+            font-size: 4em;
+            font-weight: bold;
+        }
+
+        #grid-skills{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8em;
+        }
+
+        img{
+            height: 128px;
+            width: 128px;
+        }
+
+        i{
+            font-size: 128px;
+        }
+    }
 }

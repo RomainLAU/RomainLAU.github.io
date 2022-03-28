@@ -59,9 +59,8 @@ body #sticky ul li a {
   text-decoration: none;
   display: block;
 }
-body #sticky ul li a img {
-  height: 32px;
-  width: 32px;
+body #sticky ul li a i {
+  font-size: 1em;
 }
 body #sticky ul li a:hover {
   text-decoration: underline;
@@ -577,7 +576,7 @@ body footer #copyright {
   color: white;
   align-self: center;
   text-align: center;
-  margin-top: 3em;
+  margin-top: 1em;
   font-weight: bold;
 }
 #projects-body #projects {
@@ -849,6 +848,30 @@ body footer #copyright {
 #skills-body {
   background-color: #232338;
   font-size: 16px;
+}
+#skills-body #skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5em;
+  flex-direction: column;
+  row-gap: 5em;
+}
+#skills-body #skills h1 {
+  font-size: 4em;
+  font-weight: bold;
+}
+#skills-body #skills #grid-skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8em;
+}
+#skills-body #skills img {
+  height: 128px;
+  width: 128px;
+}
+#skills-body #skills i {
+  font-size: 128px;
 }
 
 /*# sourceMappingURL=style.css.map */
