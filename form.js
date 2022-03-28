@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('DOMContentLoaded', () => {
 
     let lastFirstname = document.querySelector('#lastFirstname')
     let email = document.querySelector('#email')
@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
     let emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g
 
-    submitButton.addEventListener('click', function(event) {
+    submitButton.addEventListener('click', (event) => {
 
         if (lastFirstname.value.length === 0) {
             lastFirstname.style.border = "solid 2px red"
