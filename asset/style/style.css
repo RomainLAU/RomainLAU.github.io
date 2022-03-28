@@ -860,11 +860,24 @@ body footer #copyright {
 #skills-body #skills h1 {
   font-size: 4em;
   font-weight: bold;
+  text-align: center;
 }
 #skills-body #skills #grid-skills {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 8em;
+}
+@media screen and (max-width: 775px) {
+  #skills-body #skills #grid-skills {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8em;
+  }
+}
+@media screen and (max-width: 425px) {
+  #skills-body #skills #grid-skills {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5em;
+  }
 }
 #skills-body #skills img {
   height: 128px;

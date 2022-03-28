@@ -954,12 +954,23 @@ body{
         h1{
             font-size: 4em;
             font-weight: bold;
+            text-align: center;
         }
 
         #grid-skills{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 8em;
+
+            @media screen and (max-width: 775px) {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8em;
+            }
+
+            @media screen and (max-width: 425px) {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 5em;
+            }
         }
 
         img{
