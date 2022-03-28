@@ -87,7 +87,6 @@ body #sticky #little-menu {
 body #sticky #little-menu li #burger-button {
   width: 30px;
   height: 30px;
-  background-image: url("../images/bars.svg");
   background-repeat: no-repeat;
   transition: 0.4s ease-in-out;
 }
@@ -126,7 +125,6 @@ body #sticky #little-menu li ul #little-menu ul li a {
 }
 body #sticky #little-menu:hover #burger-button {
   transition: 0.4s ease-in-out;
-  background-image: url("../images/xmark.svg");
 }
 body #sticky #little-menu:hover #sub-menu {
   display: block;
