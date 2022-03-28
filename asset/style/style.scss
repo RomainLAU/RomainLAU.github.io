@@ -105,7 +105,6 @@ body{
                 }
 
                 #sub-menu{
-                    display: none;
                     position: absolute;
                     background-color: rgba(38, 38, 71, 0.9);
                     border-radius: 10px;
@@ -114,6 +113,7 @@ body{
                     padding: 0.75em;
                     line-height: 1.75em;
                     width: 6em;
+                    display: none;
 
                     li:last-child{
                         display: flex;
