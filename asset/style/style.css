@@ -47,6 +47,7 @@ body #sticky {
 body #sticky ul {
   display: flex;
   column-gap: 3em;
+  align-items: center;
 }
 body #sticky ul li {
   list-style-type: none;
@@ -58,6 +59,10 @@ body #sticky ul li a {
   text-decoration: none;
   display: block;
 }
+body #sticky ul li a img {
+  height: 32px;
+  width: 32px;
+}
 body #sticky ul li a:hover {
   text-decoration: underline;
   color: #cccccc;
@@ -68,7 +73,7 @@ body #sticky ul:nth-child(1) {
 body #sticky ul:nth-child(2) {
   margin-right: 4em;
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 775px) {
   body #sticky ul:nth-child(2) {
     display: none;
   }
@@ -79,9 +84,12 @@ body #sticky #little-menu {
   margin-right: 2em;
   position: relative;
 }
-body #sticky #little-menu li img {
+body #sticky #little-menu li #burger-button {
   width: 30px;
   height: 30px;
+  background-image: url("../images/bars.svg");
+  background-repeat: no-repeat;
+  transition: 0.4s ease-in-out;
 }
 body #sticky #little-menu li #sub-menu {
   display: none;
@@ -93,6 +101,11 @@ body #sticky #little-menu li #sub-menu {
   padding: 0.75em;
   line-height: 1.75em;
   width: 6em;
+}
+body #sticky #little-menu li #sub-menu li:last-child {
+  display: flex;
+  margin-top: 0.5em;
+  justify-content: space-between;
 }
 body #sticky #little-menu li ul #little-menu {
   display: none;
@@ -106,19 +119,30 @@ body #sticky #little-menu li ul #little-menu ul li {
 body #sticky #little-menu li ul #little-menu ul li a {
   display: block;
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 775px) {
   body #sticky #little-menu li ul #little-menu {
     display: flex;
   }
 }
+body #sticky #little-menu:hover #burger-button {
+  transition: 0.4s ease-in-out;
+  background-image: url("../images/xmark.svg");
+}
 body #sticky #little-menu:hover #sub-menu {
   display: block;
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 775px) {
   body #sticky #little-menu {
     display: flex;
     height: 100%;
     align-items: center;
+  }
+}
+@media screen and (max-width: 775px) {
+  body #sticky {
+    top: 1em;
+    margin-right: 1.5em;
+    margin-left: 1.5em;
   }
 }
 body #particles-js {
@@ -137,11 +161,29 @@ body #particles-js div {
 body #particles-js div h1 {
   font-size: 5em;
   font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5em;
+  margin-bottom: 0.7em;
 }
-@media screen and (max-width: 765px) {
+body #particles-js div h1 span {
+  font-size: 0.5em;
+}
+@media screen and (max-width: 775px) {
   body #particles-js div h1 {
     font-size: 4em;
   }
+}
+body #particles-js div a {
+  color: white;
+  padding: 0.25em 0.5em;
+  border: solid 2px rgba(71, 71, 211, 0.9);
+  font-size: 2.5em;
+  border-radius: 10px;
+}
+body #particles-js div a:hover {
+  background-color: rgba(71, 71, 211, 0.9);
+  border-color: white;
 }
 body #presentation {
   max-width: 100%;
@@ -152,7 +194,7 @@ body #presentation h2 {
   font-size: 3em;
   font-weight: 900;
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 775px) {
   body #presentation h2 {
     font-size: 4em;
   }
@@ -163,7 +205,7 @@ body #presentation #presentation-content {
   align-items: center;
 }
 body #presentation #presentation-content p {
-  margin-top: 3em;
+  margin-top: 1.5em;
   font-size: 1.4em;
   line-height: 1.6em;
   text-align: justify;
@@ -177,7 +219,7 @@ body #presentation #presentation-content p strong {
     width: 100%;
   }
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 775px) {
   body #presentation #presentation-content p {
     font-size: 1.5em;
     line-height: 1.5em;
@@ -191,6 +233,7 @@ body #presentation #presentation-content #profile-picture {
   border: solid 2px white;
   overflow: hidden;
   position: relative;
+  margin-top: 3em;
 }
 body #presentation #presentation-content #profile-picture img {
   object-fit: cover;
@@ -199,7 +242,7 @@ body #presentation #presentation-content #profile-picture img {
   bottom: -230px;
   left: -400px;
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 775px) {
   body #presentation #presentation-content #profile-picture {
     min-width: 20em;
     height: 20em;
@@ -217,13 +260,13 @@ body #presentation #presentation-content #profile-picture img {
     row-gap: 1em;
   }
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 775px) {
   body #presentation #presentation-content {
     justify-content: center;
     row-gap: 1em;
   }
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 775px) {
   body #presentation {
     padding: 2em;
     padding-top: 4em;
@@ -241,7 +284,7 @@ body #projects h2 {
   font-size: 3em;
   font-weight: 900;
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 775px) {
   body #projects h2 {
     align-self: center;
   }
@@ -290,7 +333,7 @@ body #projects #projects-list .project .project-name .show-project {
 body #projects #projects-list .project .project-name .show-project:hover {
   opacity: 0.8;
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 775px) {
   body #projects #projects-list .project .project-name .show-project {
     align-self: center;
   }
@@ -303,7 +346,7 @@ body #projects #projects-list .project .quick-description {
 body #projects #projects-list .project .quick-description strong {
   font-weight: bold;
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 775px) {
   body #projects #projects-list .project .quick-description {
     text-align: center;
   }
@@ -331,18 +374,18 @@ body #projects #projects-list .project .technos-used p:hover {
   opacity: 0.8;
   cursor: pointer;
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 775px) {
   body #projects #projects-list .project .technos-used {
     margin-top: 0.4em;
   }
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 775px) {
   body #projects #projects-list .project {
     justify-content: center;
     align-items: center;
   }
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 775px) {
   body #projects #projects-list {
     column-gap: 0%;
     justify-content: center;
@@ -364,7 +407,7 @@ body #projects #more #see-more {
 body #projects #more #see-more:hover {
   opacity: 0.8;
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 775px) {
   body #projects {
     display: flex;
     justify-content: center;
@@ -425,7 +468,7 @@ body #contact .contact__content .contact__small-inputs .inputs__column #lastFirs
   -ms-border-radius: 6px 0px 0px 0px;
   -o-border-radius: 6px 0px 0px 0px;
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 775px) {
   body #contact .contact__content .contact__small-inputs .inputs__column #lastFirstname {
     border-radius: 6px 6px 0px 0px;
     -webkit-border-radius: 6px 6px 0px 0px;
@@ -441,7 +484,7 @@ body #contact .contact__content .contact__small-inputs .inputs__column #email {
   -ms-border-radius: 0px 6px 0px 0px;
   -o-border-radius: 0px 6px 0px 0px;
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 775px) {
   body #contact .contact__content .contact__small-inputs .inputs__column #email {
     border-radius: 0px 0px 0px 0px;
     -webkit-border-radius: 0px 0px 0px 0px;
@@ -450,7 +493,7 @@ body #contact .contact__content .contact__small-inputs .inputs__column #email {
     -o-border-radius: 0px 0px 0px 0px;
   }
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 775px) {
   body #contact .contact__content .contact__small-inputs {
     grid-template-columns: 1fr;
     gap: 0.5em 0px;
@@ -478,12 +521,12 @@ body #contact .contact__content .inputs__column #contact__comment-input {
   -ms-border-radius: 0px 0px 6px 6px;
   -o-border-radius: 0px 0px 6px 6px;
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 775px) {
   body #contact .contact__content .inputs__column #contact__comment-input {
     height: 75%;
   }
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 775px) {
   body #contact .contact__content {
     grid-template-rows: repeat(2, 0.25fr) 0.5fr;
     height: 65%;
@@ -508,13 +551,13 @@ body #contact button:hover {
   border-color: white;
   cursor: pointer;
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 775px) {
   body #contact button {
     margin-top: 0em;
     align-self: center;
   }
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 775px) {
   body #contact {
     padding-top: 6em;
     padding-bottom: 2em;
@@ -575,7 +618,7 @@ body footer #copyright {
   font-size: 3em;
   font-weight: 900;
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 775px) {
   #projects-body #integration-projects h2 {
     align-self: center;
     text-align: center;
@@ -634,7 +677,7 @@ body footer #copyright {
 #projects-body #integration-projects #integrations-list .project .project-name .project-buttons .show-project:hover {
   opacity: 0.8;
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 775px) {
   #projects-body #integration-projects #integrations-list .project .project-name .project-buttons .show-project {
     align-self: center;
   }
@@ -666,24 +709,24 @@ body footer #copyright {
   opacity: 0.8;
   cursor: pointer;
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 775px) {
   #projects-body #integration-projects #integrations-list .project .technos-used {
     margin-top: 1.5em;
   }
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 775px) {
   #projects-body #integration-projects #integrations-list .project {
     justify-content: center;
     align-items: center;
   }
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 775px) {
   #projects-body #integration-projects #integrations-list {
     column-gap: 0%;
     justify-content: center;
   }
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 775px) {
   #projects-body #integration-projects {
     display: flex;
     justify-content: center;
