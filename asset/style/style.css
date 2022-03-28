@@ -585,6 +585,10 @@ body footer #copyright {
 #projects-body #projects .project .project-name {
   margin: 0;
 }
+#projects-body #projects h2 {
+  margin-top: 1em;
+  text-align: center;
+}
 #projects-body #integration-projects {
   background-color: #232338;
   padding: 5em;
@@ -595,7 +599,6 @@ body footer #copyright {
 }
 @media screen and (max-width: 775px) {
   #projects-body #integration-projects h2 {
-    align-self: center;
     text-align: center;
   }
 }
@@ -740,8 +743,6 @@ body footer #copyright {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 }
 #projects-body #other-projects #other-projects-list .project .project-name {
   font-size: 2.5em;
