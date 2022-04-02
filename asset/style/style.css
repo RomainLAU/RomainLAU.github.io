@@ -97,13 +97,13 @@ body #sticky #little-menu li #sub-menu {
   right: -95px;
   padding: 0.75em;
   line-height: 1.75em;
-  width: 6em;
   display: none;
 }
-body #sticky #little-menu li #sub-menu li:last-child {
+body #sticky #little-menu li #sub-menu .social-media {
   display: flex;
   margin-top: 0.5em;
-  justify-content: space-between;
+  column-gap: 2em;
+  justify-content: space-around;
 }
 body #sticky #little-menu li ul #little-menu {
   display: none;
