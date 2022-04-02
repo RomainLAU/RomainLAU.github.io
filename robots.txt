@@ -3,3 +3,6 @@ Allow: /
 
 User-Agent: Unnecessarybot
 Disallow: /
+
+User-Agent: *
+Disallow: /asset/images/
