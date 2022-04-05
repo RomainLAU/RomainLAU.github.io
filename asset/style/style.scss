@@ -659,7 +659,11 @@ body{
 
         h2{
             margin-top: 1em;
-            text-align: center;
+            font-weight: 900;
+
+            @media screen and (max-width: 775px) {
+                text-align: center;
+            }
         }
     }
 

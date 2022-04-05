@@ -587,7 +587,12 @@ body footer #copyright {
 }
 #projects-body #projects h2 {
   margin-top: 1em;
-  text-align: center;
+  font-weight: 900;
+}
+@media screen and (max-width: 775px) {
+  #projects-body #projects h2 {
+    text-align: center;
+  }
 }
 #projects-body #integration-projects {
   background-color: #232338;
