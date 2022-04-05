@@ -63,8 +63,10 @@ body #sticky ul li a i {
   font-size: 1em;
 }
 body #sticky ul li a:hover {
-  text-decoration: underline;
   color: #cccccc;
+}
+body #sticky ul li:nth-child(-n+3) a:hover {
+  text-decoration: underline;
 }
 body #sticky ul:nth-child(1) {
   margin-left: 4em;
