@@ -17,8 +17,6 @@ window.addEventListener('DOMContentLoaded', () => {
             lastFirstname.style.border = "none"
         }
 
-        console.log(email.value.match(emailRegex))
-
         if (!email.value || email.value.length === 0 || email.value.match(emailRegex) === null) {
             email.style.border = "solid 2px red"
             event.preventDefault()
