@@ -1,18 +1,22 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
+  const burgerMenu = document.querySelector("#burger-button");
+  const littleMenu = document.querySelector("#little-menu");
+  const subMenu = document.querySelector("#sub-menu");
 
-    let burgerMenu = document.querySelector('#burger-button')
-    let littleMenu = document.querySelector('#little-menu')
-    let subMenu = document.querySelector('#sub-menu')
+  burgerMenu.style.backgroundImage = "url('asset/images/bars.svg')";
 
-    burgerMenu.style.backgroundImage = "url('asset/images/bars.svg')"
+  littleMenu.addEventListener("click", () => {
+    if (subMenu.style.display == "block") {
+      burgerMenu.style.backgroundImage = "url('asset/images/bars.svg')";
+      subMenu.style.display = "none";
+    } else {
+      subMenu.style.display = "block";
+      burgerMenu.style.backgroundImage = "url('asset/images/xmark.svg')";
+    }
+  });
 
-    littleMenu.addEventListener("click", () => {
-        if (subMenu.style.display == 'block') {
-            burgerMenu.style.backgroundImage = "url('asset/images/bars.svg')"
-            subMenu.style.display = "none"
-        } else {
-            subMenu.style.display = "block"
-            burgerMenu.style.backgroundImage = "url('asset/images/xmark.svg')"
-        }
-    })
-})
+  littleMenu.addEventListener("mouseleave", () => {
+    burgerMenu.style.backgroundImage = "url('asset/images/bars.svg')";
+    subMenu.style.display = "none";
+  });
+});
