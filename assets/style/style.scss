@@ -215,7 +215,6 @@ body {
   #presentation {
     max-width: 100%;
     padding: 5em;
-    background-color: $blue;
 
     h2 {
       font-size: 3em;
@@ -614,7 +613,7 @@ body {
 // Projects Page
 
 #projects-body {
-  background-color: rgb(35, 35, 56);
+  background-color: black;
   font-size: 16px;
 
   h1 {
@@ -627,7 +626,7 @@ body {
   }
 
   #projects {
-    background: rgba(35, 35, 56);
+    background: black;
 
     .project {
       .project-name {
@@ -646,7 +645,7 @@ body {
   }
 
   #integration-projects {
-    background-color: $blue;
+    background-color: black;
     padding: 5em;
 
     h2 {
@@ -781,7 +780,7 @@ body {
   // Other projects
 
   #other-projects {
-    background-color: $blue;
+    background-color: black;
     padding: 5em;
 
     h2 {
@@ -927,7 +926,7 @@ body {
 // Skills Page
 
 #skills-body {
-  background-color: rgb(35, 35, 56);
+  background-color: black;
   font-size: 16px;
 
   #skills {
