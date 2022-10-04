@@ -490,6 +490,9 @@ body {
 
       input {
         padding-left: 0.15em;
+        background-color: black;
+        border: solid 1px rgb(255, 174, 0);
+        color: white;
       }
 
       .contact__small-inputs {
@@ -506,39 +509,22 @@ body {
           .contact__small-input {
             width: 100%;
             height: 100%;
-            border: none;
             padding-left: 0.4em;
           }
 
           #lastFirstname {
             border-radius: 6px 0px 0px 0px;
-            -webkit-border-radius: 6px 0px 0px 0px;
-            -moz-border-radius: 6px 0px 0px 0px;
-            -ms-border-radius: 6px 0px 0px 0px;
-            -o-border-radius: 6px 0px 0px 0px;
 
             @media screen and (max-width: 890px) {
               border-radius: 6px 6px 0px 0px;
-              -webkit-border-radius: 6px 6px 0px 0px;
-              -moz-border-radius: 6px 6px 0px 0px;
-              -ms-border-radius: 6px 6px 0px 0px;
-              -o-border-radius: 6px 6px 0px 0px;
             }
           }
 
           #email {
             border-radius: 0px 6px 0px 0px;
-            -webkit-border-radius: 0px 6px 0px 0px;
-            -moz-border-radius: 0px 6px 0px 0px;
-            -ms-border-radius: 0px 6px 0px 0px;
-            -o-border-radius: 0px 6px 0px 0px;
 
             @media screen and (max-width: 890px) {
               border-radius: 0px 0px 0px 0px;
-              -webkit-border-radius: 0px 0px 0px 0px;
-              -moz-border-radius: 0px 0px 0px 0px;
-              -ms-border-radius: 0px 0px 0px 0px;
-              -o-border-radius: 0px 0px 0px 0px;
             }
           }
         }
@@ -557,20 +543,18 @@ body {
         #contact__title-input {
           width: 100%;
           height: 100%;
-          border: none;
           padding-left: 0.4em;
         }
 
         #contact__comment-input {
           padding-left: 0.4em;
           padding-top: 0.5em;
+          background-color: black;
+          border: solid 1px rgb(255, 174, 0);
           width: 100%;
           height: 100%;
           border-radius: 0px 0px 6px 6px;
-          -webkit-border-radius: 0px 0px 6px 6px;
-          -moz-border-radius: 0px 0px 6px 6px;
-          -ms-border-radius: 0px 0px 6px 6px;
-          -o-border-radius: 0px 0px 6px 6px;
+          color: white;
 
           @media screen and (max-width: 890px) {
             height: 75%;
@@ -586,8 +570,8 @@ body {
 
     button {
       height: 5em;
-      background-color: white;
-      border: solid 1px blue;
+      background-color: rgb(255, 174, 0);
+      border: solid 1px white;
       margin-top: 4em;
       border-radius: 6px;
       -webkit-border-radius: 6px;
@@ -596,11 +580,12 @@ body {
       -o-border-radius: 6px;
       font-weight: bold;
       padding: 0 10px;
+      transition: all 0.1s linear;
 
       &:hover {
         background-color: black;
         color: white;
-        border-color: white;
+        border-color: rgb(255, 174, 0);
         cursor: pointer;
       }
 
