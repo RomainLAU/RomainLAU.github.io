@@ -5,4 +5,4 @@ User-Agent: Unnecessarybot
 Disallow: /
 
 User-Agent: *
-Disallow: /asset/images/
+Disallow: /assets/images/
