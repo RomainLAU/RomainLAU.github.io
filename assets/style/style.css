@@ -176,7 +176,6 @@ body #particles-js div a:hover {
 body #presentation {
   max-width: 100%;
   padding: 5em;
-  background-color: rgb(35, 35, 56);
 }
 body #presentation h2 {
   font-size: 3em;
@@ -547,7 +546,7 @@ body footer #copyright {
 }
 
 #projects-body {
-  background-color: rgb(35, 35, 56);
+  background-color: black;
   font-size: 16px;
 }
 #projects-body h1 {
@@ -559,7 +558,7 @@ body footer #copyright {
   font-weight: bold;
 }
 #projects-body #projects {
-  background: rgb(35, 35, 56);
+  background: black;
 }
 #projects-body #projects .project .project-name {
   margin: 0;
@@ -574,7 +573,7 @@ body footer #copyright {
   }
 }
 #projects-body #integration-projects {
-  background-color: rgb(35, 35, 56);
+  background-color: black;
   padding: 5em;
 }
 #projects-body #integration-projects h2 {
@@ -699,7 +698,7 @@ body footer #copyright {
   }
 }
 #projects-body #other-projects {
-  background-color: rgb(35, 35, 56);
+  background-color: black;
   padding: 5em;
 }
 #projects-body #other-projects h2 {
@@ -834,7 +833,7 @@ body footer #copyright {
 }
 
 #skills-body {
-  background-color: rgb(35, 35, 56);
+  background-color: black;
   font-size: 16px;
 }
 #skills-body #skills {
