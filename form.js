@@ -1,16 +1,18 @@
 window.addEventListener("DOMContentLoaded", () => {
-  let lastFirstname = document.querySelector("#lastFirstname");
-  let email = document.querySelector("#email");
-  let mailObject = document.querySelector("#contact__title-input");
-  let mailContent = document.querySelector("#contact__comment-input");
-  let submitButton = document.querySelector("#submit");
+  const lastFirstname = document.querySelector("#lastFirstname");
+  const email = document.querySelector("#email");
+  const mailObject = document.querySelector("#contact__title-input");
+  const mailContent = document.querySelector("#contact__comment-input");
+  const submitButton = document.querySelector("#submit");
 
-  let emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+  const nameRegex =
+    /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u;
+  const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
 
   submitButton.addEventListener("click", (event) => {
     if (
-      lastFirstname.value.length === 0 &&
-      parseInt(lastFirstname.value) != NaN
+      lastFirstname.value.length === 0 ||
+      !lastFirstname.value.match(nameRegex)
     ) {
       lastFirstname.style.borderColor = "red";
       event.preventDefault();
