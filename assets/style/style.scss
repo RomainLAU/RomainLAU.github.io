@@ -346,8 +346,8 @@ body {
       .project {
         padding: 1.5em;
         width: 25em;
-        background: rgb(49, 49, 70);
-        box-shadow: 0px 5px 25px rgb(49, 49, 70);
+        background: $blue;
+        box-shadow: 0px 0px 25px 5px rgb(255 174 0 / 20%);
         border-radius: 20px;
         display: flex;
         flex-direction: column;
@@ -658,9 +658,9 @@ body {
       .project {
         padding: 1.5em;
         width: 25em;
-        background: rgb(49, 49, 70);
+        background: $blue;
         border: solid 2px $gold;
-        box-shadow: 0px 5px 25px rgb(49, 49, 70);
+        box-shadow: 0px 0px 25px 5px rgb(255 174 0 / 20%);
         border-radius: 20px;
         display: flex;
         flex-direction: column;
@@ -793,8 +793,8 @@ body {
       .project {
         padding: 1.5em;
         width: 25em;
-        background: rgb(49, 49, 70);
-        box-shadow: 0px 5px 25px rgb(49, 49, 70);
+        background: $blue;
+        box-shadow: 0px 0px 25px 5px rgb(255 174 0 / 20%);
         border-radius: 20px;
         display: flex;
         flex-direction: column;

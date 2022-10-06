@@ -304,8 +304,8 @@ body #projects #projects-list {
 body #projects #projects-list .project {
   padding: 1.5em;
   width: 25em;
-  background: rgb(49, 49, 70);
-  box-shadow: 0px 5px 25px rgb(49, 49, 70);
+  background: rgb(35, 35, 56);
+  box-shadow: 0px 0px 25px 5px rgba(255, 174, 0, 0.2);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -585,9 +585,9 @@ body footer #copyright {
 #projects-body #integration-projects #integrations-list .project {
   padding: 1.5em;
   width: 25em;
-  background: rgb(49, 49, 70);
+  background: rgb(35, 35, 56);
   border: solid 2px rgb(255, 174, 0);
-  box-shadow: 0px 5px 25px rgb(49, 49, 70);
+  box-shadow: 0px 0px 25px 5px rgba(255, 174, 0, 0.2);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -710,8 +710,8 @@ body footer #copyright {
 #projects-body #other-projects #other-projects-list .project {
   padding: 1.5em;
   width: 25em;
-  background: rgb(49, 49, 70);
-  box-shadow: 0px 5px 25px rgb(49, 49, 70);
+  background: rgb(35, 35, 56);
+  box-shadow: 0px 0px 25px 5px rgba(255, 174, 0, 0.2);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
