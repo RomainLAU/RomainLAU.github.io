@@ -1,4 +1,5 @@
 $blue: rgb(35, 35, 56);
+$gold: rgb(255, 174, 0);
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&family=Open+Sans:wght@300&display=swap");
 
@@ -9,7 +10,7 @@ html {
 body {
   font-family: "Lato", sans-serif;
   width: 100%;
-  background-color: black;
+  background-color: #181818;
   color: white;
   margin: 0;
   padding: 0;
@@ -84,6 +85,10 @@ body {
 
     ul:nth-child(1) {
       margin-left: 4em;
+
+      @media screen and (max-width: 890px) {
+        margin-left: 2em;
+      }
     }
 
     ul:nth-child(2) {
@@ -204,7 +209,7 @@ body {
         border-radius: 10px;
 
         &:hover {
-          border-color: rgb(255, 174, 0);
+          border-color: $gold;
         }
       }
     }
@@ -239,7 +244,7 @@ body {
 
         strong {
           font-weight: bold;
-          color: rgb(255, 174, 0);
+          color: $gold;
         }
 
         @media screen and (max-width: 1843px) {
@@ -257,7 +262,7 @@ body {
         min-width: 30em;
         height: 30em;
         border-radius: 50%;
-        border: solid 2px rgb(255, 174, 0);
+        border: solid 2px $gold;
         overflow: hidden;
         position: relative;
         margin-top: 3em;
@@ -278,6 +283,17 @@ body {
             transform: scale(0.4);
             bottom: -320px;
             left: -480px;
+          }
+        }
+
+        @media screen and (max-width: 340px) {
+          min-width: 15em;
+          height: 15em;
+
+          img {
+            transform: scale(0.3);
+            bottom: -350px;
+            left: -515px;
           }
         }
       }
@@ -307,7 +323,6 @@ body {
   // Projects
 
   #projects {
-    background: black;
     padding: 5em;
 
     h2 {
@@ -337,7 +352,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        border: solid 2px rgb(255, 174, 0);
+        border: solid 2px $gold;
 
         .project-name {
           font-size: 2.5em;
@@ -378,7 +393,7 @@ body {
 
           strong {
             font-weight: bold;
-            color: rgb(255, 174, 0);
+            color: $gold;
           }
 
           @media screen and (max-width: 890px) {
@@ -395,7 +410,7 @@ body {
           align-self: center;
 
           p {
-            border: solid 1px rgb(255, 174, 0);
+            border: solid 1px $gold;
             padding: 0.4em;
             border-radius: 10px;
 
@@ -461,7 +476,6 @@ body {
 
   #contact {
     padding: 4em;
-    max-width: 100%;
     height: 35em;
     display: flex;
     align-items: center;
@@ -480,116 +494,96 @@ body {
     }
 
     .contact__content {
-      min-width: 40%;
-      height: 80%;
-      display: grid;
-      grid-template-rows: repeat(2, 0.25fr) 1fr;
-      grid-template-columns: 1fr;
-      gap: 0.5em 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 0.5em;
+      width: 800px;
+      max-width: 80vw;
+      height: 100%;
 
       input {
-        padding-left: 0.15em;
-        background-color: black;
-        border: solid 1px rgb(255, 174, 0);
+        padding: 0.6em 0.5em;
+        background-color: $blue;
+        border: solid 1px $gold;
         color: white;
+        height: 32px;
       }
 
       .contact__small-inputs {
-        border-radius: 6px;
+        display: flex;
+        justify-content: space-between;
         width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0em 0.6em;
 
-        .inputs__column {
-          display: flex;
-          flex-direction: column;
+        .contact__small-input {
+          width: 47.5%;
+        }
 
-          .contact__small-input {
-            width: 100%;
-            height: 100%;
-            padding-left: 0.4em;
+        #lastFirstname {
+          border-radius: 8px 0px 0px 0px;
+
+          @media screen and (max-width: 890px) {
+            border-radius: 8px 8px 0px 0px;
           }
+        }
 
-          #lastFirstname {
-            border-radius: 6px 0px 0px 0px;
+        #email {
+          border-radius: 0px 8px 0px 0px;
 
-            @media screen and (max-width: 890px) {
-              border-radius: 6px 6px 0px 0px;
-            }
-          }
-
-          #email {
-            border-radius: 0px 6px 0px 0px;
-
-            @media screen and (max-width: 890px) {
-              border-radius: 0px 0px 0px 0px;
-            }
+          @media screen and (max-width: 890px) {
+            border-radius: 0px 0px 0px 0px;
           }
         }
 
         @media screen and (max-width: 890px) {
-          grid-template-columns: 1fr;
-          gap: 0.5em 0px;
-        }
-      }
+          flex-direction: column;
+          row-gap: 0.5em;
 
-      .inputs__column {
-        padding: 0;
-        margin: 0;
-        width: 100%;
-
-        #contact__title-input {
-          width: 100%;
-          height: 100%;
-          padding-left: 0.4em;
-        }
-
-        #contact__comment-input {
-          padding-left: 0.4em;
-          padding-top: 0.5em;
-          background-color: black;
-          border: solid 1px rgb(255, 174, 0);
-          width: 100%;
-          height: 100%;
-          border-radius: 0px 0px 6px 6px;
-          color: white;
-
-          @media screen and (max-width: 890px) {
-            height: 75%;
+          .contact__small-input {
+            width: 100%;
           }
         }
       }
 
-      @media screen and (max-width: 890px) {
-        grid-template-rows: repeat(2, 0.25fr) 0.5fr;
-        height: 65%;
+      #contact__title-input {
+        @media screen and (max-width: 890px) {
+          width: 100%;
+        }
+      }
+
+      #contact__comment-input {
+        padding: 0.7em 0.5em;
+        background-color: $blue;
+        border: solid 1px $gold;
+        display: flex;
+        border-radius: 0px 0px 8px 8px;
+        color: white;
+        flex: 1;
+
+        @media screen and (max-width: 890px) {
+          width: 100%;
+        }
       }
     }
 
     button {
       height: 5em;
-      background-color: rgb(255, 174, 0);
+      background-color: $gold;
       border: solid 1px white;
       margin-top: 4em;
-      border-radius: 6px;
-      -webkit-border-radius: 6px;
-      -moz-border-radius: 6px;
-      -ms-border-radius: 6px;
-      -o-border-radius: 6px;
+      border-radius: 8px;
       font-weight: bold;
       padding: 0 10px;
       transition: all 0.1s linear;
 
       &:hover {
-        background-color: black;
         color: white;
-        border-color: rgb(255, 174, 0);
+        border-color: $gold;
         cursor: pointer;
       }
 
       @media screen and (max-width: 890px) {
-        margin-top: 0em;
+        margin-top: 1em;
         align-self: center;
       }
     }
@@ -597,7 +591,6 @@ body {
     @media screen and (max-width: 890px) {
       padding-top: 6em;
       padding-bottom: 2em;
-      align-items: inherit;
     }
   }
 
@@ -613,7 +606,6 @@ body {
 // Projects Page
 
 #projects-body {
-  background-color: black;
   font-size: 16px;
 
   h1 {
@@ -626,8 +618,6 @@ body {
   }
 
   #projects {
-    background: black;
-
     .project {
       .project-name {
         margin: 0;
@@ -645,7 +635,6 @@ body {
   }
 
   #integration-projects {
-    background-color: black;
     padding: 5em;
 
     h2 {
@@ -670,7 +659,7 @@ body {
         padding: 1.5em;
         width: 25em;
         background: rgb(49, 49, 70);
-        border: solid 2px rgb(255, 174, 0);
+        border: solid 2px $gold;
         box-shadow: 0px 5px 25px rgb(49, 49, 70);
         border-radius: 20px;
         display: flex;
@@ -734,7 +723,7 @@ body {
 
           p {
             background-color: rgb(49, 49, 70);
-            border: solid 1px rgb(255, 174, 0);
+            border: solid 1px $gold;
             padding: 0.4em;
             border-radius: 10px;
 
@@ -780,7 +769,6 @@ body {
   // Other projects
 
   #other-projects {
-    background-color: black;
     padding: 5em;
 
     h2 {
@@ -859,7 +847,7 @@ body {
 
           strong {
             font-weight: bold;
-            color: rgb(255, 174, 0);
+            color: $gold;
           }
 
           @media screen and (max-width: 890px) {
@@ -926,7 +914,6 @@ body {
 // Skills Page
 
 #skills-body {
-  background-color: black;
   font-size: 16px;
 
   #skills {

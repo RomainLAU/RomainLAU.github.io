@@ -6,7 +6,7 @@ html {
 body {
   font-family: "Lato", sans-serif;
   width: 100%;
-  background-color: black;
+  background-color: #181818;
   color: white;
   margin: 0;
   padding: 0;
@@ -70,6 +70,11 @@ body #sticky ul li:nth-child(-n+3) a:hover {
 }
 body #sticky ul:nth-child(1) {
   margin-left: 4em;
+}
+@media screen and (max-width: 890px) {
+  body #sticky ul:nth-child(1) {
+    margin-left: 2em;
+  }
 }
 body #sticky ul:nth-child(2) {
   margin-right: 4em;
@@ -241,6 +246,17 @@ body #presentation #presentation-content #profile-picture img {
     left: -480px;
   }
 }
+@media screen and (max-width: 340px) {
+  body #presentation #presentation-content #profile-picture {
+    min-width: 15em;
+    height: 15em;
+  }
+  body #presentation #presentation-content #profile-picture img {
+    transform: scale(0.3);
+    bottom: -350px;
+    left: -515px;
+  }
+}
 @media screen and (max-width: 1300px) {
   body #presentation #presentation-content {
     flex-wrap: wrap;
@@ -265,7 +281,6 @@ body #presentation #presentation-content #profile-picture img {
   }
 }
 body #projects {
-  background: black;
   padding: 5em;
 }
 body #projects h2 {
@@ -407,7 +422,6 @@ body #projects #more #see-more:hover {
 }
 body #contact {
   padding: 4em;
-  max-width: 100%;
   height: 35em;
   display: flex;
   align-items: center;
@@ -424,86 +438,71 @@ body #contact #contact__title {
   text-align: center;
 }
 body #contact .contact__content {
-  min-width: 40%;
-  height: 80%;
-  display: grid;
-  grid-template-rows: repeat(2, 0.25fr) 1fr;
-  grid-template-columns: 1fr;
-  gap: 0.5em 0px;
-}
-body #contact .contact__content input {
-  padding-left: 0.15em;
-  background-color: black;
-  border: solid 1px rgb(255, 174, 0);
-  color: white;
-}
-body #contact .contact__content .contact__small-inputs {
-  border-radius: 6px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0em 0.6em;
-}
-body #contact .contact__content .contact__small-inputs .inputs__column {
   display: flex;
   flex-direction: column;
-}
-body #contact .contact__content .contact__small-inputs .inputs__column .contact__small-input {
-  width: 100%;
+  justify-content: center;
+  row-gap: 0.5em;
+  width: 800px;
+  max-width: 80vw;
   height: 100%;
-  padding-left: 0.4em;
 }
-body #contact .contact__content .contact__small-inputs .inputs__column #lastFirstname {
-  border-radius: 6px 0px 0px 0px;
+body #contact .contact__content input {
+  padding: 0.6em 0.5em;
+  background-color: rgb(35, 35, 56);
+  border: solid 1px rgb(255, 174, 0);
+  color: white;
+  height: 32px;
+}
+body #contact .contact__content .contact__small-inputs {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+body #contact .contact__content .contact__small-inputs .contact__small-input {
+  width: 47.5%;
+}
+body #contact .contact__content .contact__small-inputs #lastFirstname {
+  border-radius: 8px 0px 0px 0px;
 }
 @media screen and (max-width: 890px) {
-  body #contact .contact__content .contact__small-inputs .inputs__column #lastFirstname {
-    border-radius: 6px 6px 0px 0px;
+  body #contact .contact__content .contact__small-inputs #lastFirstname {
+    border-radius: 8px 8px 0px 0px;
   }
 }
-body #contact .contact__content .contact__small-inputs .inputs__column #email {
-  border-radius: 0px 6px 0px 0px;
+body #contact .contact__content .contact__small-inputs #email {
+  border-radius: 0px 8px 0px 0px;
 }
 @media screen and (max-width: 890px) {
-  body #contact .contact__content .contact__small-inputs .inputs__column #email {
+  body #contact .contact__content .contact__small-inputs #email {
     border-radius: 0px 0px 0px 0px;
   }
 }
 @media screen and (max-width: 890px) {
   body #contact .contact__content .contact__small-inputs {
-    grid-template-columns: 1fr;
-    gap: 0.5em 0px;
+    flex-direction: column;
+    row-gap: 0.5em;
+  }
+  body #contact .contact__content .contact__small-inputs .contact__small-input {
+    width: 100%;
   }
 }
-body #contact .contact__content .inputs__column {
-  padding: 0;
-  margin: 0;
-  width: 100%;
+@media screen and (max-width: 890px) {
+  body #contact .contact__content #contact__title-input {
+    width: 100%;
+  }
 }
-body #contact .contact__content .inputs__column #contact__title-input {
-  width: 100%;
-  height: 100%;
-  padding-left: 0.4em;
-}
-body #contact .contact__content .inputs__column #contact__comment-input {
-  padding-left: 0.4em;
-  padding-top: 0.5em;
-  background-color: black;
+body #contact .contact__content #contact__comment-input {
+  padding: 0.7em 0.5em;
+  background-color: rgb(35, 35, 56);
   border: solid 1px rgb(255, 174, 0);
-  width: 100%;
-  height: 100%;
-  border-radius: 0px 0px 6px 6px;
+  display: flex;
+  border-radius: 0px 0px 8px 8px;
   color: white;
+  flex: 1;
 }
 @media screen and (max-width: 890px) {
-  body #contact .contact__content .inputs__column #contact__comment-input {
-    height: 75%;
-  }
-}
-@media screen and (max-width: 890px) {
-  body #contact .contact__content {
-    grid-template-rows: repeat(2, 0.25fr) 0.5fr;
-    height: 65%;
+  body #contact .contact__content #contact__comment-input {
+    width: 100%;
   }
 }
 body #contact button {
@@ -511,24 +510,19 @@ body #contact button {
   background-color: rgb(255, 174, 0);
   border: solid 1px white;
   margin-top: 4em;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
+  border-radius: 8px;
   font-weight: bold;
   padding: 0 10px;
   transition: all 0.1s linear;
 }
 body #contact button:hover {
-  background-color: black;
   color: white;
   border-color: rgb(255, 174, 0);
   cursor: pointer;
 }
 @media screen and (max-width: 890px) {
   body #contact button {
-    margin-top: 0em;
+    margin-top: 1em;
     align-self: center;
   }
 }
@@ -536,7 +530,6 @@ body #contact button:hover {
   body #contact {
     padding-top: 6em;
     padding-bottom: 2em;
-    align-items: inherit;
   }
 }
 body footer #copyright {
@@ -546,7 +539,6 @@ body footer #copyright {
 }
 
 #projects-body {
-  background-color: black;
   font-size: 16px;
 }
 #projects-body h1 {
@@ -556,9 +548,6 @@ body footer #copyright {
   text-align: center;
   margin-top: 1em;
   font-weight: bold;
-}
-#projects-body #projects {
-  background: black;
 }
 #projects-body #projects .project .project-name {
   margin: 0;
@@ -573,7 +562,6 @@ body footer #copyright {
   }
 }
 #projects-body #integration-projects {
-  background-color: black;
   padding: 5em;
 }
 #projects-body #integration-projects h2 {
@@ -698,7 +686,6 @@ body footer #copyright {
   }
 }
 #projects-body #other-projects {
-  background-color: black;
   padding: 5em;
 }
 #projects-body #other-projects h2 {
@@ -833,7 +820,6 @@ body footer #copyright {
 }
 
 #skills-body {
-  background-color: black;
   font-size: 16px;
 }
 #skills-body #skills {
