@@ -1,5 +1,5 @@
 $blue: rgb(35, 35, 56);
-$gold: rgb(255, 174, 0);
+$gold: #dec75f;
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&family=Open+Sans:wght@300&display=swap");
 
@@ -262,7 +262,7 @@ body {
         min-width: 30em;
         height: 30em;
         border-radius: 50%;
-        border: solid 2px $gold;
+        border: solid 2px #917d21;
         overflow: hidden;
         position: relative;
         margin-top: 3em;
@@ -347,7 +347,7 @@ body {
         padding: 1.5em;
         width: 25em;
         background: $blue;
-        box-shadow: 0px 0px 25px 5px rgb(255 174 0 / 20%);
+        box-shadow: 0px 0px 25px 5px #dec75f52;
         border-radius: 20px;
         display: flex;
         flex-direction: column;
@@ -366,7 +366,7 @@ body {
 
           .show-project {
             color: white;
-            background-color: rgba(71, 71, 211, 0.9);
+            background-color: #5f5fde;
             border-radius: 10px;
             font-size: 0.5em;
             width: fit-content;
@@ -375,9 +375,11 @@ body {
             justify-content: center;
             align-items: center;
             padding: 0.3em;
+            border: solid 1px transparent;
 
             &:hover {
-              opacity: 0.8;
+              background-color: transparent;
+              border-color: white;
             }
 
             @media screen and (max-width: 890px) {
@@ -507,7 +509,7 @@ body {
         background-color: $blue;
         border: solid 1px $gold;
         color: white;
-        height: 32px;
+        height: 38px;
       }
 
       .contact__small-inputs {
@@ -569,7 +571,7 @@ body {
     button {
       height: 5em;
       background-color: $gold;
-      border: solid 1px white;
+      border: solid 1px transparent;
       margin-top: 4em;
       border-radius: 8px;
       font-weight: bold;
@@ -577,8 +579,9 @@ body {
       transition: all 0.1s linear;
 
       &:hover {
-        color: white;
+        color: $gold;
         border-color: $gold;
+        background-color: transparent;
         cursor: pointer;
       }
 
@@ -660,7 +663,7 @@ body {
         width: 25em;
         background: $blue;
         border: solid 2px $gold;
-        box-shadow: 0px 0px 25px 5px rgb(255 174 0 / 20%);
+        box-shadow: 0px 0px 25px 5px #dec75f52;
         border-radius: 20px;
         display: flex;
         flex-direction: column;
@@ -687,18 +690,19 @@ body {
 
             .show-project {
               color: white;
-              background-color: rgba(71, 71, 211, 0.9);
+              background-color: #5f5fde;
               border-radius: 10px;
               font-size: 0.5em;
               width: fit-content;
-              border: none;
+              border: solid 1px transparent;
               display: flex;
               justify-content: center;
               align-items: center;
               padding: 0.3em 0.5em;
 
               &:hover {
-                opacity: 0.8;
+                background-color: transparent;
+                border-color: white;
               }
 
               @media screen and (max-width: 890px) {
@@ -794,7 +798,7 @@ body {
         padding: 1.5em;
         width: 25em;
         background: $blue;
-        box-shadow: 0px 0px 25px 5px rgb(255 174 0 / 20%);
+        box-shadow: 0px 0px 25px 5px #dec75f52;
         border-radius: 20px;
         display: flex;
         flex-direction: column;
@@ -819,18 +823,19 @@ body {
 
             .show-project {
               color: white;
-              background-color: rgba(71, 71, 211, 0.9);
+              background-color: #5f5fde;
               border-radius: 10px;
               font-size: 0.5em;
               width: fit-content;
-              border: none;
               display: flex;
               justify-content: center;
               align-items: center;
               padding: 0.3em 0.5em;
+              border: solid 1px transparent;
 
               &:hover {
-                opacity: 0.8;
+                background-color: transparent;
+                border-color: white;
               }
 
               @media screen and (max-width: 890px) {

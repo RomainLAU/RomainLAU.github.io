@@ -176,7 +176,7 @@ body #particles-js div a {
   border-radius: 10px;
 }
 body #particles-js div a:hover {
-  border-color: rgb(255, 174, 0);
+  border-color: #dec75f;
 }
 body #presentation {
   max-width: 100%;
@@ -205,7 +205,7 @@ body #presentation #presentation-content p {
 }
 body #presentation #presentation-content p strong {
   font-weight: bold;
-  color: rgb(255, 174, 0);
+  color: #dec75f;
 }
 @media screen and (max-width: 1843px) {
   body #presentation #presentation-content p {
@@ -223,7 +223,7 @@ body #presentation #presentation-content #profile-picture {
   min-width: 30em;
   height: 30em;
   border-radius: 50%;
-  border: solid 2px rgb(255, 174, 0);
+  border: solid 2px #917d21;
   overflow: hidden;
   position: relative;
   margin-top: 3em;
@@ -305,12 +305,12 @@ body #projects #projects-list .project {
   padding: 1.5em;
   width: 25em;
   background: rgb(35, 35, 56);
-  box-shadow: 0px 0px 25px 5px rgba(255, 174, 0, 0.2);
+  box-shadow: 0px 0px 25px 5px rgba(222, 199, 95, 0.3215686275);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: solid 2px rgb(255, 174, 0);
+  border: solid 2px #dec75f;
 }
 body #projects #projects-list .project .project-name {
   font-size: 2.5em;
@@ -324,7 +324,7 @@ body #projects #projects-list .project .project-name {
 }
 body #projects #projects-list .project .project-name .show-project {
   color: white;
-  background-color: rgba(71, 71, 211, 0.9);
+  background-color: #5f5fde;
   border-radius: 10px;
   font-size: 0.5em;
   width: fit-content;
@@ -333,9 +333,11 @@ body #projects #projects-list .project .project-name .show-project {
   justify-content: center;
   align-items: center;
   padding: 0.3em;
+  border: solid 1px transparent;
 }
 body #projects #projects-list .project .project-name .show-project:hover {
-  opacity: 0.8;
+  background-color: transparent;
+  border-color: white;
 }
 @media screen and (max-width: 890px) {
   body #projects #projects-list .project .project-name .show-project {
@@ -349,7 +351,7 @@ body #projects #projects-list .project .quick-description {
 }
 body #projects #projects-list .project .quick-description strong {
   font-weight: bold;
-  color: rgb(255, 174, 0);
+  color: #dec75f;
 }
 @media screen and (max-width: 890px) {
   body #projects #projects-list .project .quick-description {
@@ -365,7 +367,7 @@ body #projects #projects-list .project .technos-used {
   align-self: center;
 }
 body #projects #projects-list .project .technos-used p {
-  border: solid 1px rgb(255, 174, 0);
+  border: solid 1px #dec75f;
   padding: 0.4em;
   border-radius: 10px;
 }
@@ -449,9 +451,9 @@ body #contact .contact__content {
 body #contact .contact__content input {
   padding: 0.6em 0.5em;
   background-color: rgb(35, 35, 56);
-  border: solid 1px rgb(255, 174, 0);
+  border: solid 1px #dec75f;
   color: white;
-  height: 32px;
+  height: 38px;
 }
 body #contact .contact__content .contact__small-inputs {
   display: flex;
@@ -494,7 +496,7 @@ body #contact .contact__content .contact__small-inputs #email {
 body #contact .contact__content #contact__comment-input {
   padding: 0.7em 0.5em;
   background-color: rgb(35, 35, 56);
-  border: solid 1px rgb(255, 174, 0);
+  border: solid 1px #dec75f;
   display: flex;
   border-radius: 0px 0px 8px 8px;
   color: white;
@@ -507,8 +509,8 @@ body #contact .contact__content #contact__comment-input {
 }
 body #contact button {
   height: 5em;
-  background-color: rgb(255, 174, 0);
-  border: solid 1px white;
+  background-color: #dec75f;
+  border: solid 1px transparent;
   margin-top: 4em;
   border-radius: 8px;
   font-weight: bold;
@@ -516,8 +518,9 @@ body #contact button {
   transition: all 0.1s linear;
 }
 body #contact button:hover {
-  color: white;
-  border-color: rgb(255, 174, 0);
+  color: #dec75f;
+  border-color: #dec75f;
+  background-color: transparent;
   cursor: pointer;
 }
 @media screen and (max-width: 890px) {
@@ -586,8 +589,8 @@ body footer #copyright {
   padding: 1.5em;
   width: 25em;
   background: rgb(35, 35, 56);
-  border: solid 2px rgb(255, 174, 0);
-  box-shadow: 0px 0px 25px 5px rgba(255, 174, 0, 0.2);
+  border: solid 2px #dec75f;
+  box-shadow: 0px 0px 25px 5px rgba(222, 199, 95, 0.3215686275);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -614,18 +617,19 @@ body footer #copyright {
 }
 #projects-body #integration-projects #integrations-list .project .project-name .project-buttons .show-project {
   color: white;
-  background-color: rgba(71, 71, 211, 0.9);
+  background-color: #5f5fde;
   border-radius: 10px;
   font-size: 0.5em;
   width: fit-content;
-  border: none;
+  border: solid 1px transparent;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0.3em 0.5em;
 }
 #projects-body #integration-projects #integrations-list .project .project-name .project-buttons .show-project:hover {
-  opacity: 0.8;
+  background-color: transparent;
+  border-color: white;
 }
 @media screen and (max-width: 890px) {
   #projects-body #integration-projects #integrations-list .project .project-name .project-buttons .show-project {
@@ -646,7 +650,7 @@ body footer #copyright {
 }
 #projects-body #integration-projects #integrations-list .project .technos-used p {
   background-color: rgb(49, 49, 70);
-  border: solid 1px rgb(255, 174, 0);
+  border: solid 1px #dec75f;
   padding: 0.4em;
   border-radius: 10px;
 }
@@ -711,7 +715,7 @@ body footer #copyright {
   padding: 1.5em;
   width: 25em;
   background: rgb(35, 35, 56);
-  box-shadow: 0px 0px 25px 5px rgba(255, 174, 0, 0.2);
+  box-shadow: 0px 0px 25px 5px rgba(222, 199, 95, 0.3215686275);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -736,18 +740,19 @@ body footer #copyright {
 }
 #projects-body #other-projects #other-projects-list .project .project-name .project-buttons .show-project {
   color: white;
-  background-color: rgba(71, 71, 211, 0.9);
+  background-color: #5f5fde;
   border-radius: 10px;
   font-size: 0.5em;
   width: fit-content;
-  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0.3em 0.5em;
+  border: solid 1px transparent;
 }
 #projects-body #other-projects #other-projects-list .project .project-name .project-buttons .show-project:hover {
-  opacity: 0.8;
+  background-color: transparent;
+  border-color: white;
 }
 @media screen and (max-width: 890px) {
   #projects-body #other-projects #other-projects-list .project .project-name .project-buttons .show-project {
@@ -761,7 +766,7 @@ body footer #copyright {
 }
 #projects-body #other-projects #other-projects-list .project .quick-description strong {
   font-weight: bold;
-  color: rgb(255, 174, 0);
+  color: #dec75f;
 }
 @media screen and (max-width: 890px) {
   #projects-body #other-projects #other-projects-list .project .quick-description {
