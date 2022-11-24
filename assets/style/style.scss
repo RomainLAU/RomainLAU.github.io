@@ -492,7 +492,6 @@ body {
 
   #contact {
     padding: 4em;
-    // height: 35em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -500,11 +499,11 @@ body {
 
     label {
       margin-bottom: 12px;
-      font-size: 16px;
+      font-size: 18px;
     }
 
     #contact__title {
-      margin-bottom: 1em;
+      margin-bottom: 3em;
       font-size: 2em;
       font-weight: bold;
       text-align: center;
@@ -599,7 +598,7 @@ body {
       background-color: $rose;
       color: white;
       border: solid 1px transparent;
-      margin-top: 28px;
+      margin-top: 48px;
       border-radius: 8px;
       font-weight: bold;
       padding: 18px 24px;
@@ -628,6 +627,7 @@ body {
       display: flex;
       justify-content: center;
       padding: 1.5em 0;
+      margin-top: 64px;
     }
   }
 }
