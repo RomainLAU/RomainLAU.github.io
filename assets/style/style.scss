@@ -6,6 +6,10 @@ $transparent-rose: #cd598f69;
 
 html {
   scroll-behavior: smooth;
+
+  *::selection {
+    background-color: rgba(70, 178, 211, 0.384);
+  }
 }
 
 body {
