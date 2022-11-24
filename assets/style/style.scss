@@ -1,14 +1,14 @@
 $blue: rgb(35, 35, 56);
 $gold: #dec75f;
 
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&family=Open+Sans:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&family=Open+Sans:wght@300&display=swap');
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   width: 100%;
   background-color: #181818;
   color: white;
@@ -40,16 +40,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(38, 38, 71, 0.9);
+    background-color: transparent;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     z-index: 10;
-    top: 1em;
-    margin-right: 1.5em;
-    margin-left: 1.5em;
+    top: 0em;
+    backdrop-filter: blur(6px);
 
     ul {
       display: flex;

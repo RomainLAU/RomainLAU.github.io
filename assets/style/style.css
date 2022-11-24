@@ -33,16 +33,15 @@ body #sticky {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(38, 38, 71, 0.9);
+  background-color: transparent;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   z-index: 10;
-  top: 1em;
-  margin-right: 1.5em;
-  margin-left: 1.5em;
+  top: 0em;
+  backdrop-filter: blur(6px);
 }
 body #sticky ul {
   display: flex;
