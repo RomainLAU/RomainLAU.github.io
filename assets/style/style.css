@@ -306,7 +306,7 @@ body #projects #projects-list .project {
   padding: 1.5em;
   width: 25em;
   background: rgb(35, 35, 56);
-  box-shadow: 0px 0px 25px 5px rgba(222, 199, 95, 0.3215686275);
+  box-shadow: 0px 0px 25px 5px rgba(205, 89, 143, 0.4117647059);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -591,7 +591,7 @@ body footer #copyright {
   width: 25em;
   background: rgb(35, 35, 56);
   border: solid 2px rgba(205, 89, 143, 0.7215686275);
-  box-shadow: 0px 0px 25px 5px rgba(222, 199, 95, 0.3215686275);
+  box-shadow: 0px 0px 25px 5px rgba(205, 89, 143, 0.4117647059);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -716,7 +716,7 @@ body footer #copyright {
   padding: 1.5em;
   width: 25em;
   background: rgb(35, 35, 56);
-  box-shadow: 0px 0px 25px 5px rgba(222, 199, 95, 0.3215686275);
+  box-shadow: 0px 0px 25px 5px rgba(205, 89, 143, 0.4117647059);
   border-radius: 20px;
   display: flex;
   flex-direction: column;

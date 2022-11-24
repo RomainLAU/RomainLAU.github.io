@@ -349,7 +349,7 @@ body {
         padding: 1.5em;
         width: 25em;
         background: $blue;
-        box-shadow: 0px 0px 25px 5px #dec75f52;
+        box-shadow: 0px 0px 25px 5px $transparent-rose;
         border-radius: 20px;
         display: flex;
         flex-direction: column;
@@ -665,7 +665,7 @@ body {
         width: 25em;
         background: $blue;
         border: solid 2px $rose;
-        box-shadow: 0px 0px 25px 5px #dec75f52;
+        box-shadow: 0px 0px 25px 5px $transparent-rose;
         border-radius: 20px;
         display: flex;
         flex-direction: column;
@@ -800,7 +800,7 @@ body {
         padding: 1.5em;
         width: 25em;
         background: $blue;
-        box-shadow: 0px 0px 25px 5px #dec75f52;
+        box-shadow: 0px 0px 25px 5px $transparent-rose;
         border-radius: 20px;
         display: flex;
         flex-direction: column;
