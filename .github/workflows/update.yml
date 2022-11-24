@@ -1,0 +1,22 @@
+---
+name: Update
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Pull
+        env:
+          deploy_key: ${{secrets.deploy_key}}
+          known_hosts: ${{secrets.known_hosts}}
+        run: |
+          mkdir -p ${HOME}/.ssh
+          printf "%s\n" "$known_hosts" > ${HOME}/.ssh/known_hosts
+          printf "%s\n" "$pull_key" > ${HOME}/.ssh/id_rsa
+          chmod 600 ${HOME}/.ssh/id_rsa
+          rsync -a ./ portfolio@romain-laurent.live:/home/portfolio/website/
