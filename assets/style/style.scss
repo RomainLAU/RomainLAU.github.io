@@ -1,5 +1,6 @@
 $blue: rgb(35, 35, 56);
-$gold: #dec75f;
+$rose: #cd598fb8;
+$transparent-rose: #cd598f69;
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&family=Open+Sans:wght@300&display=swap');
 
@@ -114,7 +115,8 @@ body {
 
         #sub-menu {
           position: absolute;
-          background-color: rgba(38, 38, 71, 0.9);
+          background-color: transparent;
+          backdrop-filter: blur(6px);
           border-radius: 10px;
           margin-top: 12px;
           right: -95px;
@@ -141,7 +143,8 @@ body {
 
             ul {
               li {
-                background-color: rgba(38, 38, 71, 0.9);
+                background-color: transparent;
+                backdrop-filter: blur(6px);
                 a {
                   display: block;
                 }
@@ -208,7 +211,7 @@ body {
         border-radius: 10px;
 
         &:hover {
-          border-color: $gold;
+          border-color: $rose;
         }
       }
     }
@@ -243,7 +246,7 @@ body {
 
         strong {
           font-weight: bold;
-          color: $gold;
+          color: $rose;
         }
 
         @media screen and (max-width: 1843px) {
@@ -351,7 +354,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        border: solid 2px $gold;
+        border: solid 2px $rose;
 
         .project-name {
           font-size: 2.5em;
@@ -394,7 +397,7 @@ body {
 
           strong {
             font-weight: bold;
-            color: $gold;
+            color: $rose;
           }
 
           @media screen and (max-width: 890px) {
@@ -411,7 +414,7 @@ body {
           align-self: center;
 
           p {
-            border: solid 1px $gold;
+            border: solid 1px $rose;
             padding: 0.4em;
             border-radius: 10px;
 
@@ -506,7 +509,7 @@ body {
       input {
         padding: 0.6em 0.5em;
         background-color: $blue;
-        border: solid 1px $gold;
+        border: solid 1px $rose;
         color: white;
         height: 38px;
       }
@@ -555,7 +558,7 @@ body {
       #contact__comment-input {
         padding: 0.7em 0.5em;
         background-color: $blue;
-        border: solid 1px $gold;
+        border: solid 1px $rose;
         display: flex;
         border-radius: 0px 0px 8px 8px;
         color: white;
@@ -569,7 +572,7 @@ body {
 
     button {
       height: 5em;
-      background-color: $gold;
+      background-color: $rose;
       border: solid 1px transparent;
       margin-top: 4em;
       border-radius: 8px;
@@ -578,8 +581,8 @@ body {
       transition: all 0.1s linear;
 
       &:hover {
-        color: $gold;
-        border-color: $gold;
+        color: $rose;
+        border-color: $rose;
         background-color: transparent;
         cursor: pointer;
       }
@@ -661,7 +664,7 @@ body {
         padding: 1.5em;
         width: 25em;
         background: $blue;
-        border: solid 2px $gold;
+        border: solid 2px $rose;
         box-shadow: 0px 0px 25px 5px #dec75f52;
         border-radius: 20px;
         display: flex;
@@ -726,7 +729,7 @@ body {
 
           p {
             background-color: rgb(49, 49, 70);
-            border: solid 1px $gold;
+            border: solid 1px $rose;
             padding: 0.4em;
             border-radius: 10px;
 
@@ -851,7 +854,7 @@ body {
 
           strong {
             font-weight: bold;
-            color: $gold;
+            color: $rose;
           }
 
           @media screen and (max-width: 890px) {
