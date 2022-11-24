@@ -19,5 +19,5 @@ jobs:
           printf "%s\n" "$known_hosts" > ${HOME}/.ssh/known_hosts
           printf "%s\n" "$deploy_key" > ${HOME}/.ssh/id_rsa 
           chmod 600 ${HOME}/.ssh/id_rsa
-          rsync -a --delete ./ github@romain-laurent.live:/home/github/portfolio # --delete will remove files if they were removed from the repository
+          rsync -a --delete ./ github@romain-laurent.live:/home/github/portfolio/ # --delete will remove files if they were removed from the repository
           # So if it's a problem, just remove the option
