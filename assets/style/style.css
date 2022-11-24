@@ -598,12 +598,15 @@ body footer #copyright {
   width: 25em;
   background: rgb(35, 35, 56);
   border: solid 2px rgba(205, 89, 143, 0.7215686275);
-  box-shadow: 0px 0px 25px 5px rgba(205, 89, 143, 0.4117647059);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+#projects-body #integration-projects #integrations-list .project:hover {
+  box-shadow: 0px 0px 25px 5px rgba(205, 89, 143, 0.4117647059);
 }
 #projects-body #integration-projects #integrations-list .project .project-name {
   font-size: 2.5em;
@@ -728,6 +731,7 @@ body footer #copyright {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
+  transition: all 0.2s ease-in-out;
 }
 #projects-body #other-projects #other-projects-list .project:hover {
   box-shadow: 0px 0px 25px 5px rgba(205, 89, 143, 0.4117647059);
