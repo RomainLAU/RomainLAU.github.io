@@ -224,7 +224,7 @@ body #presentation #presentation-content #profile-picture {
   min-width: 30em;
   height: 30em;
   border-radius: 50%;
-  border: solid 2px #917d21;
+  border: solid 2px rgba(205, 89, 143, 0.7215686275);
   overflow: hidden;
   position: relative;
   margin-top: 3em;
