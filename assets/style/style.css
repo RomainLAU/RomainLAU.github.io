@@ -520,7 +520,7 @@ body #contact #submit {
   height: 5em;
   background-color: rgba(205, 89, 143, 0.7215686275);
   border: solid 1px transparent;
-  margin-top: 4em;
+  margin-top: 28px;
   border-radius: 8px;
   font-weight: bold;
   padding: 0 10px;
@@ -534,7 +534,6 @@ body #contact #submit:hover {
 }
 @media screen and (max-width: 890px) {
   body #contact #submit {
-    margin-top: 1em;
     align-self: center;
   }
 }
@@ -726,10 +725,12 @@ body footer #copyright {
   padding: 1.5em;
   width: 25em;
   background: rgb(35, 35, 56);
-  box-shadow: 0px 0px 25px 5px rgba(205, 89, 143, 0.4117647059);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
+}
+#projects-body #other-projects #other-projects-list .project:hover {
+  box-shadow: 0px 0px 25px 5px rgba(205, 89, 143, 0.4117647059);
 }
 #projects-body #other-projects #other-projects-list .project .project-name {
   font-size: 2.5em;

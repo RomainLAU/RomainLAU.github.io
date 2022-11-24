@@ -586,7 +586,7 @@ body {
       height: 5em;
       background-color: $rose;
       border: solid 1px transparent;
-      margin-top: 4em;
+      margin-top: 28px;
       border-radius: 8px;
       font-weight: bold;
       padding: 0 10px;
@@ -600,7 +600,6 @@ body {
       }
 
       @media screen and (max-width: 890px) {
-        margin-top: 1em;
         align-self: center;
       }
     }
@@ -814,10 +813,13 @@ body {
         padding: 1.5em;
         width: 25em;
         background: $blue;
-        box-shadow: 0px 0px 25px 5px $transparent-rose;
         border-radius: 20px;
         display: flex;
         flex-direction: column;
+
+        &:hover {
+          box-shadow: 0px 0px 25px 5px $transparent-rose;
+        }
 
         .project-name {
           font-size: 2.5em;
