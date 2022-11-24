@@ -65,6 +65,7 @@ body {
           color: white;
           text-decoration: none;
           display: block;
+          transition: all 0.1s linear;
 
           i {
             font-size: 1em;
@@ -209,6 +210,7 @@ body {
         border: solid 2px rgba(71, 71, 211, 0.9);
         font-size: 2.5em;
         border-radius: 10px;
+        transition: all 0.1s linear;
 
         &:hover {
           border-color: $rose;
@@ -378,6 +380,7 @@ body {
             align-items: center;
             padding: 0.3em;
             border: solid 1px transparent;
+            transition: all 0.1s linear;
 
             &:hover {
               background-color: transparent;
@@ -417,6 +420,7 @@ body {
             border: solid 1px $rose;
             padding: 0.4em;
             border-radius: 10px;
+            transition: all 0.1s linear;
 
             a {
               color: white;
@@ -461,6 +465,7 @@ body {
         font-size: 1.25em;
         font-weight: 700;
         text-align: center;
+        transition: all 0.1s linear;
 
         &:hover {
           opacity: 0.8;
@@ -570,7 +575,7 @@ body {
       }
     }
 
-    button {
+    #submit {
       height: 5em;
       background-color: $rose;
       border: solid 1px transparent;
@@ -701,6 +706,7 @@ body {
               justify-content: center;
               align-items: center;
               padding: 0.3em 0.5em;
+              transition: all 0.1s linear;
 
               &:hover {
                 background-color: transparent;
@@ -732,6 +738,7 @@ body {
             border: solid 1px $rose;
             padding: 0.4em;
             border-radius: 10px;
+            transition: all 0.1s linear;
 
             a {
               color: white;
@@ -834,6 +841,7 @@ body {
               align-items: center;
               padding: 0.3em 0.5em;
               border: solid 1px transparent;
+              transition: all 0.1s linear;
 
               &:hover {
                 background-color: transparent;
@@ -891,6 +899,7 @@ body {
           align-items: center;
           padding: 0.3em 0.5em;
           cursor: pointer;
+          transition: all 0.1s linear;
 
           &:hover {
             opacity: 0.8;
