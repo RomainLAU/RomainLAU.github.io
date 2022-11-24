@@ -121,13 +121,14 @@ body {
         #sub-menu {
           position: absolute;
           background-color: transparent;
+          --webkit-backdrop-filter: blur(6px);
           backdrop-filter: blur(6px);
           border-radius: 10px;
           margin-top: 12px;
           right: -95px;
           padding: 0.75em;
-          line-height: 1.75em;
           display: none;
+          line-height: 1.75em;
 
           .social-media {
             display: flex;
@@ -146,10 +147,8 @@ body {
             top: 0;
             left: 50;
 
-            ul {
+            #sub-menu {
               li {
-                background-color: transparent;
-                backdrop-filter: blur(6px);
                 a {
                   display: block;
                 }
@@ -355,12 +354,16 @@ body {
         padding: 1.5em;
         width: 25em;
         background: $blue;
-        box-shadow: 0px 0px 25px 5px $transparent-rose;
         border-radius: 20px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         border: solid 2px $rose;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          box-shadow: 0px 0px 25px 5px $transparent-rose;
+        }
 
         .project-name {
           font-size: 2.5em;
@@ -510,13 +513,13 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      row-gap: 0.5em;
+      row-gap: 28px;
       width: 800px;
       max-width: 80vw;
       height: 100%;
 
       input {
-        padding: 0.6em 0.5em;
+        padding: 12px;
         background-color: $blue;
         border: solid 1px $rose;
         color: white;
@@ -529,7 +532,7 @@ body {
         width: 100%;
 
         .contact__small-input {
-          width: 47.5%;
+          width: 360px;
         }
 
         #lastFirstname {
@@ -550,7 +553,7 @@ body {
 
         @media screen and (max-width: 890px) {
           flex-direction: column;
-          row-gap: 0.5em;
+          row-gap: 28px;
 
           .contact__small-input {
             width: 100%;
@@ -565,7 +568,7 @@ body {
       }
 
       #contact__comment-input {
-        padding: 0.7em 0.5em;
+        padding: 12px;
         background-color: $blue;
         border: solid 1px $rose;
         display: flex;
