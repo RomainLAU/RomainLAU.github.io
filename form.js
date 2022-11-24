@@ -7,7 +7,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const nameRegex =
     /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u;
-  const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+  const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,12}$/g;
 
   submitButton.addEventListener('click', (event) => {
     if (
