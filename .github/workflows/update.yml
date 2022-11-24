@@ -17,6 +17,6 @@ jobs:
         run: |
           mkdir -p ${HOME}/.ssh
           printf "%s\n" "$known_hosts" > ${HOME}/.ssh/known_hosts
-          printf "%s\n" "$pull_key" > ${HOME}/.ssh/id_rsa
+          printf "%s\n" "$deploy_key" > ${HOME}/.ssh/id_rsa 
           chmod 600 ${HOME}/.ssh/id_rsa
           rsync -a ./ portfolio@romain-laurent.live:/home/portfolio/website/
