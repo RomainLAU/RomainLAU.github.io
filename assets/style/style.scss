@@ -492,14 +492,15 @@ body {
 
   #contact {
     padding: 4em;
-    height: 35em;
+    // height: 35em;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 
     label {
-      display: none;
+      margin-bottom: 12px;
+      font-size: 16px;
     }
 
     #contact__title {
@@ -507,6 +508,16 @@ body {
       font-size: 2em;
       font-weight: bold;
       text-align: center;
+    }
+
+    .little-input-column,
+    .input-column {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .input-column:last-child {
+      height: 250px;
     }
 
     .contact__content {
@@ -524,6 +535,7 @@ body {
         border: solid 1px $rose;
         color: white;
         height: 38px;
+        font-size: 18px;
       }
 
       .contact__small-inputs {
@@ -575,6 +587,7 @@ body {
         border-radius: 0px 0px 8px 8px;
         color: white;
         flex: 1;
+        font-size: 18px;
 
         @media screen and (max-width: 890px) {
           width: 100%;
@@ -583,13 +596,13 @@ body {
     }
 
     #submit {
-      height: 5em;
       background-color: $rose;
+      color: white;
       border: solid 1px transparent;
       margin-top: 28px;
       border-radius: 8px;
       font-weight: bold;
-      padding: 0 10px;
+      padding: 18px 24px;
       transition: all 0.1s linear;
 
       &:hover {

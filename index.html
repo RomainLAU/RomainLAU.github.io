@@ -280,40 +280,48 @@
       <h2 id="contact__title">Send me a message !</h2>
       <div class="contact__content">
         <div class="contact__small-inputs">
-          <label for="lastFirstname">Your lastname / firstname</label>
+          <div class="little-input-column">
+            <label for="lastFirstname">Your lastname / firstname</label>
+            <input
+              class="contact__small-input"
+              type="text"
+              placeholder="Your lastname / firstname"
+              name="Nom / Prénom"
+              id="lastFirstname"
+              required
+            />
+          </div>
+          <div class="little-input-column">
+            <label for="email">Your email</label>
+            <input
+              type="email"
+              class="contact__small-input"
+              placeholder="Your email"
+              name="Adresse mail"
+              id="email"
+              required
+            />
+          </div>
+        </div>
+        <div class="input-column">
+          <label for="contact__title-input">Mail object</label>
           <input
-            class="contact__small-input"
+            id="contact__title-input"
             type="text"
-            placeholder="Your lastname / firstname"
-            name="Nom / Prénom"
-            id="lastFirstname"
-            required
-          />
-          <label for="email">Your email</label>
-          <input
-            type="email"
-            class="contact__small-input"
-            placeholder="Your email"
-            name="Adresse mail"
-            id="email"
+            placeholder="Mail object"
+            name="Objet du Mail"
             required
           />
         </div>
-        <label for="contact__title-input">Mail object</label>
-        <input
-          id="contact__title-input"
-          type="text"
-          placeholder="Mail object"
-          name="Objet du Mail"
-          required
-        />
-        <label for="contact__comment-input">Your comment</label>
-        <textarea
-          id="contact__comment-input"
-          placeholder="Your comment"
-          name="Commentaire"
-          required
-        ></textarea>
+        <div class="input-column">
+          <label for="contact__comment-input">Your comment</label>
+          <textarea
+            id="contact__comment-input"
+            placeholder="Your comment"
+            name="Commentaire"
+            required
+          ></textarea>
+        </div>
       </div>
       <button type="submit" id="submit">SEND MESSAGE</button>
     </form>
