@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&family=Open+Sans:wght@300&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+html *::selection {
+  background-color: rgba(70, 178, 211, 0.384);
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  background-color: #181818;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+body input {
+  margin: 0;
+  padding: 0;
+}
+body textarea {
+  margin: 0;
+  padding: 0;
+}
+body b {
+  font-weight: bold;
+}
+body a {
+  text-decoration: none;
+}
+body #sticky {
+  position: sticky;
+  height: 3.5em;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(32, 35, 51, 0.356);
+  z-index: 10000;
+  top: 0;
+  --webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+}
+body #sticky ul {
+  display: flex;
+  column-gap: 3em;
+  align-items: center;
+}
+body #sticky ul li {
+  list-style-type: none;
+  font-weight: bold;
+}
+body #sticky ul li a {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  display: block;
+  transition: all 0.1s linear;
+}
+body #sticky ul li a i {
+  font-size: 1em;
+}
+body #sticky ul li a:hover {
+  color: rgb(204, 204, 204);
+}
+body #sticky ul li:nth-child(-n+3) a:hover {
+  text-decoration: underline;
+}
+body #sticky ul:nth-child(1) {
+  margin-left: 4em;
+}
+@media screen and (max-width: 890px) {
+  body #sticky ul:nth-child(1) {
+    margin-left: 2em;
+  }
+}
+body #sticky ul:nth-child(2) {
+  margin-right: 4em;
+}
+@media screen and (max-width: 890px) {
+  body #sticky ul:nth-child(2) {
+    display: none;
+  }
+}
+body #sticky #little-menu {
+  display: none;
+  color: white;
+  margin-right: 2em;
+  position: relative;
+}
+body #sticky #little-menu li #burger-button {
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  transition: 0.4s ease-in-out;
+}
+body #sticky #little-menu li #sub-menu {
+  position: absolute;
+  background-color: rgba(32, 35, 51, 0.712);
+  --webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  border-radius: 0 0 10px 10px;
+  margin-top: 13px;
+  right: -95px;
+  padding: 0.75em;
+  display: none;
+  line-height: 1.75em;
+}
+body #sticky #little-menu li #sub-menu .social-media {
+  display: flex;
+  margin-top: 0.5em;
+  column-gap: 2em;
+  justify-content: space-around;
+}
+body #sticky #little-menu li ul #little-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 50;
+}
+body #sticky #little-menu li ul #little-menu #sub-menu li a {
+  display: block;
+}
+@media screen and (max-width: 890px) {
+  body #sticky #little-menu li ul #little-menu {
+    display: flex;
+  }
+}
+body #sticky #little-menu:hover #burger-button {
+  transition: 0.4s ease-in-out;
+}
+body #sticky #little-menu:hover #sub-menu {
+  display: block;
+}
+@media screen and (max-width: 890px) {
+  body #sticky #little-menu {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+}
+body #skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5em;
+  flex-direction: column;
+  row-gap: 5em;
+}
+body #skills h1 {
+  font-size: 4em;
+  font-weight: bold;
+  text-align: center;
+}
+body #skills #grid-skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8em;
+}
+body #skills #grid-skills .skill-item {
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+body #skills #grid-skills .skill-item:hover {
+  transform: scale(1.5);
+}
+body #skills #grid-skills .skill-item:hover :last-child {
+  filter: brightness(0.4);
+}
+body #skills #grid-skills .skill-item:hover .skill-description {
+  opacity: 1;
+}
+body #skills #grid-skills .skill-item .skill-description {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  text-align: justify;
+  width: 100%;
+  line-height: 20px;
+}
+@media screen and (max-width: 890px) {
+  body #skills #grid-skills {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8em;
+  }
+}
+@media screen and (max-width: 425px) {
+  body #skills #grid-skills {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5em;
+  }
+}
+body #skills img {
+  height: 128px;
+  width: 128px;
+}
+body #skills i {
+  font-size: 128px;
+}
+body footer #copyright {
+  display: flex;
+  justify-content: center;
+  padding: 1.5em 0;
+  margin-top: 64px;
+}
+
+/*# sourceMappingURL=skills.css.map */
