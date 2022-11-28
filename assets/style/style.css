@@ -36,15 +36,11 @@ body #sticky {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: transparent;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  background-color: rgba(32, 35, 51, 0.356);
   z-index: 10000;
-  top: 0em;
-  backdrop-filter: blur(6px);
+  top: 0;
+  --webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
 }
 body #sticky ul {
   display: flex;
@@ -101,8 +97,11 @@ body #sticky #little-menu li #burger-button {
 }
 body #sticky #little-menu li #sub-menu {
   position: absolute;
-  border-radius: 10px;
-  margin-top: 12px;
+  background-color: rgba(32, 35, 51, 0.712);
+  --webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  border-radius: 0 0 10px 10px;
+  margin-top: 13px;
   right: -95px;
   padding: 0.75em;
   display: none;
