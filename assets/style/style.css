@@ -140,17 +140,18 @@ body #sticky #little-menu:hover #sub-menu {
     align-items: center;
   }
 }
-body #particles-js {
+body #header-container {
   max-width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-body #particles-js div {
+body #header-container div {
   text-align: center;
+  margin-top: -100px;
 }
-body #particles-js div h1 {
+body #header-container div h1 {
   font-size: 5em;
   font-weight: bold;
   display: flex;
@@ -158,15 +159,15 @@ body #particles-js div h1 {
   row-gap: 0.5em;
   margin-bottom: 0.7em;
 }
-body #particles-js div h1 span {
+body #header-container div h1 span {
   font-size: 0.5em;
 }
 @media screen and (max-width: 890px) {
-  body #particles-js div h1 {
+  body #header-container div h1 {
     font-size: 4em;
   }
 }
-body #particles-js div a {
+body #header-container div a {
   color: white;
   padding: 0.25em 0.5em;
   border: solid 2px rgba(71, 71, 211, 0.9);
@@ -174,7 +175,7 @@ body #particles-js div a {
   border-radius: 10px;
   transition: all 0.1s linear;
 }
-body #particles-js div a:hover {
+body #header-container div a:hover {
   border-color: rgba(205, 89, 143, 0.7215686275);
 }
 body #presentation {
