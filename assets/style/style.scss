@@ -1,4 +1,5 @@
 $blue: rgb(35, 35, 56);
+$light-blue: #5f5fde;
 $rose: #cd598fb8;
 $transparent-rose: #cd598f69;
 
@@ -373,7 +374,7 @@ body {
 
           .show-project {
             color: white;
-            background-color: #5f5fde;
+            background-color: $light-blue;
             border-radius: 10px;
             font-size: 0.5em;
             width: fit-content;
@@ -387,7 +388,8 @@ body {
 
             &:hover {
               background-color: transparent;
-              border-color: white;
+              border-color: $light-blue;
+              color: $light-blue;
             }
 
             @media screen and (max-width: 890px) {
@@ -434,7 +436,7 @@ body {
             }
 
             &:hover {
-              opacity: 0.8;
+              border-color: $light-blue;
               cursor: pointer;
             }
           }
@@ -716,7 +718,7 @@ body {
 
             .show-project {
               color: white;
-              background-color: #5f5fde;
+              background-color: $light-blue;
               border-radius: 10px;
               font-size: 0.5em;
               width: fit-content;
@@ -729,7 +731,8 @@ body {
 
               &:hover {
                 background-color: transparent;
-                border-color: white;
+                border-color: $light-blue;
+                color: $light-blue;
               }
 
               @media screen and (max-width: 890px) {
@@ -768,7 +771,7 @@ body {
             }
 
             &:hover {
-              opacity: 0.8;
+              border-color: $light-blue;
               cursor: pointer;
             }
           }
@@ -855,7 +858,7 @@ body {
 
             .show-project {
               color: white;
-              background-color: #5f5fde;
+              background-color: $light-blue;
               border-radius: 10px;
               font-size: 0.5em;
               width: fit-content;
@@ -868,7 +871,8 @@ body {
 
               &:hover {
                 background-color: transparent;
-                border-color: white;
+                border-color: $light-blue;
+                color: $light-blue;
               }
 
               @media screen and (max-width: 890px) {

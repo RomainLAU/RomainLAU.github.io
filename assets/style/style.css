@@ -340,7 +340,8 @@ body #projects #projects-list .project .project-name .show-project {
 }
 body #projects #projects-list .project .project-name .show-project:hover {
   background-color: transparent;
-  border-color: white;
+  border-color: #5f5fde;
+  color: #5f5fde;
 }
 @media screen and (max-width: 890px) {
   body #projects #projects-list .project .project-name .show-project {
@@ -382,7 +383,7 @@ body #projects #projects-list .project .technos-used p a button {
   color: white;
 }
 body #projects #projects-list .project .technos-used p:hover {
-  opacity: 0.8;
+  border-color: #5f5fde;
   cursor: pointer;
 }
 @media screen and (max-width: 890px) {
@@ -648,7 +649,8 @@ body footer #copyright {
 }
 #projects-body #integration-projects #integrations-list .project .project-name .project-buttons .show-project:hover {
   background-color: transparent;
-  border-color: white;
+  border-color: #5f5fde;
+  color: #5f5fde;
 }
 @media screen and (max-width: 890px) {
   #projects-body #integration-projects #integrations-list .project .project-name .project-buttons .show-project {
@@ -681,7 +683,7 @@ body footer #copyright {
   color: white;
 }
 #projects-body #integration-projects #integrations-list .project .technos-used p:hover {
-  opacity: 0.8;
+  border-color: #5f5fde;
   cursor: pointer;
 }
 @media screen and (max-width: 890px) {
@@ -776,7 +778,8 @@ body footer #copyright {
 }
 #projects-body #other-projects #other-projects-list .project .project-name .project-buttons .show-project:hover {
   background-color: transparent;
-  border-color: white;
+  border-color: #5f5fde;
+  color: #5f5fde;
 }
 @media screen and (max-width: 890px) {
   #projects-body #other-projects #other-projects-list .project .project-name .project-buttons .show-project {
