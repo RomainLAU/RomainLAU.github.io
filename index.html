@@ -98,12 +98,17 @@
     <meta name="theme-color" content="#ffffff" />
     <!-- End Favicons -->
 
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto Mono"
+      rel="stylesheet"
+    />
     <link defer rel="stylesheet" href="assets/style/reset.css" />
     <link
       defer
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     />
+    <link rel="stylesheet" href="assets/style/style.css" />
     <link rel="stylesheet" href="assets/style/index.css" />
   </head>
   <body>
@@ -159,10 +164,8 @@
     </nav>
     <header id="header-container">
       <div>
-        <h1>
-          Romain Laurent
-          <span>Web Developer</span>
-        </h1>
+        <h1 id="header-title" data-value="Romain Laurent">Romain Laurent</h1>
+        <span>Web Developer</span>
         <a href="assets/images/CV-french.pdf" target="blank" id="hire-me"
           >Hire Me !</a
         >
@@ -341,5 +344,6 @@
     </footer>
     <script defer src="form.js"></script>
     <script src="dropdown.js"></script>
+    <script src="hash-effect.js"></script>
   </body>
 </html>
