@@ -21,3 +21,5 @@ jobs:
           chmod 600 ${HOME}/.ssh/id_rsa
           rsync -a --delete ./ github@romain-laurent.me:/home/github/portfolio/ # --delete will remove files if they were removed from the repository
           # So if it's a problem, just remove the option
+
+# When changing the domain name you must update the known_hosts secret key on github with the known_hosts from your laptop + update the domain name at the line 22 of this file

@@ -20,6 +20,51 @@ body #skills #grid-skills .skill-item {
   cursor: pointer;
   position: relative;
   transition: all 0.3s ease-in-out;
+  transform: scale(0);
+}
+body #skills #grid-skills .skill-item:nth-of-type(1) {
+  animation: skill-animation 0.5s 0.7s cubic-bezier(0.38, 0.66, 0.66, 0.87) forwards;
+}
+body #skills #grid-skills .skill-item:nth-of-type(2) {
+  animation: skill-animation 0.5s 0.7s cubic-bezier(0.38, 0.66, 0.66, 0.87) forwards;
+}
+body #skills #grid-skills .skill-item:nth-of-type(3) {
+  animation: skill-animation 0.5s 0.7s cubic-bezier(0.38, 0.66, 0.66, 0.87) forwards;
+}
+body #skills #grid-skills .skill-item:nth-of-type(4) {
+  animation: skill-animation 0.5s 0.8s cubic-bezier(0.38, 0.66, 0.66, 0.87) forwards;
+}
+body #skills #grid-skills .skill-item:nth-of-type(5) {
+  animation: skill-animation 0.5s 0.8s cubic-bezier(0.38, 0.66, 0.66, 0.87) forwards;
+}
+body #skills #grid-skills .skill-item:nth-of-type(6) {
+  animation: skill-animation 0.5s 0.8s cubic-bezier(0.38, 0.66, 0.66, 0.87) forwards;
+}
+body #skills #grid-skills .skill-item:nth-of-type(7) {
+  animation: skill-animation 0.5s 0.9s cubic-bezier(0.38, 0.66, 0.66, 0.87) forwards;
+}
+body #skills #grid-skills .skill-item:nth-of-type(8) {
+  animation: skill-animation 0.5s 0.9s cubic-bezier(0.38, 0.66, 0.66, 0.87) forwards;
+}
+body #skills #grid-skills .skill-item:nth-of-type(9) {
+  animation: skill-animation 0.5s 0.9s cubic-bezier(0.38, 0.66, 0.66, 0.87) forwards;
+}
+body #skills #grid-skills .skill-item:nth-of-type(10) {
+  animation: skill-animation 0.5s 1s cubic-bezier(0.38, 0.66, 0.66, 0.87) forwards;
+}
+body #skills #grid-skills .skill-item:nth-of-type(11) {
+  animation: skill-animation 0.5s 1s cubic-bezier(0.38, 0.66, 0.66, 0.87) forwards;
+}
+body #skills #grid-skills .skill-item:nth-of-type(12) {
+  animation: skill-animation 0.5s 1s cubic-bezier(0.38, 0.66, 0.66, 0.87) forwards;
+}
+@keyframes skill-animation {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 body #skills #grid-skills .skill-item:hover {
   transform: scale(1.5);
