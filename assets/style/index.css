@@ -1,3 +1,39 @@
+body {
+  /* Contact */
+}
+body #header-container {
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+body #header-container div {
+  text-align: center;
+  margin-top: -100px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  align-items: center;
+}
+body #header-container div h1 {
+  font-size: clamp(2em, 6vw, 400px);
+  font-weight: bold;
+  margin-bottom: 0.3em;
+  animation: 1.5s animate-title 1 cubic-bezier(0.38, 0.66, 0.66, 0.87) forwards;
+  opacity: 0;
+  font-family: "Roboto Mono", monospace;
+  transition: all 0.2s cubic-bezier(0.38, 0.66, 0.66, 0.87);
+}
+body #header-container div span {
+  font-size: clamp(1.5em, 2vw, 200px);
+  animation: 1s animate-sub 1 0.4s cubic-bezier(0.38, 0.66, 0.66, 0.87) forwards;
+  margin-bottom: 3em;
+  font-weight: bold;
+  opacity: 0;
+  transform: scale(0);
+}
 @keyframes animate-title {
   0% {
     opacity: 0;
@@ -19,16 +55,46 @@
     opacity: 1;
   }
 }
-body {
-  /* Contact */
+body #header-container div a {
+  color: white;
+  padding: 0.25em 2em;
+  width: fit-content;
+  border: solid 2px rgba(71, 71, 211, 0.9);
+  font-size: 2.5em;
+  border-radius: 10px;
+  transition: all 0.1s linear;
 }
 body #header-container div a:hover {
   border-color: rgba(205, 89, 143, 0.7215686275);
+}
+body #presentation {
+  max-width: 100%;
+  padding: 5em;
+}
+body #presentation h2 {
+  font-size: 3em;
+  font-weight: 900;
 }
 @media screen and (max-width: 890px) {
   body #presentation h2 {
     font-size: 4em;
   }
+}
+body #presentation #presentation-content {
+  display: flex;
+  column-gap: 5em;
+  align-items: center;
+}
+body #presentation #presentation-content p {
+  margin-top: 1.5em;
+  font-size: 1.4em;
+  line-height: 1.6em;
+  text-align: justify;
+  letter-spacing: 0.03em;
+}
+body #presentation #presentation-content p strong {
+  font-weight: bold;
+  color: rgba(205, 89, 143, 0.7215686275);
 }
 @media screen and (max-width: 1843px) {
   body #presentation #presentation-content p {
@@ -41,6 +107,22 @@ body #header-container div a:hover {
     line-height: 1.5em;
     width: 20;
   }
+}
+body #presentation #presentation-content #profile-picture {
+  min-width: 30em;
+  height: 30em;
+  border-radius: 50%;
+  border: solid 2px rgba(205, 89, 143, 0.7215686275);
+  overflow: hidden;
+  position: relative;
+  margin-top: 3em;
+}
+body #presentation #presentation-content #profile-picture img {
+  object-fit: cover;
+  transform: scale(0.6);
+  position: absolute;
+  bottom: -230px;
+  left: -400px;
 }
 @media screen and (max-width: 890px) {
   body #presentation #presentation-content #profile-picture {
@@ -87,13 +169,64 @@ body #header-container div a:hover {
     text-align: center;
   }
 }
+body #projects {
+  padding: 5em;
+}
+body #projects h2 {
+  font-size: 3em;
+  font-weight: 900;
+}
 @media screen and (max-width: 890px) {
   body #projects h2 {
     align-self: center;
   }
 }
+body #projects #projects-list {
+  margin-top: 5em;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 10%;
+  row-gap: 4em;
+}
+body #projects #projects-list .project {
+  padding: 1.5em;
+  width: 25em;
+  background: rgb(35, 35, 56);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: solid 2px rgba(205, 89, 143, 0.7215686275);
+  transition: all 0.2s ease-in-out;
+}
 body #projects #projects-list .project:hover {
   box-shadow: 0px 0px 25px 5px rgba(205, 89, 143, 0.4117647059);
+}
+body #projects #projects-list .project .project-name {
+  font-size: 2.5em;
+  font-weight: 400;
+  margin-bottom: 0.5em;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5em;
+  text-align: center;
+  align-items: center;
+}
+body #projects #projects-list .project .project-name .show-project {
+  color: white;
+  background-color: #5f5fde;
+  border-radius: 10px;
+  font-size: 0.5em;
+  width: fit-content;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3em;
+  border: solid 1px transparent;
+  transition: all 0.1s linear;
 }
 body #projects #projects-list .project .project-name .show-project:hover {
   background-color: transparent;
@@ -105,10 +238,39 @@ body #projects #projects-list .project .project-name .show-project:hover {
     align-self: center;
   }
 }
+body #projects #projects-list .project .quick-description {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  text-align: justify;
+}
+body #projects #projects-list .project .quick-description strong {
+  font-weight: bold;
+  color: rgba(205, 89, 143, 0.7215686275);
+}
 @media screen and (max-width: 890px) {
   body #projects #projects-list .project .quick-description {
     text-align: center;
   }
+}
+body #projects #projects-list .project .technos-used {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.2em;
+  row-gap: 0.2em;
+  margin-top: 0.5em;
+  align-self: center;
+}
+body #projects #projects-list .project .technos-used p {
+  border: solid 1px rgba(205, 89, 143, 0.7215686275);
+  padding: 0.4em;
+  border-radius: 10px;
+  transition: all 0.1s linear;
+}
+body #projects #projects-list .project .technos-used p a {
+  color: white;
+}
+body #projects #projects-list .project .technos-used p a button {
+  color: white;
 }
 body #projects #projects-list .project .technos-used p:hover {
   border-color: #5f5fde;
@@ -131,6 +293,20 @@ body #projects #projects-list .project .technos-used p:hover {
     justify-content: center;
   }
 }
+body #projects #more {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+}
+body #projects #more #see-more {
+  color: white;
+  text-decoration: underline;
+  font-size: 1.25em;
+  font-weight: 700;
+  text-align: center;
+  transition: all 0.1s linear;
+}
 body #projects #more #see-more:hover {
   opacity: 0.8;
 }
@@ -142,10 +318,66 @@ body #projects #more #see-more:hover {
     padding: 2em;
   }
 }
+body #contact {
+  padding: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body #contact label {
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+body #contact #contact__title {
+  margin-bottom: 3em;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+body #contact .little-input-column,
+body #contact .input-column {
+  display: flex;
+  flex-direction: column;
+}
+body #contact .input-column:last-child {
+  height: 250px;
+}
+body #contact .contact__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 28px;
+  width: 800px;
+  max-width: 80vw;
+  height: 100%;
+}
+body #contact .contact__content input {
+  padding: 12px;
+  background-color: rgb(35, 35, 56);
+  border: solid 1px rgba(205, 89, 143, 0.7215686275);
+  color: white;
+  height: 38px;
+  font-size: 18px;
+}
+body #contact .contact__content .contact__small-inputs {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+body #contact .contact__content .contact__small-inputs .contact__small-input {
+  width: 360px;
+}
+body #contact .contact__content .contact__small-inputs #lastFirstname {
+  border-radius: 8px 0px 0px 0px;
+}
 @media screen and (max-width: 890px) {
   body #contact .contact__content .contact__small-inputs #lastFirstname {
     border-radius: 8px 8px 0px 0px;
   }
+}
+body #contact .contact__content .contact__small-inputs #email {
+  border-radius: 0px 8px 0px 0px;
 }
 @media screen and (max-width: 890px) {
   body #contact .contact__content .contact__small-inputs #email {
@@ -166,10 +398,30 @@ body #projects #more #see-more:hover {
     width: 100%;
   }
 }
+body #contact .contact__content #contact__comment-input {
+  padding: 12px;
+  background-color: rgb(35, 35, 56);
+  border: solid 1px rgba(205, 89, 143, 0.7215686275);
+  display: flex;
+  border-radius: 0px 0px 8px 8px;
+  color: white;
+  flex: 1;
+  font-size: 18px;
+}
 @media screen and (max-width: 890px) {
   body #contact .contact__content #contact__comment-input {
     width: 100%;
   }
+}
+body #contact #submit {
+  background-color: rgba(205, 89, 143, 0.7215686275);
+  color: white;
+  border: solid 1px transparent;
+  margin-top: 48px;
+  border-radius: 8px;
+  font-weight: bold;
+  padding: 18px 24px;
+  transition: all 0.1s linear;
 }
 body #contact #submit:hover {
   color: rgba(205, 89, 143, 0.7215686275);
@@ -187,6 +439,12 @@ body #contact #submit:hover {
     padding-top: 6em;
     padding-bottom: 2em;
   }
+}
+body footer #copyright {
+  display: flex;
+  justify-content: center;
+  padding: 1.5em 0;
+  margin-top: 64px;
 }
 
 /*# sourceMappingURL=index.css.map */
