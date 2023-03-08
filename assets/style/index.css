@@ -96,6 +96,12 @@ body #presentation #presentation-content p strong {
   font-weight: bold;
   color: rgba(205, 89, 143, 0.7215686275);
 }
+body #presentation #presentation-content p a {
+  color: #5f5fde;
+}
+body #presentation #presentation-content p a:hover {
+  text-decoration: underline;
+}
 @media screen and (max-width: 1843px) {
   body #presentation #presentation-content p {
     width: 100%;
