@@ -348,5 +348,11 @@
     <script defer src="form.js"></script>
     <script src="dropdown.js"></script>
     <script src="hash-effect.js"></script>
+    <script>
+      let copyright = document.querySelector('#copyright');
+      let currentYear = new Date().getFullYear();
+
+      copyright.innerHTML = `Copyright &copy; ${currentYear} Romain Laurent.`;
+    </script>
   </body>
 </html>

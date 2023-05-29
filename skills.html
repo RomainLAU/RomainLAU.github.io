@@ -280,6 +280,10 @@
     <script src="dropdown.js"></script>
     <script>
       document.addEventListener('touchstart', function () {});
+      let copyright = document.querySelector('#copyright');
+      let currentYear = new Date().getFullYear();
+
+      copyright.innerHTML = `Copyright &copy; ${currentYear} Romain Laurent.`;
     </script>
   </body>
 </html>
