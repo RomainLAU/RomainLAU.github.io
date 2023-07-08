@@ -43,44 +43,32 @@ body #header-container div #svg-1 {
   left: calc(100vw - 85%);
   width: 5rem;
   height: 5rem;
-  transition: transform 0.4s linear 1s;
   transform: rotate(0deg);
-}
-body #header-container div #svg-1 {
-  transform: rotate(510deg);
+  animation: 0.4s animate-svg1 1 1s linear forwards;
 }
 body #header-container div #svg-2 {
   top: calc(100vh - 25%);
   left: calc(100vw - 75%);
   width: 6rem;
   height: 6rem;
-  transition: transform 1s linear 0.4s;
-  transform: rotate(-10deg);
-}
-body #header-container div #svg-2 {
-  transform: rotate(-410deg);
+  animation: 1s animate-svg2 1 0.4s linear forwards;
+  transform: rotate(10deg);
 }
 body #header-container div #svg-3 {
   top: calc(100vh - 86%);
   right: calc(100vw - 80%);
   width: 4rem;
   height: 4rem;
-  transition: transform 0.5s linear 0.9s;
+  animation: 0.5s animate-svg3 1 0.9s linear forwards;
   transform: rotate(15deg);
-}
-body #header-container div #svg-3 {
-  transform: rotate(615deg);
 }
 body #header-container div #svg-4 {
   top: calc(100vh - 23%);
   right: calc(100vw - 70%);
   width: 2rem;
   height: 2rem;
-  transition: transform 0.8s linear 0.6s;
+  animation: 0.8s animate-svg4 1 0.6s linear forwards;
   transform: rotate(20deg);
-}
-body #header-container div #svg-4 {
-  transform: rotate(280deg);
 }
 @keyframes animate-title {
   0% {
@@ -101,6 +89,38 @@ body #header-container div #svg-4 {
   100% {
     transform: scale(1);
     opacity: 1;
+  }
+}
+@keyframes animate-svg1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(510deg);
+  }
+}
+@keyframes animate-svg2 {
+  0% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(410deg);
+  }
+}
+@keyframes animate-svg3 {
+  0% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(615deg);
+  }
+}
+@keyframes animate-svg4 {
+  0% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(280deg);
   }
 }
 body #header-container div a {
