@@ -37,13 +37,13 @@ body #header-container div span {
 body #header-container div svg {
   position: absolute;
   filter: blur(4px);
-  transition: transform 0.4s linear 1s;
 }
 body #header-container div #svg-1 {
   top: calc(100vh - 80%);
   left: calc(100vw - 85%);
   width: 5rem;
   height: 5rem;
+  transition: transform 0.4s linear 1s;
   transform: rotate(0deg);
 }
 body #header-container div #svg-1 {
@@ -54,9 +54,8 @@ body #header-container div #svg-2 {
   left: calc(100vw - 75%);
   width: 6rem;
   height: 6rem;
+  transition: transform 1s linear 0.4s;
   transform: rotate(-10deg);
-  transition-duration: 1s;
-  transition-delay: 0.4s;
 }
 body #header-container div #svg-2 {
   transform: rotate(-410deg);
@@ -66,9 +65,8 @@ body #header-container div #svg-3 {
   right: calc(100vw - 80%);
   width: 4rem;
   height: 4rem;
+  transition: transform 0.5s linear 0.9s;
   transform: rotate(15deg);
-  transition-duration: 0.5s;
-  transition-delay: 0.9s;
 }
 body #header-container div #svg-3 {
   transform: rotate(615deg);
@@ -78,12 +76,11 @@ body #header-container div #svg-4 {
   right: calc(100vw - 70%);
   width: 2rem;
   height: 2rem;
-  transform: rotate(-20deg);
-  transition-duration: 0.8s;
-  transition-delay: 0.6s;
+  transition: transform 0.8s linear 0.6s;
+  transform: rotate(20deg);
 }
 body #header-container div #svg-4 {
-  transform: rotate(-280deg);
+  transform: rotate(280deg);
 }
 @keyframes animate-title {
   0% {
