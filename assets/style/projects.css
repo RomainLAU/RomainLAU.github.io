@@ -1,5 +1,5 @@
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   width: 100%;
   background-color: #181818;
   color: white;
@@ -37,26 +37,32 @@ body #projects #projects-list .project {
   flex-direction: column;
   justify-content: space-between;
   border: solid 2px rgba(205, 89, 143, 0.7215686275);
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s linear;
   transform: scale(0);
 }
 body #projects #projects-list .project:nth-of-type(1) {
-  animation: project-animation 0.8s 0.35s cubic-bezier(0.38, 0.66, 0.66, 0.87) forwards;
+  animation: project-animation 0.8s 0.35s cubic-bezier(0.38, 0.66, 0.66, 0.87)
+    forwards;
 }
 body #projects #projects-list .project:nth-of-type(2) {
-  animation: project-animation 0.8s 0.4s cubic-bezier(0.38, 0.66, 0.66, 0.87) forwards;
+  animation: project-animation 0.8s 0.4s cubic-bezier(0.38, 0.66, 0.66, 0.87)
+    forwards;
 }
 body #projects #projects-list .project:nth-of-type(3) {
-  animation: project-animation 0.8s 0.45s cubic-bezier(0.38, 0.66, 0.66, 0.87) forwards;
+  animation: project-animation 0.8s 0.45s cubic-bezier(0.38, 0.66, 0.66, 0.87)
+    forwards;
 }
 body #projects #projects-list .project:nth-of-type(4) {
-  animation: project-animation 0.8s 0.5s cubic-bezier(0.38, 0.66, 0.66, 0.87) forwards;
+  animation: project-animation 0.8s 0.5s cubic-bezier(0.38, 0.66, 0.66, 0.87)
+    forwards;
 }
 body #projects #projects-list .project:nth-of-type(5) {
-  animation: project-animation 0.8s 0.55s cubic-bezier(0.38, 0.66, 0.66, 0.87) forwards;
+  animation: project-animation 0.8s 0.55s cubic-bezier(0.38, 0.66, 0.66, 0.87)
+    forwards;
 }
 body #projects #projects-list .project:nth-of-type(6) {
-  animation: project-animation 0.8s 0.6s cubic-bezier(0.38, 0.66, 0.66, 0.87) forwards;
+  animation: project-animation 0.8s 0.6s cubic-bezier(0.38, 0.66, 0.66, 0.87)
+    forwards;
 }
 @keyframes project-animation {
   0% {
@@ -214,7 +220,7 @@ body #integration-projects #integrations-list .project {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s linear;
 }
 body #integration-projects #integrations-list .project:hover {
   box-shadow: 0px 0px 25px 5px rgba(205, 89, 143, 0.4117647059);
@@ -230,14 +236,25 @@ body #integration-projects #integrations-list .project .project-name {
   margin-top: 0;
   margin-bottom: 0.5em;
 }
-body #integration-projects #integrations-list .project .project-name .project-buttons {
+body
+  #integration-projects
+  #integrations-list
+  .project
+  .project-name
+  .project-buttons {
   display: flex;
   column-gap: 1em;
   row-gap: 0.4em;
   flex-wrap: wrap;
   justify-content: center;
 }
-body #integration-projects #integrations-list .project .project-name .project-buttons .show-project {
+body
+  #integration-projects
+  #integrations-list
+  .project
+  .project-name
+  .project-buttons
+  .show-project {
   color: white;
   background-color: #5f5fde;
   border-radius: 10px;
@@ -250,13 +267,25 @@ body #integration-projects #integrations-list .project .project-name .project-bu
   padding: 0.3em 0.5em;
   transition: all 0.1s linear;
 }
-body #integration-projects #integrations-list .project .project-name .project-buttons .show-project:hover {
+body
+  #integration-projects
+  #integrations-list
+  .project
+  .project-name
+  .project-buttons
+  .show-project:hover {
   background-color: transparent;
   border-color: #5f5fde;
   color: #5f5fde;
 }
 @media screen and (max-width: 890px) {
-  body #integration-projects #integrations-list .project .project-name .project-buttons .show-project {
+  body
+    #integration-projects
+    #integrations-list
+    .project
+    .project-name
+    .project-buttons
+    .show-project {
     align-self: center;
   }
 }
@@ -282,7 +311,14 @@ body #integration-projects #integrations-list .project .technos-used p {
 body #integration-projects #integrations-list .project .technos-used p a {
   color: white;
 }
-body #integration-projects #integrations-list .project .technos-used p a button {
+body
+  #integration-projects
+  #integrations-list
+  .project
+  .technos-used
+  p
+  a
+  button {
   color: white;
 }
 body #integration-projects #integrations-list .project .technos-used p:hover {
@@ -343,7 +379,7 @@ body #other-projects #other-projects-list .project {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s linear;
 }
 body #other-projects #other-projects-list .project:hover {
   box-shadow: 0px 0px 25px 5px rgba(205, 89, 143, 0.4117647059);
@@ -359,14 +395,25 @@ body #other-projects #other-projects-list .project .project-name {
   margin-top: 0;
   margin-bottom: 0.5em;
 }
-body #other-projects #other-projects-list .project .project-name .project-buttons {
+body
+  #other-projects
+  #other-projects-list
+  .project
+  .project-name
+  .project-buttons {
   display: flex;
   column-gap: 1em;
   row-gap: 0.4em;
   flex-wrap: wrap;
   justify-content: center;
 }
-body #other-projects #other-projects-list .project .project-name .project-buttons .show-project {
+body
+  #other-projects
+  #other-projects-list
+  .project
+  .project-name
+  .project-buttons
+  .show-project {
   color: white;
   background-color: #5f5fde;
   border-radius: 10px;
@@ -379,13 +426,25 @@ body #other-projects #other-projects-list .project .project-name .project-button
   border: solid 1px transparent;
   transition: all 0.1s linear;
 }
-body #other-projects #other-projects-list .project .project-name .project-buttons .show-project:hover {
+body
+  #other-projects
+  #other-projects-list
+  .project
+  .project-name
+  .project-buttons
+  .show-project:hover {
   background-color: transparent;
   border-color: #5f5fde;
   color: #5f5fde;
 }
 @media screen and (max-width: 890px) {
-  body #other-projects #other-projects-list .project .project-name .project-buttons .show-project {
+  body
+    #other-projects
+    #other-projects-list
+    .project
+    .project-name
+    .project-buttons
+    .show-project {
     align-self: center;
   }
 }
