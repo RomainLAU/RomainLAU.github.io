@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&family=Open+Sans:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;600;700&display=swap');
 html {
   scroll-behavior: smooth;
 }
@@ -8,7 +8,7 @@ html *::selection {
 }
 
 body {
-  font-family: "Leto", sans-serif;
+  font-family: 'Leto', sans-serif;
   width: 100%;
   background-color: #181818;
   color: white;
@@ -50,7 +50,8 @@ body a {
   top: 0;
   --webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
-  animation: 1s animate-header 1 0.4s cubic-bezier(0.38, 0.66, 0.66, 0.87) forwards;
+  animation: 1s animate-header 1 0.4s cubic-bezier(0.38, 0.66, 0.66, 0.87)
+    forwards;
   transform: translateY(-5em);
 }
 @keyframes animate-header {
@@ -76,6 +77,7 @@ body a {
   text-decoration: none;
   display: block;
   transition: all 0.1s linear;
+  position: relative;
 }
 #sticky ul li a i {
   font-size: 1em;
@@ -83,8 +85,20 @@ body a {
 #sticky ul li a:hover {
   color: rgb(204, 204, 204);
 }
-#sticky ul li:nth-child(-n+3) a:hover {
-  text-decoration: underline;
+#sticky ul li a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  transform: rotate(10deg);
+  transition: all 0.1s linear;
+}
+#sticky ul li:nth-child(-n + 3) a:hover::after {
+  width: 100%;
+  transform: rotate(0deg);
 }
 #sticky ul:nth-child(1) {
   margin-left: 4em;
