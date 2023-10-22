@@ -10,7 +10,7 @@
         <loc>https://romain-laurent.fr/</loc>
         <lastmod>2023-10-22T22:15:55+00:00</lastmod>
         <priority>1.00</priority>
-    </url>
+    </url>      
     <url>
         <loc>https://romain-laurent.fr/projects</loc>
         <lastmod>2023-10-22T22:15:55+00:00</lastmod>
@@ -24,8 +24,13 @@
     <url>
         <loc>https://romain-laurent.fr/assets/images/CV-french.pdf</loc>
         <lastmod>2023-10-22T22:15:55+00:00</lastmod>
-        <priority>0.80</priority>
+        <priority>0.90</priority>
     </url>
 
+    <url>
+        <loc>https://romain-laurent.me/</loc>
+        <lastmod>2023-10-22T22:15:55+00:00</lastmod>
+        <priority>0.60</priority>
+    </url>
 
 </urlset>
