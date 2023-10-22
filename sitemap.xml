@@ -7,61 +7,23 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
     <url>
-        <loc>https://romain-laurent.me/</loc>
-        <lastmod>2023-09-04T10:45:55+00:00</lastmod>
-        <priority>1.00</priority>
-    </url>
-    <url>
-        <loc>https://romain-laurent.me/projects</loc>
-        <lastmod>2023-09-04T10:45:55+00:00</lastmod>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://romain-laurent.me/skills</loc>
-        <lastmod>2023-09-04T10:45:55+00:00</lastmod>
-        <priority>0.80</priority>
-    </url>
-
-
-    <url>
-        <loc>https://www.romain-laurent.fr/</loc>
-        <lastmod>2023-09-04T10:45:55+00:00</lastmod>
-        <priority>1.00</priority>
-    </url>
-    <url>
-        <loc>https://www.romain-laurent.fr/projects</loc>
-        <lastmod>2023-09-04T10:45:55+00:00</lastmod>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://www.romain-laurent.fr/skills</loc>
-        <lastmod>2023-09-04T10:45:55+00:00</lastmod>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://www.romain-laurent.fr/assets/images/CV-french.pdf</loc>
-        <lastmod>2023-09-04T10:45:55+00:00</lastmod>
-        <priority>0.80</priority>
-    </url>
-
-    <url>
         <loc>https://romain-laurent.fr/</loc>
-        <lastmod>2023-09-04T10:45:55+00:00</lastmod>
+        <lastmod>2023-10-22T22:15:55+00:00</lastmod>
         <priority>1.00</priority>
     </url>
     <url>
         <loc>https://romain-laurent.fr/projects</loc>
-        <lastmod>2023-09-04T10:45:55+00:00</lastmod>
+        <lastmod>2023-10-22T22:15:55+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://romain-laurent.fr/skills</loc>
-        <lastmod>2023-09-04T10:45:55+00:00</lastmod>
+        <lastmod>2023-10-22T22:15:55+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://romain-laurent.fr/assets/images/CV-french.pdf</loc>
-        <lastmod>2023-09-04T10:45:55+00:00</lastmod>
+        <lastmod>2023-10-22T22:15:55+00:00</lastmod>
         <priority>0.80</priority>
     </url>
 
