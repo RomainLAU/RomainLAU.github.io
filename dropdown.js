@@ -20,7 +20,12 @@ document.addEventListener('DOMContentLoaded', () => {
     subMenu.style.display = 'none';
   });
 
-  littleMenu.addEventListener('blur', () => {
+  littleMenu.addEventListener('touchleave', () => {
+    burgerMenu.style.backgroundImage = "url('/assets/images/bars.svg')";
+    subMenu.style.display = 'none';
+  });
+
+  littleMenu.addEventListener('touchcancel', () => {
     burgerMenu.style.backgroundImage = "url('/assets/images/bars.svg')";
     subMenu.style.display = 'none';
   });
