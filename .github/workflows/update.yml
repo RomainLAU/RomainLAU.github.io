@@ -1,25 +1,25 @@
----
-name: Update
+# ---
+# name: Update
 
-on:
-  push:
-    branches: [main]
+# on:
+#   push:
+#     branches: [main]
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Pull
-        env:
-          deploy_key: ${{secrets.deploy_key}}
-          known_hosts: ${{secrets.known_hosts}}
-        run: |
-          mkdir -p ${HOME}/.ssh
-          printf "%s\n" "$known_hosts" > ${HOME}/.ssh/known_hosts
-          printf "%s\n" "$deploy_key" > ${HOME}/.ssh/id_rsa 
-          chmod 600 ${HOME}/.ssh/id_rsa
-          rsync -a --delete ./ github@romain-laurent.me:/home/github/portfolio/ # --delete will remove files if they were removed from the repository
-          # So if it's a problem, just remove the option
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v3
+#       - name: Pull
+#         env:
+#           deploy_key: ${{secrets.deploy_key}}
+#           known_hosts: ${{secrets.known_hosts}}
+#         run: |
+#           mkdir -p ${HOME}/.ssh
+#           printf "%s\n" "$known_hosts" > ${HOME}/.ssh/known_hosts
+#           printf "%s\n" "$deploy_key" > ${HOME}/.ssh/id_rsa
+#           chmod 600 ${HOME}/.ssh/id_rsa
+#           rsync -a --delete ./ github@romain-laurent.me:/home/github/portfolio/ # --delete will remove files if they were removed from the repository
+#           # So if it's a problem, just remove the option
 
-# When changing the domain name you must update the known_hosts secret key on github with the known_hosts from your laptop + update the domain name at the line 22 of this file
+# # When changing the domain name you must update the known_hosts secret key on github with the known_hosts from your laptop + update the domain name at the line 22 of this file
