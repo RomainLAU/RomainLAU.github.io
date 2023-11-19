@@ -29,4 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
     burgerMenu.style.backgroundImage = "url('/assets/images/bars.svg')";
     subMenu.style.display = 'none';
   });
+
+  document.addEventListener('scroll', () => {
+    burgerMenu.style.backgroundImage = "url('/assets/images/bars.svg')";
+    subMenu.style.display = 'none';
+  });
 });
