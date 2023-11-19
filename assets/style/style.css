@@ -48,11 +48,15 @@ body a {
   background-color: rgba(32, 35, 51, 0.356);
   z-index: 10000;
   top: 0;
-  backdrop-filter: blur(5px) !important;
-  --webkit-backdrop-filter: blur(5px);
   animation: 1s animate-header 1 0.4s cubic-bezier(0.38, 0.66, 0.66, 0.87)
     forwards;
   transform: translateY(-5em);
+}
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  #sticky {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+  }
 }
 @keyframes animate-header {
   0% {
