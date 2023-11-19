@@ -423,8 +423,8 @@ body #contact .contact__content {
   flex-direction: column;
   justify-content: center;
   row-gap: 28px;
-  width: 800px;
-  max-width: 80vw;
+  width: 90vw;
+  max-width: 800px;
   height: 100%;
 }
 body #contact .contact__content input {
@@ -434,6 +434,7 @@ body #contact .contact__content input {
   color: white;
   height: 38px;
   font-size: 18px;
+  max-width: -webkit-fill-available;
 }
 body #contact .contact__content .contact__small-inputs {
   display: flex;
@@ -485,7 +486,7 @@ body #contact .contact__content #contact__comment-input {
 }
 @media screen and (max-width: 890px) {
   body #contact .contact__content #contact__comment-input {
-    width: 100%;
+    max-width: -webkit-fill-available;
   }
 }
 body #contact #submit {
