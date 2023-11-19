@@ -10,6 +10,8 @@ html *::selection {
 body {
   font-family: 'Leto', sans-serif;
   width: 100%;
+  max-width: 100vw;
+  /* overflow: hidden; */
   background-color: #181818;
   color: white;
   margin: 0;
@@ -41,11 +43,12 @@ body a {
 #sticky {
   position: fixed;
   height: 3.5em;
-  width: 100%;
+  width: 100vw;
+  max-width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(32, 35, 51, 0.356);
+  background-color: rgba(32, 35, 51, 0.712);
   z-index: 10000;
   top: 0;
   animation: 1s animate-header 1 0.4s cubic-bezier(0.38, 0.66, 0.66, 0.87)
@@ -136,7 +139,7 @@ body a {
   position: absolute;
   background-color: rgba(32, 35, 51, 0.712);
   border-radius: 0 0 10px 10px;
-  margin-top: 13px;
+  top: 56px;
   right: -95px;
   padding: 0.75em;
   display: none;
