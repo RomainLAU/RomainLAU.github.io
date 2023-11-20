@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setTimeout(() => {
       subMenu.style.display = 'none';
-    }, 400);
+    }, 410);
   };
 
   littleMenu.addEventListener('click', () => {
