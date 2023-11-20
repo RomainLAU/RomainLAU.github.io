@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setTimeout(() => {
       subMenu.style.display = 'none';
-    }, 410);
+    }, 401);
   };
 
   littleMenu.addEventListener('click', () => {
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         subMenu.style.gridTemplateRows = 'repeat(4, 1fr)';
         subMenu.style.opacity = '1';
         burgerButton.style.backgroundImage = "url('/assets/images/xmark.svg')";
-      }, 10);
+      }, 1);
     }
   });
 
