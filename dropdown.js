@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setTimeout(() => {
       subMenu.style.display = 'none';
-    }, 800);
+    }, 810);
   };
 
   littleMenu.addEventListener('click', () => {
@@ -20,8 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
       removeSubmenu();
     } else {
       subMenu.style.display = 'flex';
-      subMenu.style.transform = 'translateY(0%)';
       burgerButton.style.backgroundImage = "url('/assets/images/xmark.svg')";
+
+      setTimeout(() => {
+        subMenu.style.transform = 'translateY(0%)';
+      }, 10);
     }
   });
 
