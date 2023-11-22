@@ -61,6 +61,11 @@ body a {
     backdrop-filter: blur(5px);
   }
 }
+@supports (width: -webkit-fill-available) {
+  #sticky {
+    width: -webkit-fill-available;
+  }
+}
 @keyframes animate-header {
   0% {
     transform: translateY(-5em);
@@ -135,28 +140,35 @@ body a {
   background-repeat: no-repeat;
   transition: 0.4s ease-in-out;
 }
-#sticky #little-menu li #sub-menu {
+#sub-menu-container {
   position: absolute;
-  top: 55.5px;
   right: -32px;
+  top: 100%;
+  width: 140px;
+  clip-path: inset(0 0 -150px);
+}
+#sub-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
   padding: 0.75em;
   background-color: rgba(32, 35, 51, 0.712);
   border-radius: 0 0 10px 10px;
   height: auto;
   margin: 0;
   line-height: 1.75em;
-  display: none;
-  grid-template-rows: repeat(4, 0fr);
-  opacity: 0;
-  transition: grid-template-rows 0.4s ease-in 1ms, opacity 0.1s linear 0.2s;
+  display: flex;
+  flex-direction: column;
+  transition: transform 1s cubic-bezier(0, 0.93, 0.71, 1.01);
+  transform: translateY(-100%);
 }
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-  #sticky #little-menu li #sub-menu {
+  #sub-menu {
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
   }
 }
-#sticky #little-menu li #sub-menu .social-media {
+#sub-menu .social-media {
   display: flex;
   margin-top: 0.5em;
   column-gap: 2em;
@@ -178,9 +190,6 @@ body a {
 }
 #sticky #little-menu:hover #burger-button {
   transition: 0.4s ease-in-out;
-}
-#sticky #little-menu:hover #sub-menu {
-  display: grid;
 }
 @media screen and (max-width: 890px) {
   #sticky #little-menu {
