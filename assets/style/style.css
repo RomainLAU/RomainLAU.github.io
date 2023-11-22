@@ -157,9 +157,9 @@ body a {
   height: auto;
   margin: 0;
   line-height: 1.75em;
-  display: flex;
+  display: none;
   flex-direction: column;
-  transition: transform 1s cubic-bezier(0, 0.93, 0.71, 1.01);
+  transition: transform 0.8s cubic-bezier(0, 0.93, 0.71, 1.01);
   transform: translateY(-100%);
 }
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {

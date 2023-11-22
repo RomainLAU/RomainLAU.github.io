@@ -4,17 +4,22 @@ document.addEventListener('DOMContentLoaded', () => {
   const subMenu = document.querySelector('#sub-menu');
 
   burgerButton.style.backgroundImage = "url('/assets/images/bars.svg')";
-  // subMenu.style.display = 'none';
+  subMenu.style.display = 'none';
 
   const removeSubmenu = () => {
     burgerButton.style.backgroundImage = "url('/assets/images/bars.svg')";
     subMenu.style.transform = 'translateY(-100%)';
+
+    setTimeout(() => {
+      subMenu.style.display = 'none';
+    }, 800);
   };
 
   littleMenu.addEventListener('click', () => {
     if (subMenu.style.transform == 'translateY(0%)') {
       removeSubmenu();
     } else {
+      subMenu.style.display = 'flex';
       subMenu.style.transform = 'translateY(0%)';
       burgerButton.style.backgroundImage = "url('/assets/images/xmark.svg')";
     }
