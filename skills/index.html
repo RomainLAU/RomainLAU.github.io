@@ -1,291 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="I'm Romain Laurent, a french student learning Web Development at the IIM Digital School and I love Frontend development ! Even if i'm still learning and discovering the development world, I really like ReactJS, VueJS and TypeScript. When I need to manage my DB, I use TypeORM for the API, because TypeScript <3 !"
-    />
-    <meta property="og:type" content="Portfolio" />
-    <meta
-      name="image"
-      property="og:image"
-      content="../assets/images/photoCV.webp"
-      alt="Picture of me, Romain LAURENT"
-    />
-    <meta name="author" content="Romain LAURENT" />
-    <meta name="publish-date" content="April 3rd 2023" />
-    <title>My Skills</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="I'm Romain Laurent, a french student learning Web Development at the IIM Digital School and I love Frontend development ! Even if i'm still learning and discovering the development world, I really like ReactJS, VueJS and TypeScript. When I need to manage my DB, I use TypeORM for the API, because TypeScript <3 !"
+        />
+        <meta property="og:type" content="Portfolio" />
+        <meta
+            name="image"
+            property="og:image"
+            content="../assets/images/photoCV.webp"
+            alt="Picture of me, Romain LAURENT"
+        />
+        <meta name="author" content="Romain LAURENT" />
+        <meta name="publish-date" content="April 3rd 2023" />
+        <title>My Skills</title>
 
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="../assets/images/favicons/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="../assets/images/favicons/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="../assets/images/favicons/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="../assets/images/favicons/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="../assets/images/favicons/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="../assets/images/favicons/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="../assets/images/favicons/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="../assets/images/favicons/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="../assets/images/favicons/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="../assets/images/favicons/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../assets/images/favicons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="../assets/images/favicons/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="../assets/images/favicons/favicon-16x16.png"
-    />
-    <link rel="manifest" href="../assets/images/favicons/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta
-      name="msapplication-TileImage"
-      content="../assets/images/favicons/ms-icon-144x144.png"
-    />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- End Favicons -->
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="57x57" href="../assets/images/favicons/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="../assets/images/favicons/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="../assets/images/favicons/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="../assets/images/favicons/apple-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="../assets/images/favicons/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="../assets/images/favicons/apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="../assets/images/favicons/apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="../assets/images/favicons/apple-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicons/apple-icon-180x180.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="../assets/images/favicons/android-icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicons/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="../assets/images/favicons/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicons/favicon-16x16.png" />
+        <link rel="manifest" href="../assets/images/favicons/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="../assets/images/favicons/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- End Favicons -->
 
-    <link rel="stylesheet" href="../assets/style/reset.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
-    />
-    <link rel="stylesheet" href="../assets/style/style.css" />
-    <link rel="stylesheet" href="../assets/style/skills.css" />
-  </head>
-  <body id="skills-body">
-    <nav id="sticky">
-      <ul>
-        <li><a href="/">Romain Laurent</a></li>
-      </ul>
-      <ul>
-        <li><a href="/projects">My Projects</a></li>
-        <li><a href="/skills">My Skills</a></li>
-        <li><a href="/#contact">Contact</a></li>
-        <li>
-          <a href="https://github.com/RomainLAU/" target="blank"
-            ><i class="devicon-github-original"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://twitter.com/LeRoiAdibou" target="blank"
-            ><i class="devicon-twitter-original"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/romain-laurent-118281231/"
-            target="blank"
-            ><i class="devicon-linkedin-plain"></i
-          ></a>
-        </li>
-      </ul>
-      <ul id="little-menu">
-        <li>
-          <div id="burger-button"></div>
-          <div id="sub-menu-container">
-            <ul id="sub-menu">
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="/skills">My Skills</a></li>
-              <li><a href="/projects">My Projects</a></li>
-              <li class="social-media">
-                <a href="https://github.com/RomainLAU/" target="blank"
-                  ><i class="devicon-github-original"></i
-                ></a>
-                <a href="https://twitter.com/LeRoiAdibou" target="blank"
-                  ><i class="devicon-twitter-original"></i
-                ></a>
-                <a
-                  href="https://www.linkedin.com/in/romain-laurent-118281231/"
-                  target="blank"
-                  ><i class="devicon-linkedin-plain"></i
-                ></a>
-              </li>
+        <link rel="stylesheet" href="../assets/style/reset.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+        <link rel="stylesheet" href="../assets/style/style.css" />
+        <link rel="stylesheet" href="../assets/style/skills.css" />
+    </head>
+    <body id="skills-body">
+        <nav id="sticky">
+            <ul>
+                <li><a href="/">Romain Laurent</a></li>
             </ul>
-          </div>
-        </li>
-      </ul>
-    </nav>
+            <ul>
+                <li><a href="/projects">My Projects</a></li>
+                <li><a href="/skills">My Skills</a></li>
+                <li><a href="/#contact">Contact</a></li>
+                <li>
+                    <a href="https://github.com/RomainLAU/" target="blank"><i class="devicon-github-original"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/LeRoiAdibou" target="blank"
+                        ><i class="devicon-twitter-original"></i
+                    ></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/romain-laurent-118281231/" target="blank"
+                        ><i class="devicon-linkedin-plain"></i
+                    ></a>
+                </li>
+            </ul>
+            <ul id="little-menu">
+                <li>
+                    <div id="burger-button"></div>
+                    <div id="sub-menu-container">
+                        <ul id="sub-menu">
+                            <li><a href="/#contact">Contact</a></li>
+                            <li><a href="/skills">My Skills</a></li>
+                            <li><a href="/projects">My Projects</a></li>
+                            <li class="social-media">
+                                <a href="https://github.com/RomainLAU/" target="blank"
+                                    ><i class="devicon-github-original"></i
+                                ></a>
+                                <a href="https://twitter.com/LeRoiAdibou" target="blank"
+                                    ><i class="devicon-twitter-original"></i
+                                ></a>
+                                <a href="https://www.linkedin.com/in/romain-laurent-118281231/" target="blank"
+                                    ><i class="devicon-linkedin-plain"></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
 
-    <div id="skills">
-      <h1>
-        Here is what I master<br />
-        (or tend to)
-      </h1>
-      <div id="grid-skills">
-        <div class="skill-item">
-          <p class="skill-description">
-            I love ReactJS because it allows us to create dynamical components
-            very easily.
-          </p>
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-            alt="ReactJS"
-          />
+        <div id="skills">
+            <h1>
+                Here is what I master<br />
+                (or tend to)
+            </h1>
+            <div id="grid-skills">
+                <div class="skill-item">
+                    <p class="skill-description">
+                        I love ReactJS because it allows us to create dynamical components very easily.
+                    </p>
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                        alt="ReactJS"
+                    />
+                </div>
+                <div class="skill-item">
+                    <p class="skill-description">
+                        TypeScript is a very powerful language, It really helps to stay consistent in our code when
+                        using JavaScript.
+                    </p>
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                        alt="TypeScript"
+                    />
+                </div>
+                <div class="skill-item">
+                    <p class="skill-description">
+                        I really like JavaScript as it allows us to build any type of project, from the frontend to the
+                        backend, even on mobile with all its frameworks and alternative languages.
+                    </p>
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="javascript"
+                    />
+                </div>
+                <div class="skill-item">
+                    <p class="skill-description">
+                        Python is the first language I learned to use. It's really powerful and really wordy and I think
+                        it's a really good language.
+                    </p>
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"
+                        alt="python"
+                    />
+                </div>
+                <div class="skill-item">
+                    <p class="skill-description">
+                        I discovered Django recently but I really like it, it's probably my favorite framework /
+                        language for the backend.
+                    </p>
+                    <i class="devicon-django-plain"></i>
+                </div>
+                <div class="skill-item">
+                    <p class="skill-description">
+                        Even if I'm not really into PHP, I think it's a great language to learn to start as it's really
+                        wordy and its documentation is well done.
+                    </p>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="php" />
+                </div>
+                <div class="skill-item">
+                    <p class="skill-description">
+                        HTML is really a good "language" to start to learn developing and I think it's pretty fun to
+                        build the structure of a page with it.
+                    </p>
+                    <i class="devicon-html5-plain-wordmark colored"></i>
+                </div>
+                <div class="skill-item">
+                    <p class="skill-description">I really like CSS even if it's not really consistent 😅</p>
+                    <i class="devicon-css3-plain-wordmark colored"></i>
+                </div>
+                <div class="skill-item">
+                    <p class="skill-description">
+                        I use SASS to write SCSS and I think it's a really cool tool as it allows me to write CSS a
+                        "better" way.
+                    </p>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="sass" />
+                </div>
+                <div class="skill-item">
+                    <p class="skill-description">
+                        I started using Linux in October 2021 when I started developing and since this day I learn new
+                        things everyday.
+                    </p>
+                    <i class="devicon-linux-plain"></i>
+                </div>
+                <div class="skill-item">
+                    <p class="skill-description">
+                        I use Git everyday to keep a trace of all my work. In addition to Git, I use GitHub and its
+                        Actions to manage this portfolio and others works.
+                    </p>
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg"
+                        alt="git"
+                    />
+                </div>
+                <div class="skill-item">
+                    <p class="skill-description">
+                        MySQL is a great language to manage databases. I used it on all the projects I worked on that
+                        needed a database.
+                    </p>
+                    <i class="devicon-mysql-plain-wordmark"></i>
+                </div>
+            </div>
         </div>
-        <div class="skill-item">
-          <p class="skill-description">
-            TypeScript is a very powerful language, It really helps to stay
-            consistent in our code when using JavaScript.
-          </p>
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-            alt="TypeScript"
-          />
-        </div>
-        <div class="skill-item">
-          <p class="skill-description">
-            I really like JavaScript as it allows us to build any type of
-            project, from the frontend to the backend, even on mobile with all
-            its frameworks and alternative languages.
-          </p>
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-            alt="javascript"
-          />
-        </div>
-        <div class="skill-item">
-          <p class="skill-description">
-            Python is the first language I learned to use. It's really powerful
-            and really wordy and I think it's a really good language.
-          </p>
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"
-            alt="python"
-          />
-        </div>
-        <div class="skill-item">
-          <p class="skill-description">
-            I discovered Django recently but I really like it, it's probably my
-            favorite framework / language for the backend.
-          </p>
-          <i class="devicon-django-plain"></i>
-        </div>
-        <div class="skill-item">
-          <p class="skill-description">
-            Even if I'm not really into PHP, I think it's a great language to
-            learn to start as it's really wordy and its documentation is well
-            done.
-          </p>
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
-            alt="php"
-          />
-        </div>
-        <div class="skill-item">
-          <p class="skill-description">
-            HTML is really a good "language" to start to learn developing and I
-            think it's pretty fun to build the structure of a page with it.
-          </p>
-          <i class="devicon-html5-plain-wordmark colored"></i>
-        </div>
-        <div class="skill-item">
-          <p class="skill-description">
-            I really like CSS even if it's not really consistent 😅
-          </p>
-          <i class="devicon-css3-plain-wordmark colored"></i>
-        </div>
-        <div class="skill-item">
-          <p class="skill-description">
-            I use SASS to write SCSS and I think it's a really cool tool as it
-            allows me to write CSS a "better" way.
-          </p>
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
-            alt="sass"
-          />
-        </div>
-        <div class="skill-item">
-          <p class="skill-description">
-            I started using Linux in October 2021 when I started developing and
-            since this day I learn new things everyday.
-          </p>
-          <i class="devicon-linux-plain"></i>
-        </div>
-        <div class="skill-item">
-          <p class="skill-description">
-            I use Git everyday to keep a trace of all my work. In addition to
-            Git, I use GitHub and its Actions to manage this portfolio and
-            others works.
-          </p>
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg"
-            alt="git"
-          />
-        </div>
-        <div class="skill-item">
-          <p class="skill-description">
-            MySQL is a great language to manage databases. I used it on all the
-            projects I worked on that needed a database.
-          </p>
-          <i class="devicon-mysql-plain-wordmark"></i>
-        </div>
-      </div>
-    </div>
 
-    <footer>
-      <div id="copyright">Copyright &copy; 2022 Romain Laurent.</div>
-    </footer>
-    <script src="../dropdown.js"></script>
-    <script>
-      document.addEventListener('touchstart', function () {});
-      let copyright = document.querySelector('#copyright');
-      let currentYear = new Date().getFullYear();
+        <footer>
+            <div id="copyright">Copyright &copy; 2022 Romain Laurent.</div>
+        </footer>
+        <script src="../dropdown.js"></script>
+        <script>
+            document.addEventListener('touchstart', function () {});
+            let copyright = document.querySelector('#copyright');
+            let currentYear = new Date().getFullYear();
 
-      copyright.innerHTML = `Copyright &copy; ${currentYear} Romain Laurent.`;
-    </script>
-  </body>
+            copyright.innerHTML = `Copyright &copy; ${currentYear} Romain Laurent.`;
+        </script>
+    </body>
 </html>

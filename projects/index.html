@@ -1,468 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="I'm Romain Laurent, a french student learning Web Development at the IIM Digital School and I love Frontend development ! Even if i'm still learning and discovering the development world, I really like ReactJS, VueJS and TypeScript. When I need to manage my DB, I use TypeORM for the API, because TypeScript <3 !"
-    />
-    <meta property="og:type" content="Portfolio" />
-    <meta
-      name="image"
-      property="og:image"
-      content="../assets/images/photoCV.webp"
-      alt="Picture of me, Romain LAURENT"
-    />
-    <meta name="author" content="Romain LAURENT" />
-    <meta name="publish-date" content="April 3rd 2023" />
-    <title>My Projects</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="I'm Romain Laurent, a french student learning Web Development at the IIM Digital School and I love Frontend development ! Even if i'm still learning and discovering the development world, I really like ReactJS, VueJS and TypeScript. When I need to manage my DB, I use TypeORM for the API, because TypeScript <3 !"
+        />
+        <meta property="og:type" content="Portfolio" />
+        <meta
+            name="image"
+            property="og:image"
+            content="../assets/images/photoCV.webp"
+            alt="Picture of me, Romain LAURENT"
+        />
+        <meta name="author" content="Romain LAURENT" />
+        <meta name="publish-date" content="April 3rd 2023" />
+        <title>My Projects</title>
 
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="../assets/images/favicons/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="../assets/images/favicons/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="../assets/images/favicons/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="../assets/images/favicons/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="../assets/images/favicons/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="../assets/images/favicons/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="../assets/images/favicons/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="../assets/images/favicons/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="../assets/images/favicons/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="../assets/images/favicons/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../assets/images/favicons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="../assets/images/favicons/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="../assets/images/favicons/favicon-16x16.png"
-    />
-    <link rel="manifest" href="../assets/images/favicons/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta
-      name="msapplication-TileImage"
-      content="../assets/images/favicons/ms-icon-144x144.png"
-    />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- End Favicons -->
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="57x57" href="../assets/images/favicons/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="../assets/images/favicons/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="../assets/images/favicons/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="../assets/images/favicons/apple-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="../assets/images/favicons/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="../assets/images/favicons/apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="../assets/images/favicons/apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="../assets/images/favicons/apple-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicons/apple-icon-180x180.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="../assets/images/favicons/android-icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicons/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="../assets/images/favicons/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicons/favicon-16x16.png" />
+        <link rel="manifest" href="../assets/images/favicons/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="../assets/images/favicons/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- End Favicons -->
 
-    <link rel="stylesheet" href="../assets/style/reset.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
-    />
-    <link rel="stylesheet" href="../assets/style/style.css" />
-    <link rel="stylesheet" href="../assets/style/projects.css" />
-  </head>
-  <body id="projects-body">
-    <nav id="sticky">
-      <ul>
-        <li><a href="/">Romain Laurent</a></li>
-      </ul>
-      <ul>
-        <li><a href="/projects">My Projects</a></li>
-        <li><a href="/skills">My Skills</a></li>
-        <li><a href="/#contact">Contact</a></li>
-        <li>
-          <a href="https://github.com/RomainLAU/" target="blank"
-            ><i class="devicon-github-original"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://twitter.com/LeRoiAdibou" target="blank"
-            ><i class="devicon-twitter-original"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/romain-laurent-118281231/"
-            target="blank"
-            ><i class="devicon-linkedin-plain"></i
-          ></a>
-        </li>
-      </ul>
-      <ul id="little-menu">
-        <li>
-          <div id="burger-button"></div>
-          <div id="sub-menu-container">
-            <ul id="sub-menu">
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="/skills">My Skills</a></li>
-              <li><a href="/projects">My Projects</a></li>
-              <li class="social-media">
-                <a href="https://github.com/RomainLAU/" target="blank"
-                  ><i class="devicon-github-original"></i
-                ></a>
-                <a href="https://twitter.com/LeRoiAdibou" target="blank"
-                  ><i class="devicon-twitter-original"></i
-                ></a>
-                <a
-                  href="https://www.linkedin.com/in/romain-laurent-118281231/"
-                  target="blank"
-                  ><i class="devicon-linkedin-plain"></i
-                ></a>
-              </li>
+        <link rel="stylesheet" href="../assets/style/reset.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+        <link rel="stylesheet" href="../assets/style/style.css" />
+        <link rel="stylesheet" href="../assets/style/projects.css" />
+    </head>
+    <body id="projects-body">
+        <nav id="sticky">
+            <ul>
+                <li><a href="/">Romain Laurent</a></li>
             </ul>
-          </div>
-        </li>
-      </ul>
-    </nav>
-    <h1 data-value="My projects   " id="header-title">My projects</h1>
+            <ul>
+                <li><a href="/projects">My Projects</a></li>
+                <li><a href="/skills">My Skills</a></li>
+                <li><a href="/#contact">Contact</a></li>
+                <li>
+                    <a href="https://github.com/RomainLAU/" target="blank"><i class="devicon-github-original"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/LeRoiAdibou" target="blank"
+                        ><i class="devicon-twitter-original"></i
+                    ></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/romain-laurent-118281231/" target="blank"
+                        ><i class="devicon-linkedin-plain"></i
+                    ></a>
+                </li>
+            </ul>
+            <ul id="little-menu">
+                <li>
+                    <div id="burger-button"></div>
+                    <div id="sub-menu-container">
+                        <ul id="sub-menu">
+                            <li><a href="/#contact">Contact</a></li>
+                            <li><a href="/skills">My Skills</a></li>
+                            <li><a href="/projects">My Projects</a></li>
+                            <li class="social-media">
+                                <a href="https://github.com/RomainLAU/" target="blank"
+                                    ><i class="devicon-github-original"></i
+                                ></a>
+                                <a href="https://twitter.com/LeRoiAdibou" target="blank"
+                                    ><i class="devicon-twitter-original"></i
+                                ></a>
+                                <a href="https://www.linkedin.com/in/romain-laurent-118281231/" target="blank"
+                                    ><i class="devicon-linkedin-plain"></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <h1 data-value="My projects   " id="header-title">My projects</h1>
 
-    <div id="projects">
-      <h2>My Programming Projects</h2>
-      <div id="projects-list">
-        <div class="project">
-          <h3 class="project-name">
-            Escape Game
-            <a
-              class="show-project"
-              href="https://github.com/RomainLAU/Escape-Game"
-              target="blank"
-              >Show the project</a
-            >
-          </h3>
-          <p class="quick-description">
-            During the first lockdown in 2020, I learnt by myself how to use
-            <strong>Unreal Engine 4</strong> and I built an escape game based on
-            what we had learnt in class. (Logic gates, Binary, Directories
-            system in Windows, Text Hashing) This project took me around 400
-            hours of hard work and made me push my technical limits.
-          </p>
-          <div class="technos-used">
-            <p>
-              <a href="https://www.unrealengine.com/en-US/" target="blank"
-                >Unreal Engine 4</a
-              >
-            </p>
-          </div>
-        </div>
-        <div class="project">
-          <h3 class="project-name">
-            Random Shapes and Colors
-            <a
-              class="show-project"
-              href="https://github.com/RomainLAU/randomShapesGenerator"
-              target="blank"
-              >Show the project</a
-            >
-          </h3>
-          <p class="quick-description">
-            At highschool I had an art class, and for a project I decided to use
-            <strong>Python</strong> (with turtle module) to build a shape
-            generator, you can decide of the shape (square, circle, triangle or
-            parallelepiped), and the number of turns (the number of shapes
-            drawn), and it will choose randomly a position, a color and a size
-            for each shape.
-          </p>
-          <div class="technos-used">
-            <p><a href="https://www.python.org/" target="blank">Python</a></p>
-            <p>
-              <a
-                href="https://docs.python.org/3/library/turtle.html"
-                target="blank"
-                >Turtle module</a
-              >
-            </p>
-          </div>
-        </div>
-        <div class="project">
-          <h3 class="project-name">
-            Karaoke
-            <a
-              class="show-project"
-              href="https://github.com/RomainLAU/JSKaraoke"
-              target="blank"
-              >Show the project</a
-            >
-          </h3>
-          <p class="quick-description">
-            I developed a karaoke using <strong>JavaScript</strong> which
-            displays lyrics while the music is playing. Using a file containing
-            lyrics and timings to show them. I used Regex to sort timings and
-            lyrics of the text file, and using <strong>AJAX</strong> method to
-            display lyrics on the page.
-          </p>
-          <div class="technos-used">
-            <p>
-              <a
-                href="https://developer.mozilla.org/fr/docs/Web/JavaScript"
-                target="blank"
-                >JavaScript</a
-              >
-            </p>
-          </div>
-        </div>
-        <div class="project">
-          <h3 class="project-name">
-            Get useful informations about velibs
-            <a
-              class="show-project"
-              href="https://github.com/RomainLAU/HowManyVelibs"
-              target="blank"
-              >Show the project</a
-            >
-          </h3>
-          <p class="quick-description">
-            This project I devlopped in <strong>JavaScript</strong>, allows
-            anyone to see the main informations about velibs in the Parmentier
-            street in <strong>Paris</strong>. It first shows you a loading bar
-            representing the percentage of velibs available in the street
-            compared to the total number of charging stations. Then it shows you
-            the exact number of velibs available (in green if the percentage is
-            greater than the third of the total of charging borns, in red in the
-            other case). You can also see the percentage of eVelibs (electric
-            ones) and mechanical velibs. There is also a small map to know
-            exactly where is the street.
-          </p>
-          <div class="technos-used">
-            <p>
-              <a
-                href="https://developer.mozilla.org/fr/docs/Web/JavaScript"
-                target="blank"
-                >JavaScript</a
-              >
-            </p>
-            <p>
-              <a
-                href="https://developer.mozilla.org/fr/docs/Web/Guide/AJAX"
-                target="blank"
-                >AJAX</a
-              >
-            </p>
-          </div>
-        </div>
-        <div class="project">
-          <h3 class="project-name">
-            Pokedex
-            <a
-              class="show-project"
-              href="https://github.com/RomainLAU/Pokedex"
-              target="blank"
-              >Show the project</a
-            >
-          </h3>
-          <p class="quick-description">
-            This Pokedex made in PHP, allows you to search any
-            <strong>Pokemon</strong> by his name, or if you don't have a
-            favorite <strong>Pokemon</strong> to search for, you simply can
-            search a type and it will shows you all <strong>Pokemons</strong> of
-            the selected type. I used a <strong>JSON</strong> file containing
-            multiple informations about more than 800 <strong>Pokemons</strong>,
-            like their ID, their names (in english, japanese, chinese and
-            french), their type and their statistics (HP, Attack, Defense...).
-          </p>
-          <div class="technos-used">
-            <p><a href="https://www.php.net/" target="blank">PHP</a></p>
-            <p>
-              <a
-                href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/JSON"
-                target="blank"
-                >JSON</a
-              >
-            </p>
-          </div>
-        </div>
-        <div class="project">
-          <h3 class="project-name">
-            System of Bonuses and Penalties
-            <a
-              class="show-project"
-              href="https://github.com/RomainLAU/BonusesOrPenatlies"
-              target="blank"
-              >Show the project</a
-            >
-          </h3>
-          <p class="quick-description">
-            Our english teacher put in place a bonus/penalty system in class
-            which makes students get advantages or disadvantages at a certain
-            point of bonuses/penalties. To keep the trace of every student
-            bonuses and penalties, I developed this little
-            <strong>website</strong> that allows me to add bonuses and penalties
-            to any student. I used <strong>PHP</strong> and
-            <strong>MySQL</strong> to update a <strong>database</strong> that
-            contains all the informations about all the students.
-          </p>
-          <div class="technos-used">
-            <p><a href="https://www.php.net//" target="blank">PHP</a></p>
-            <p><a href="https://www.mysql.com/fr/" target="blank">MySQL</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="integration-projects">
-      <h2>My Integration Projects</h2>
-      <div id="integrations-list">
-        <div class="project">
-          <h3 class="project-name">
-            SEO Exercise
-            <div class="project-buttons">
-              <a
-                class="show-project"
-                href="https://github.com/RomainLAU/myIntegrations/tree/main/SEO%20Exercise"
-                target="blank"
-                >Show code</a
-              >
-              <a
-                class="show-project"
-                href="../assets/images/SEO-Project.webp"
-                target="blank"
-                >Show result</a
-              >
+        <div id="projects">
+            <h2>My Programming Projects</h2>
+            <div id="projects-list">
+                <div class="project">
+                    <h3 class="project-name">
+                        Escape Game
+                        <a class="show-project" href="https://github.com/RomainLAU/Escape-Game" target="blank"
+                            >Show the project</a
+                        >
+                    </h3>
+                    <p class="quick-description">
+                        During the first lockdown in 2020, I learnt by myself how to use
+                        <strong>Unreal Engine 4</strong> and I built an escape game based on what we had learnt in
+                        class. (Logic gates, Binary, Directories system in Windows, Text Hashing) This project took me
+                        around 400 hours of hard work and made me push my technical limits.
+                    </p>
+                    <div class="technos-used">
+                        <p>
+                            <a href="https://www.unrealengine.com/en-US/" target="blank">Unreal Engine 4</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3 class="project-name">
+                        Random Shapes and Colors
+                        <a class="show-project" href="https://github.com/RomainLAU/randomShapesGenerator" target="blank"
+                            >Show the project</a
+                        >
+                    </h3>
+                    <p class="quick-description">
+                        At highschool I had an art class, and for a project I decided to use
+                        <strong>Python</strong> (with turtle module) to build a shape generator, you can decide of the
+                        shape (square, circle, triangle or parallelepiped), and the number of turns (the number of
+                        shapes drawn), and it will choose randomly a position, a color and a size for each shape.
+                    </p>
+                    <div class="technos-used">
+                        <p><a href="https://www.python.org/" target="blank">Python</a></p>
+                        <p>
+                            <a href="https://docs.python.org/3/library/turtle.html" target="blank">Turtle module</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3 class="project-name">
+                        Karaoke
+                        <a class="show-project" href="https://github.com/RomainLAU/JSKaraoke" target="blank"
+                            >Show the project</a
+                        >
+                    </h3>
+                    <p class="quick-description">
+                        I developed a karaoke using <strong>JavaScript</strong> which displays lyrics while the music is
+                        playing. Using a file containing lyrics and timings to show them. I used Regex to sort timings
+                        and lyrics of the text file, and using <strong>AJAX</strong> method to display lyrics on the
+                        page.
+                    </p>
+                    <div class="technos-used">
+                        <p>
+                            <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="blank">JavaScript</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3 class="project-name">
+                        Get useful informations about velibs
+                        <a class="show-project" href="https://github.com/RomainLAU/HowManyVelibs" target="blank"
+                            >Show the project</a
+                        >
+                    </h3>
+                    <p class="quick-description">
+                        This project I devlopped in <strong>JavaScript</strong>, allows anyone to see the main
+                        informations about velibs in the Parmentier street in <strong>Paris</strong>. It first shows you
+                        a loading bar representing the percentage of velibs available in the street compared to the
+                        total number of charging stations. Then it shows you the exact number of velibs available (in
+                        green if the percentage is greater than the third of the total of charging borns, in red in the
+                        other case). You can also see the percentage of eVelibs (electric ones) and mechanical velibs.
+                        There is also a small map to know exactly where is the street.
+                    </p>
+                    <div class="technos-used">
+                        <p>
+                            <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="blank">JavaScript</a>
+                        </p>
+                        <p>
+                            <a href="https://developer.mozilla.org/fr/docs/Web/Guide/AJAX" target="blank">AJAX</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3 class="project-name">
+                        Pokedex
+                        <a class="show-project" href="https://github.com/RomainLAU/Pokedex" target="blank"
+                            >Show the project</a
+                        >
+                    </h3>
+                    <p class="quick-description">
+                        This Pokedex made in PHP, allows you to search any
+                        <strong>Pokemon</strong> by his name, or if you don't have a favorite
+                        <strong>Pokemon</strong> to search for, you simply can search a type and it will shows you all
+                        <strong>Pokemons</strong> of the selected type. I used a <strong>JSON</strong> file containing
+                        multiple informations about more than 800 <strong>Pokemons</strong>, like their ID, their names
+                        (in english, japanese, chinese and french), their type and their statistics (HP, Attack,
+                        Defense...).
+                    </p>
+                    <div class="technos-used">
+                        <p><a href="https://www.php.net/" target="blank">PHP</a></p>
+                        <p>
+                            <a
+                                href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/JSON"
+                                target="blank"
+                                >JSON</a
+                            >
+                        </p>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3 class="project-name">
+                        System of Bonuses and Penalties
+                        <a class="show-project" href="https://github.com/RomainLAU/BonusesOrPenatlies" target="blank"
+                            >Show the project</a
+                        >
+                    </h3>
+                    <p class="quick-description">
+                        Our english teacher put in place a bonus/penalty system in class which makes students get
+                        advantages or disadvantages at a certain point of bonuses/penalties. To keep the trace of every
+                        student bonuses and penalties, I developed this little
+                        <strong>website</strong> that allows me to add bonuses and penalties to any student. I used
+                        <strong>PHP</strong> and <strong>MySQL</strong> to update a <strong>database</strong> that
+                        contains all the informations about all the students.
+                    </p>
+                    <div class="technos-used">
+                        <p><a href="https://www.php.net//" target="blank">PHP</a></p>
+                        <p><a href="https://www.mysql.com/fr/" target="blank">MySQL</a></p>
+                    </div>
+                </div>
             </div>
-          </h3>
-          <img
-            src="../assets/images/SEO-Project.webp"
-            alt="Project screenshot"
-          />
+        </div>
+        <div id="integration-projects">
+            <h2>My Integration Projects</h2>
+            <div id="integrations-list">
+                <div class="project">
+                    <h3 class="project-name">
+                        SEO Exercise
+                        <div class="project-buttons">
+                            <a
+                                class="show-project"
+                                href="https://github.com/RomainLAU/myIntegrations/tree/main/SEO%20Exercise"
+                                target="blank"
+                                >Show code</a
+                            >
+                            <a class="show-project" href="../assets/images/SEO-Project.webp" target="blank"
+                                >Show result</a
+                            >
+                        </div>
+                    </h3>
+                    <img src="../assets/images/SEO-Project.webp" alt="Project screenshot" />
 
-          <div class="technos-used">
-            <p>
-              <a
-                href="https://developer.mozilla.org/fr/docs/Web/HTML"
-                target="blank"
-                >HTML</a
-              >
-            </p>
-            <p><a href="https://sass-lang.com/" target="blank">SCSS</a></p>
-          </div>
-        </div>
-        <div class="project">
-          <h3 class="project-name">
-            Curriculum Vitae
-            <div class="project-buttons">
-              <a
-                class="show-project"
-                href="https://github.com/RomainLAU/myIntegrations/tree/main/cv"
-                target="blank"
-                >Show code</a
-              >
-              <a
-                class="show-project"
-                href="../assets/images/currciculum-vitae.webp"
-                target="blank"
-                >Show result</a
-              >
+                    <div class="technos-used">
+                        <p>
+                            <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="blank">HTML</a>
+                        </p>
+                        <p><a href="https://sass-lang.com/" target="blank">SCSS</a></p>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3 class="project-name">
+                        Curriculum Vitae
+                        <div class="project-buttons">
+                            <a
+                                class="show-project"
+                                href="https://github.com/RomainLAU/myIntegrations/tree/main/cv"
+                                target="blank"
+                                >Show code</a
+                            >
+                            <a class="show-project" href="../assets/images/currciculum-vitae.webp" target="blank"
+                                >Show result</a
+                            >
+                        </div>
+                    </h3>
+                    <img src="../assets/images/currciculum-vitae.webp" alt="Project screenshot" />
+                    <div class="technos-used">
+                        <p>
+                            <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="blank">HTML</a>
+                        </p>
+                        <p>
+                            <a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="blank">CSS</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3 class="project-name">
+                        Scss Exercise
+                        <div class="project-buttons">
+                            <a
+                                class="show-project"
+                                href="https://github.com/RomainLAU/myIntegrations/tree/main/scssProject"
+                                target="blank"
+                                >Show code</a
+                            >
+                            <a class="show-project" href="../assets/images/scssProject.webp" target="blank"
+                                >Show result</a
+                            >
+                        </div>
+                    </h3>
+                    <img src="../assets/images/scssProject.webp" alt="Project screenshot" />
+                    <div class="technos-used">
+                        <p>
+                            <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="blank">HTML</a>
+                        </p>
+                        <p><a href="https://sass-lang.com/" target="blank">SCSS</a></p>
+                    </div>
+                </div>
             </div>
-          </h3>
-          <img
-            src="../assets/images/currciculum-vitae.webp"
-            alt="Project screenshot"
-          />
-          <div class="technos-used">
-            <p>
-              <a
-                href="https://developer.mozilla.org/fr/docs/Web/HTML"
-                target="blank"
-                >HTML</a
-              >
-            </p>
-            <p>
-              <a
-                href="https://developer.mozilla.org/fr/docs/Web/CSS"
-                target="blank"
-                >CSS</a
-              >
-            </p>
-          </div>
         </div>
-        <div class="project">
-          <h3 class="project-name">
-            Scss Exercise
-            <div class="project-buttons">
-              <a
-                class="show-project"
-                href="https://github.com/RomainLAU/myIntegrations/tree/main/scssProject"
-                target="blank"
-                >Show code</a
-              >
-              <a
-                class="show-project"
-                href="../assets/images/scssProject.webp"
-                target="blank"
-                >Show result</a
-              >
-            </div>
-          </h3>
-          <img
-            src="../assets/images/scssProject.webp"
-            alt="Project screenshot"
-          />
-          <div class="technos-used">
-            <p>
-              <a
-                href="https://developer.mozilla.org/fr/docs/Web/HTML"
-                target="blank"
-                >HTML</a
-              >
-            </p>
-            <p><a href="https://sass-lang.com/" target="blank">SCSS</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer>
-      <div id="copyright">Copyright &copy; 2022 Romain Laurent.</div>
-    </footer>
-    <script src="../dropdown.js"></script>
-    <script src="../hash-effect.js"></script>
-    <script>
-      let copyright = document.querySelector('#copyright');
-      let currentYear = new Date().getFullYear();
+        <footer>
+            <div id="copyright">Copyright &copy; 2022 Romain Laurent.</div>
+        </footer>
+        <script src="../dropdown.js"></script>
+        <script src="../hash-effect.js"></script>
+        <script>
+            let copyright = document.querySelector('#copyright');
+            let currentYear = new Date().getFullYear();
 
-      copyright.innerHTML = `Copyright &copy; ${currentYear} Romain Laurent.`;
-    </script>
-  </body>
+            copyright.innerHTML = `Copyright &copy; ${currentYear} Romain Laurent.`;
+        </script>
+    </body>
 </html>
