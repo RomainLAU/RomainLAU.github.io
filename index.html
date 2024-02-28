@@ -1,353 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="description"
-            content="I'm Romain Laurent, a french student learning Web Development at the IIM Digital School and I love Frontend development ! Even if i'm still learning and discovering the development world, I really like ReactJS, VueJS and TypeScript. When I need to manage my DB, I use TypeORM for the API, because TypeScript <3 !"
-        />
-        <meta property="og:type" content="Portfolio" />
-        <meta
-            name="image"
-            property="og:image"
-            content="assets/images/photoCV.webp"
-            alt="Picture of me, Romain LAURENT"
-        />
-        <meta name="author" content="Romain LAURENT" />
-        <meta name="publish-date" content="April 3rd 2023" />
-        <title>Romain Laurent - Frontend Developer</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="I'm Romain Laurent, a french student learning Web Development at the IIM Digital School and I love Frontend development ! Even if i'm still learning and discovering the development world, I really like ReactJS, VueJS and TypeScript. When I need to manage my DB, I use TypeORM for the API, because TypeScript <3 !"
+    />
+    <meta property="og:type" content="Portfolio" />
+    <meta name="image" property="og:image" content="assets/images/photoCV.webp" alt="Picture of me, Romain LAURENT" />
+    <meta name="author" content="Romain LAURENT" />
+    <meta name="publish-date" content="April 3rd 2023" />
+    <title>Romain Laurent - Frontend Developer</title>
 
-        <!-- Favicons -->
-        <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-icon-57x57.png" />
-        <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-icon-60x60.png" />
-        <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-icon-72x72.png" />
-        <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-icon-76x76.png" />
-        <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-icon-114x114.png" />
-        <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicons/apple-icon-120x120.png" />
-        <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-icon-144x144.png" />
-        <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicons/apple-icon-152x152.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-icon-180x180.png" />
-        <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicons/android-icon-192x192.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicons/favicon-96x96.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
-        <link rel="manifest" href="assets/images/favicons/manifest.json" />
-        <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta name="msapplication-TileImage" content="assets/images/favicons/ms-icon-144x144.png" />
-        <meta name="theme-color" content="#ffffff" />
-        <!-- End Favicons -->
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicons/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicons/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicons/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicons/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="assets/images/favicons/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="assets/images/favicons/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- End Favicons -->
 
-        <link rel="stylesheet" href="assets/style/reset.css" />
-        <link rel="stylesheet" href="assets/style/style.css" />
-        <link rel="stylesheet" href="assets/style/index.css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto Mono" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
-    </head>
-    <body>
-        <nav id="sticky">
-            <ul>
-                <li><a href="/">Romain Laurent</a></li>
+    <link rel="stylesheet" href="assets/style/reset.css" />
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="stylesheet" href="assets/style/index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto Mono" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+  </head>
+  <body>
+    <nav id="sticky">
+      <ul>
+        <li><a href="/">Romain Laurent</a></li>
+      </ul>
+      <ul>
+        <li><a href="/projects">My Projects</a></li>
+        <li><a href="/skills">My Skills</a></li>
+        <li><a href="/#contact">Contact</a></li>
+        <li>
+          <a href="https://github.com/RomainLAU/" target="blank"><i class="devicon-github-original"></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/LeRoiAdibou" target="blank"><i class="devicon-twitter-original"></i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/romain-laurent-118281231/" target="blank"
+            ><i class="devicon-linkedin-plain"></i
+          ></a>
+        </li>
+      </ul>
+      <ul id="little-menu">
+        <li>
+          <div id="burger-button"></div>
+          <div id="sub-menu-container">
+            <ul id="sub-menu">
+              <li><a href="/#contact">Contact</a></li>
+              <li><a href="/skills">My Skills</a></li>
+              <li><a href="/projects">My Projects</a></li>
+              <li class="social-media">
+                <a href="https://github.com/RomainLAU/" target="blank"><i class="devicon-github-original"></i></a>
+                <a href="https://twitter.com/LeRoiAdibou" target="blank"><i class="devicon-twitter-original"></i></a>
+                <a href="https://www.linkedin.com/in/romain-laurent-118281231/" target="blank"
+                  ><i class="devicon-linkedin-plain"></i
+                ></a>
+              </li>
             </ul>
-            <ul>
-                <li><a href="/projects">My Projects</a></li>
-                <li><a href="/skills">My Skills</a></li>
-                <li><a href="/#contact">Contact</a></li>
-                <li>
-                    <a href="https://github.com/RomainLAU/" target="blank"><i class="devicon-github-original"></i></a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/LeRoiAdibou" target="blank"
-                        ><i class="devicon-twitter-original"></i
-                    ></a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/romain-laurent-118281231/" target="blank"
-                        ><i class="devicon-linkedin-plain"></i
-                    ></a>
-                </li>
-            </ul>
-            <ul id="little-menu">
-                <li>
-                    <div id="burger-button"></div>
-                    <div id="sub-menu-container">
-                        <ul id="sub-menu">
-                            <li><a href="/#contact">Contact</a></li>
-                            <li><a href="/skills">My Skills</a></li>
-                            <li><a href="/projects">My Projects</a></li>
-                            <li class="social-media">
-                                <a href="https://github.com/RomainLAU/" target="blank"
-                                    ><i class="devicon-github-original"></i
-                                ></a>
-                                <a href="https://twitter.com/LeRoiAdibou" target="blank"
-                                    ><i class="devicon-twitter-original"></i
-                                ></a>
-                                <a href="https://www.linkedin.com/in/romain-laurent-118281231/" target="blank"
-                                    ><i class="devicon-linkedin-plain"></i
-                                ></a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-        <header id="header-container">
-            <div>
-                <h1 id="header-title" data-value="Romain Laurent">Romain Laurent</h1>
-                <span>Frontend Developer</span>
-                <a href="assets/images/CV-french.pdf" target="blank" id="hire-me">Hire Me !</a>
-                <svg
-                    id="svg-1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="200"
-                    height="200"
-                    fill="none"
-                    viewBox="0 0 200 200"
-                    version="1.1"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xmlns:svgjs="http://svgjs.dev/svgjs"
-                >
-                    <path
-                        fill='url("#SvgjsLinearGradient1076")'
-                        d="M100 0c3.395 53.76 46.24 96.605 100 100-53.76 3.395-96.605 46.24-100 100-3.395-53.76-46.24-96.605-100-100C53.76 96.605 96.605 53.76 100 0Z"
-                    ></path>
-                    <defs>
-                        <linearGradient gradientTransform="rotate(0 0.5 0.5)" id="SvgjsLinearGradient1076">
-                            <stop stop-opacity=" 0.9" stop-color="rgba(71, 71, 211)" offset="0"></stop>
-                            <stop stop-opacity=" 1" stop-color="rgba(234, 204, 248)" offset="0.48"></stop>
-                            <stop stop-opacity=" 0.7215686275" stop-color="rgba(205, 89, 143)" offset="1"></stop>
-                        </linearGradient>
-                    </defs>
-                </svg>
-                <svg
-                    id="svg-2"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="200"
-                    height="200"
-                    fill="none"
-                    viewBox="0 0 200 200"
-                    version="1.1"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xmlns:svgjs="http://svgjs.dev/svgjs"
-                >
-                    <path
-                        fill='url("#SvgjsLinearGradient1082")'
-                        d="m100 0 5.94 94.06L200 100l-94.06 5.94L100 200l-5.94-94.06L0 100l94.06-5.94L100 0Z"
-                    ></path>
-                    <defs>
-                        <linearGradient gradientTransform="rotate(0 0.5 0.5)" id="SvgjsLinearGradient1082">
-                            <stop stop-opacity=" 0.9" stop-color="rgba(71, 71, 211)" offset="0"></stop>
-                            <stop stop-opacity=" 1" stop-color="rgba(234, 204, 248)" offset="0.48"></stop>
-                            <stop stop-opacity=" 0.7215686275" stop-color="rgba(205, 89, 143)" offset="1"></stop>
-                        </linearGradient>
-                    </defs>
-                </svg>
-                <svg
-                    id="svg-3"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="200"
-                    height="200"
-                    fill="none"
-                    viewBox="0 0 200 200"
-                    version="1.1"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xmlns:svgjs="http://svgjs.dev/svgjs"
-                >
-                    <path
-                        fill='url("#SvgjsLinearGradient1088")'
-                        fill-rule="evenodd"
-                        d="M107.143 4a4 4 0 0 0-4-4h-6.286a4 4 0 0 0-4 4v38.675c0 4.396-6.062 5.575-7.709 1.498L70.661 8.315a4 4 0 0 0-5.208-2.21l-5.828 2.354a4 4 0 0 0-2.21 5.207l15.446 38.229c1.632 4.04-3.457 7.408-6.538 4.327L37.17 27.067a4 4 0 0 0-5.657 0l-4.445 4.445a4 4 0 0 0 0 5.657l26.18 26.18c3.126 3.126-.379 8.264-4.429 6.494L14.89 55.02a4 4 0 0 0-5.267 2.063l-2.517 5.76A4 4 0 0 0 9.17 68.11l39.096 17.082c3.972 1.735 2.733 7.665-1.602 7.665H4a4 4 0 0 0-4 4v6.286a4 4 0 0 0 4 4h42.664c4.334 0 5.573 5.93 1.602 7.665L9.17 131.89a3.999 3.999 0 0 0-2.064 5.266l2.517 5.76a3.999 3.999 0 0 0 5.267 2.064l33.928-14.823c4.05-1.77 7.555 3.368 4.43 6.494l-26.181 26.18a4 4 0 0 0 0 5.657l4.445 4.445a4 4 0 0 0 5.657 0l29.154-29.155c3.082-3.081 8.17.287 6.538 4.327l-15.446 38.229a4 4 0 0 0 2.21 5.207l5.828 2.355a4 4 0 0 0 5.207-2.211l14.488-35.858c1.647-4.077 7.71-2.898 7.71 1.498V196a4 4 0 0 0 4 4h6.285a4 4 0 0 0 4-4v-38.675c0-4.396 6.062-5.575 7.709-1.498l14.487 35.858a4.001 4.001 0 0 0 5.208 2.211l5.828-2.355a4 4 0 0 0 2.21-5.207l-15.445-38.229c-1.633-4.04 3.455-7.408 6.537-4.327l29.154 29.155a4 4 0 0 0 5.657 0l4.445-4.445a4 4 0 0 0 0-5.657l-26.181-26.18c-3.125-3.126.38-8.264 4.43-6.494l33.928 14.823a3.999 3.999 0 0 0 5.267-2.064l2.517-5.76a4 4 0 0 0-2.064-5.266l-39.096-17.082c-3.971-1.735-2.733-7.665 1.602-7.665H196a4 4 0 0 0 4-4v-6.286a4 4 0 0 0-4-4h-42.664c-4.335 0-5.574-5.93-1.602-7.665L190.83 68.11a4 4 0 0 0 2.064-5.267l-2.517-5.76a4 4 0 0 0-5.267-2.063l-33.928 14.823c-4.05 1.77-7.555-3.368-4.43-6.494l26.181-26.18a4 4 0 0 0 0-5.657l-4.445-4.445a4 4 0 0 0-5.657 0l-29.154 29.155c-3.082 3.08-8.17-.287-6.537-4.327l15.445-38.229a4 4 0 0 0-2.21-5.207l-5.828-2.355a4 4 0 0 0-5.208 2.21l-14.487 35.86c-1.647 4.076-7.709 2.897-7.709-1.5V4Z"
-                        clip-rule="evenodd"
-                    ></path>
-                    <defs>
-                        <linearGradient gradientTransform="rotate(0 0.5 0.5)" id="SvgjsLinearGradient1088">
-                            <stop stop-opacity=" 0.9" stop-color="rgba(71, 71, 211)" offset="0"></stop>
-                            <stop stop-opacity=" 1" stop-color="rgba(234, 204, 248)" offset="0.48"></stop>
-                            <stop stop-opacity=" 0.7215686275" stop-color="rgba(205, 89, 143)" offset="1"></stop>
-                        </linearGradient>
-                    </defs>
-                </svg>
-                <svg
-                    id="svg-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="200"
-                    height="200"
-                    fill="none"
-                    viewBox="0 0 200 200"
-                    version="1.1"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xmlns:svgjs="http://svgjs.dev/svgjs"
-                >
-                    <path
-                        fill='url("#SvgjsLinearGradient1094")'
-                        d="M165.963 134.037c-5.467 5.467-14.332 5.467-19.799 0l-24.137-24.138c-5.468-5.467-5.468-14.331 0-19.799l24.137-24.137c5.467-5.467 14.332-5.467 19.799 0L190.101 90.1c5.467 5.468 5.467 14.332 0 19.799l-24.138 24.138Zm-112.127 0c-5.467 5.467-14.332 5.467-19.8 0L9.9 109.899c-5.468-5.467-5.468-14.331 0-19.799l24.137-24.137c5.467-5.467 14.332-5.467 19.799 0L77.973 90.1c5.468 5.468 5.468 14.332 0 19.799l-24.137 24.138ZM109.9 190.1c-5.468 5.468-14.332 5.468-19.8 0l-24.137-24.137c-5.467-5.467-5.467-14.332 0-19.799l24.138-24.137c5.467-5.468 14.331-5.468 19.799 0l24.137 24.137c5.467 5.467 5.467 14.332 0 19.799L109.9 190.1Zm0-112.127c-5.468 5.468-14.332 5.468-19.8 0L65.963 53.836c-5.467-5.468-5.467-14.332 0-19.8L90.101 9.9c5.467-5.467 14.331-5.467 19.799 0l24.137 24.138c5.467 5.467 5.467 14.331 0 19.799L109.9 77.973Z"
-                    ></path>
-                    <defs>
-                        <linearGradient gradientTransform="rotate(0 0.5 0.5)" id="SvgjsLinearGradient1094">
-                            <stop stop-opacity=" 0.9" stop-color="rgba(71, 71, 211)" offset="0"></stop>
-                            <stop stop-opacity=" 1" stop-color="rgba(234, 204, 248)" offset="0.48"></stop>
-                            <stop stop-opacity=" 0.7215686275" stop-color="rgba(205, 89, 143)" offset="1"></stop>
-                        </linearGradient>
-                    </defs>
-                </svg>
-            </div>
-        </header>
-        <div id="presentation">
-            <h2>Who am I</h2>
-            <div id="presentation-content">
-                <div id="profile-picture">
-                    <img src="assets/images/photoCV.webp" alt="My profile picture" />
-                </div>
-
-                <p>
-                    Hi ! I'm <strong>Romain LAURENT</strong>, a french student in web development at
-                    <strong>Epitech Digital</strong> in Paris. I started coding in 2019, by making little programs in
-                    <strong>Python</strong>. In 2020 I discovered the web development -- with
-                    <strong>HTML, CSS and PHP</strong> -- and at this moment, I knew that was what I wanted to do later.
-                    I love <strong>JavaScript, TypeScript, ReactJS</strong> and <strong>VueJS</strong>... I think we can
-                    say I'm a <strong>frontend developer</strong> ! I like to work during <strong>night</strong> to
-                    fully be in <strong>peace</strong>, when nobody can disturb me, and there only are my projects and
-                    me. I love colors (as you can see on my hair), and that's why I had an art class in high school. And
-                    I think it explains pretty well why, even if I'm a developer, I'm really interested in design and
-                    UX/UI. Currently, my dream would be to get a website displayed on the
-                    <a href="https://www.awwwards.com/" target="_blank">Awwwards</a>
-                    website...
-                </p>
-            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <header id="header-container">
+      <div>
+        <h1 id="header-title" data-value="Romain Laurent">Romain Laurent</h1>
+        <span>Frontend Developer</span>
+        <a href="assets/images/CV-french.pdf" target="blank" id="hire-me">Hire Me !</a>
+        <svg
+          id="svg-1"
+          xmlns="http://www.w3.org/2000/svg"
+          width="200"
+          height="200"
+          fill="none"
+          viewBox="0 0 200 200"
+          version="1.1"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svgjs="http://svgjs.dev/svgjs"
+        >
+          <path
+            fill='url("#SvgjsLinearGradient1076")'
+            d="M100 0c3.395 53.76 46.24 96.605 100 100-53.76 3.395-96.605 46.24-100 100-3.395-53.76-46.24-96.605-100-100C53.76 96.605 96.605 53.76 100 0Z"
+          ></path>
+          <defs>
+            <linearGradient gradientTransform="rotate(0 0.5 0.5)" id="SvgjsLinearGradient1076">
+              <stop stop-opacity=" 0.9" stop-color="rgba(71, 71, 211)" offset="0"></stop>
+              <stop stop-opacity=" 1" stop-color="rgba(234, 204, 248)" offset="0.48"></stop>
+              <stop stop-opacity=" 0.7215686275" stop-color="rgba(205, 89, 143)" offset="1"></stop>
+            </linearGradient>
+          </defs>
+        </svg>
+        <svg
+          id="svg-2"
+          xmlns="http://www.w3.org/2000/svg"
+          width="200"
+          height="200"
+          fill="none"
+          viewBox="0 0 200 200"
+          version="1.1"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svgjs="http://svgjs.dev/svgjs"
+        >
+          <path
+            fill='url("#SvgjsLinearGradient1082")'
+            d="m100 0 5.94 94.06L200 100l-94.06 5.94L100 200l-5.94-94.06L0 100l94.06-5.94L100 0Z"
+          ></path>
+          <defs>
+            <linearGradient gradientTransform="rotate(0 0.5 0.5)" id="SvgjsLinearGradient1082">
+              <stop stop-opacity=" 0.9" stop-color="rgba(71, 71, 211)" offset="0"></stop>
+              <stop stop-opacity=" 1" stop-color="rgba(234, 204, 248)" offset="0.48"></stop>
+              <stop stop-opacity=" 0.7215686275" stop-color="rgba(205, 89, 143)" offset="1"></stop>
+            </linearGradient>
+          </defs>
+        </svg>
+        <svg
+          id="svg-3"
+          xmlns="http://www.w3.org/2000/svg"
+          width="200"
+          height="200"
+          fill="none"
+          viewBox="0 0 200 200"
+          version="1.1"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svgjs="http://svgjs.dev/svgjs"
+        >
+          <path
+            fill='url("#SvgjsLinearGradient1088")'
+            fill-rule="evenodd"
+            d="M107.143 4a4 4 0 0 0-4-4h-6.286a4 4 0 0 0-4 4v38.675c0 4.396-6.062 5.575-7.709 1.498L70.661 8.315a4 4 0 0 0-5.208-2.21l-5.828 2.354a4 4 0 0 0-2.21 5.207l15.446 38.229c1.632 4.04-3.457 7.408-6.538 4.327L37.17 27.067a4 4 0 0 0-5.657 0l-4.445 4.445a4 4 0 0 0 0 5.657l26.18 26.18c3.126 3.126-.379 8.264-4.429 6.494L14.89 55.02a4 4 0 0 0-5.267 2.063l-2.517 5.76A4 4 0 0 0 9.17 68.11l39.096 17.082c3.972 1.735 2.733 7.665-1.602 7.665H4a4 4 0 0 0-4 4v6.286a4 4 0 0 0 4 4h42.664c4.334 0 5.573 5.93 1.602 7.665L9.17 131.89a3.999 3.999 0 0 0-2.064 5.266l2.517 5.76a3.999 3.999 0 0 0 5.267 2.064l33.928-14.823c4.05-1.77 7.555 3.368 4.43 6.494l-26.181 26.18a4 4 0 0 0 0 5.657l4.445 4.445a4 4 0 0 0 5.657 0l29.154-29.155c3.082-3.081 8.17.287 6.538 4.327l-15.446 38.229a4 4 0 0 0 2.21 5.207l5.828 2.355a4 4 0 0 0 5.207-2.211l14.488-35.858c1.647-4.077 7.71-2.898 7.71 1.498V196a4 4 0 0 0 4 4h6.285a4 4 0 0 0 4-4v-38.675c0-4.396 6.062-5.575 7.709-1.498l14.487 35.858a4.001 4.001 0 0 0 5.208 2.211l5.828-2.355a4 4 0 0 0 2.21-5.207l-15.445-38.229c-1.633-4.04 3.455-7.408 6.537-4.327l29.154 29.155a4 4 0 0 0 5.657 0l4.445-4.445a4 4 0 0 0 0-5.657l-26.181-26.18c-3.125-3.126.38-8.264 4.43-6.494l33.928 14.823a3.999 3.999 0 0 0 5.267-2.064l2.517-5.76a4 4 0 0 0-2.064-5.266l-39.096-17.082c-3.971-1.735-2.733-7.665 1.602-7.665H196a4 4 0 0 0 4-4v-6.286a4 4 0 0 0-4-4h-42.664c-4.335 0-5.574-5.93-1.602-7.665L190.83 68.11a4 4 0 0 0 2.064-5.267l-2.517-5.76a4 4 0 0 0-5.267-2.063l-33.928 14.823c-4.05 1.77-7.555-3.368-4.43-6.494l26.181-26.18a4 4 0 0 0 0-5.657l-4.445-4.445a4 4 0 0 0-5.657 0l-29.154 29.155c-3.082 3.08-8.17-.287-6.537-4.327l15.445-38.229a4 4 0 0 0-2.21-5.207l-5.828-2.355a4 4 0 0 0-5.208 2.21l-14.487 35.86c-1.647 4.076-7.709 2.897-7.709-1.5V4Z"
+            clip-rule="evenodd"
+          ></path>
+          <defs>
+            <linearGradient gradientTransform="rotate(0 0.5 0.5)" id="SvgjsLinearGradient1088">
+              <stop stop-opacity=" 0.9" stop-color="rgba(71, 71, 211)" offset="0"></stop>
+              <stop stop-opacity=" 1" stop-color="rgba(234, 204, 248)" offset="0.48"></stop>
+              <stop stop-opacity=" 0.7215686275" stop-color="rgba(205, 89, 143)" offset="1"></stop>
+            </linearGradient>
+          </defs>
+        </svg>
+        <svg
+          id="svg-4"
+          xmlns="http://www.w3.org/2000/svg"
+          width="200"
+          height="200"
+          fill="none"
+          viewBox="0 0 200 200"
+          version="1.1"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svgjs="http://svgjs.dev/svgjs"
+        >
+          <path
+            fill='url("#SvgjsLinearGradient1094")'
+            d="M165.963 134.037c-5.467 5.467-14.332 5.467-19.799 0l-24.137-24.138c-5.468-5.467-5.468-14.331 0-19.799l24.137-24.137c5.467-5.467 14.332-5.467 19.799 0L190.101 90.1c5.467 5.468 5.467 14.332 0 19.799l-24.138 24.138Zm-112.127 0c-5.467 5.467-14.332 5.467-19.8 0L9.9 109.899c-5.468-5.467-5.468-14.331 0-19.799l24.137-24.137c5.467-5.467 14.332-5.467 19.799 0L77.973 90.1c5.468 5.468 5.468 14.332 0 19.799l-24.137 24.138ZM109.9 190.1c-5.468 5.468-14.332 5.468-19.8 0l-24.137-24.137c-5.467-5.467-5.467-14.332 0-19.799l24.138-24.137c5.467-5.468 14.331-5.468 19.799 0l24.137 24.137c5.467 5.467 5.467 14.332 0 19.799L109.9 190.1Zm0-112.127c-5.468 5.468-14.332 5.468-19.8 0L65.963 53.836c-5.467-5.468-5.467-14.332 0-19.8L90.101 9.9c5.467-5.467 14.331-5.467 19.799 0l24.137 24.138c5.467 5.467 5.467 14.331 0 19.799L109.9 77.973Z"
+          ></path>
+          <defs>
+            <linearGradient gradientTransform="rotate(0 0.5 0.5)" id="SvgjsLinearGradient1094">
+              <stop stop-opacity=" 0.9" stop-color="rgba(71, 71, 211)" offset="0"></stop>
+              <stop stop-opacity=" 1" stop-color="rgba(234, 204, 248)" offset="0.48"></stop>
+              <stop stop-opacity=" 0.7215686275" stop-color="rgba(205, 89, 143)" offset="1"></stop>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+    </header>
+    <div id="presentation">
+      <h2>Who am I</h2>
+      <div id="presentation-content">
+        <div id="profile-picture">
+          <img src="assets/images/photoCV.webp" alt="My profile picture" />
         </div>
 
-        <div id="projects">
-            <h2>My Projects</h2>
-            <div id="projects-list">
-                <div class="project">
-                    <h3 class="project-name">
-                        Escape Game
-                        <a class="show-project" href="https://github.com/RomainLAU/Escape-Game" target="blank"
-                            >Show the project</a
-                        >
-                    </h3>
-                    <p class="quick-description">
-                        During the first lockdown in 2020, I learnt by myself how to use
-                        <strong>Unreal Engine 4</strong> and I built an escape game based on what we had learnt in
-                        class. (Logic gates, Binary, Directories system in Windows, Text Hashing) This project took me
-                        around 400 hours of hard work and made me push my technical limits.
-                    </p>
-                    <div class="technos-used">
-                        <p>
-                            <a href="https://www.unrealengine.com/en-US/" target="blank">Unreal Engine 4</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="project">
-                    <h3 class="project-name">
-                        Random Shapes and Colors
-                        <a class="show-project" href="https://github.com/RomainLAU/randomShapesGenerator" target="blank"
-                            >Show the project</a
-                        >
-                    </h3>
-                    <p class="quick-description">
-                        In highschool I had an art class, and for a project I decided to use
-                        <strong>Python</strong> (with turtle module) to build a shape generator, you can decide of the
-                        shape (square, circle, triangle or parallelepiped), and the number of turns (the number of
-                        shapes drawn), and it will choose randomly a position, a color and a size for each shape.
-                    </p>
-                    <div class="technos-used">
-                        <p><a href="https://www.python.org/" target="blank">Python</a></p>
-                        <p>
-                            <a href="https://docs.python.org/3/library/turtle.html" target="blank">Turtle module</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="project">
-                    <h3 class="project-name">
-                        Karaoke
-                        <a class="show-project" href="https://github.com/RomainLAU/JSKaraoke" target="blank"
-                            >Show the project</a
-                        >
-                    </h3>
-                    <p class="quick-description">
-                        I developed a karaoke using <strong>JavaScript</strong> which displays lyrics while the music is
-                        playing. Using a file containing lyrics and timings to show them. I used Regex to sort timings
-                        and lyrics of the text file, and using <strong>AJAX</strong> method to display lyrics on the
-                        page.
-                    </p>
-                    <div class="technos-used">
-                        <p>
-                            <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="blank">JavaScript</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div id="more">
-                <a href="projects" id="see-more"
-                    >Want to see more of my projects ?<br />
-                    Click here</a
-                >
-            </div>
+        <p>
+          Hi ! I'm Romain Laurent, a french student learning Web Development at the IIM Digital School and I love
+          Frontend development ! I started coding in 2019, by making little programs in <strong>Python</strong>. In 2020
+          I discovered the web development -- with <strong>HTML, CSS and PHP</strong> -- and at this moment, I knew that
+          was what I wanted to do later. I love <strong>JavaScript, TypeScript, ReactJS</strong> and
+          <strong>VueJS</strong>... I think we can say I'm a <strong>frontend developer</strong> ! I like to work during
+          <strong>night</strong> to fully be in <strong>peace</strong>, when nobody can disturb me, and there only are
+          my projects and me. I love colors (as you can see on my hair (not up to date)), and that's why I had an art
+          class in high school. And I think it explains pretty well why, even if I'm a developer, I'm really interested
+          in design and UX/UI. Currently, my dream would be to get a website displayed on the
+          <a href="https://www.awwwards.com/" target="_blank">Awwwards</a>
+          website...
+        </p>
+      </div>
+    </div>
+
+    <div id="projects">
+      <h2>My Projects</h2>
+      <div id="projects-list">
+        <div class="project">
+          <h3 class="project-name">
+            Escape Game
+            <a class="show-project" href="https://github.com/RomainLAU/Escape-Game" target="blank">Show the project</a>
+          </h3>
+          <p class="quick-description">
+            During the first lockdown in 2020, I learnt by myself how to use
+            <strong>Unreal Engine 4</strong> and I built an escape game based on what we had learnt in class. (Logic
+            gates, Binary, Directories system in Windows, Text Hashing) This project took me around 400 hours of hard
+            work and made me push my technical limits.
+          </p>
+          <div class="technos-used">
+            <p>
+              <a href="https://www.unrealengine.com/en-US/" target="blank">Unreal Engine 4</a>
+            </p>
+          </div>
         </div>
+        <div class="project">
+          <h3 class="project-name">
+            Random Shapes and Colors
+            <a class="show-project" href="https://github.com/RomainLAU/randomShapesGenerator" target="blank"
+              >Show the project</a
+            >
+          </h3>
+          <p class="quick-description">
+            In highschool I had an art class, and for a project I decided to use
+            <strong>Python</strong> (with turtle module) to build a shape generator, you can decide of the shape
+            (square, circle, triangle or parallelepiped), and the number of turns (the number of shapes drawn), and it
+            will choose randomly a position, a color and a size for each shape.
+          </p>
+          <div class="technos-used">
+            <p><a href="https://www.python.org/" target="blank">Python</a></p>
+            <p>
+              <a href="https://docs.python.org/3/library/turtle.html" target="blank">Turtle module</a>
+            </p>
+          </div>
+        </div>
+        <div class="project">
+          <h3 class="project-name">
+            Karaoke
+            <a class="show-project" href="https://github.com/RomainLAU/JSKaraoke" target="blank">Show the project</a>
+          </h3>
+          <p class="quick-description">
+            I developed a karaoke using <strong>JavaScript</strong> which displays lyrics while the music is playing.
+            Using a file containing lyrics and timings to show them. I used Regex to sort timings and lyrics of the text
+            file, and using <strong>AJAX</strong> method to display lyrics on the page.
+          </p>
+          <div class="technos-used">
+            <p>
+              <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="blank">JavaScript</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="more">
+        <a href="projects" id="see-more"
+          >Want to see more of my projects ?<br />
+          Click here</a
+        >
+      </div>
+    </div>
 
-        <form id="contact" action="https://formspree.io/f/xeqnklnr" method="POST">
-            <h2 id="contact__title">Send me a message !</h2>
-            <div class="contact__content">
-                <div class="contact__small-inputs">
-                    <div class="little-input-column">
-                        <label for="lastFirstname">Your last name & first name</label>
-                        <input
-                            class="contact__small-input"
-                            type="text"
-                            placeholder="Ex: Dupont Jeanne"
-                            name="Nom / Prénom"
-                            id="lastFirstname"
-                            required
-                        />
-                    </div>
-                    <div class="little-input-column">
-                        <label for="email">Your email</label>
-                        <input
-                            type="email"
-                            class="contact__small-input"
-                            placeholder="Ex: jeanne.dupont@mail.com"
-                            name="Adresse mail"
-                            id="email"
-                            required
-                        />
-                    </div>
-                </div>
-                <div class="input-column">
-                    <label for="contact__title-input">Mail object</label>
-                    <input
-                        id="contact__title-input"
-                        type="text"
-                        placeholder="Ex: Come in my company !"
-                        name="Objet du Mail"
-                        required
-                    />
-                </div>
-                <div class="input-column">
-                    <label for="contact__comment-input">Your comment</label>
-                    <textarea
-                        id="contact__comment-input"
-                        placeholder="Ex: You are such an interisting developer, I want you in my team !"
-                        name="Commentaire"
-                        required
-                    ></textarea>
-                </div>
-            </div>
-            <button type="submit" id="submit">SEND MESSAGE</button>
-        </form>
+    <form id="contact" action="https://formspree.io/f/xeqnklnr" method="POST">
+      <h2 id="contact__title">Send me a message !</h2>
+      <div class="contact__content">
+        <div class="contact__small-inputs">
+          <div class="little-input-column">
+            <label for="lastFirstname">Your last name & first name</label>
+            <input
+              class="contact__small-input"
+              type="text"
+              placeholder="Ex: Dupont Jeanne"
+              name="Nom / Prénom"
+              id="lastFirstname"
+              required
+            />
+          </div>
+          <div class="little-input-column">
+            <label for="email">Your email</label>
+            <input
+              type="email"
+              class="contact__small-input"
+              placeholder="Ex: jeanne.dupont@mail.com"
+              name="Adresse mail"
+              id="email"
+              required
+            />
+          </div>
+        </div>
+        <div class="input-column">
+          <label for="contact__title-input">Mail object</label>
+          <input
+            id="contact__title-input"
+            type="text"
+            placeholder="Ex: Come in my company !"
+            name="Objet du Mail"
+            required
+          />
+        </div>
+        <div class="input-column">
+          <label for="contact__comment-input">Your comment</label>
+          <textarea
+            id="contact__comment-input"
+            placeholder="Ex: You are such an interisting developer, I want you in my team !"
+            name="Commentaire"
+            required
+          ></textarea>
+        </div>
+      </div>
+      <button type="submit" id="submit">SEND MESSAGE</button>
+    </form>
 
-        <footer>
-            <div id="copyright">Copyright &copy; Romain Laurent.</div>
-        </footer>
-        <script defer src="form.js"></script>
-        <script src="dropdown.js"></script>
-        <script src="hash-effect.js"></script>
-        <script>
-            let copyright = document.querySelector('#copyright');
-            let currentYear = new Date().getFullYear();
+    <footer>
+      <div id="copyright">Copyright &copy; Romain Laurent.</div>
+    </footer>
+    <script defer src="form.js"></script>
+    <script src="dropdown.js"></script>
+    <script src="hash-effect.js"></script>
+    <script>
+      let copyright = document.querySelector('#copyright');
+      let currentYear = new Date().getFullYear();
 
-            copyright.innerHTML = `Copyright &copy; ${currentYear} Romain Laurent.`;
-        </script>
-    </body>
+      copyright.innerHTML = `Copyright &copy; ${currentYear} Romain Laurent.`;
+    </script>
+  </body>
 </html>
