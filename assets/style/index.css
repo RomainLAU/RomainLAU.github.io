@@ -194,10 +194,10 @@ body #presentation #presentation-content #profile-picture {
 }
 body #presentation #presentation-content #profile-picture img {
   object-fit: cover;
-  transform: scale(0.6);
+  transform: scale(0.17);
   position: absolute;
-  bottom: -230px;
-  left: -400px;
+  bottom: -1930px;
+  left: -1190px;
 }
 @media screen and (max-width: 890px) {
   body #presentation #presentation-content #profile-picture {
@@ -205,9 +205,9 @@ body #presentation #presentation-content #profile-picture img {
     height: 20em;
   }
   body #presentation #presentation-content #profile-picture img {
-    transform: scale(0.4);
-    bottom: -320px;
-    left: -480px;
+    transform: scale(0.12);
+    bottom: -2030px;
+    left: -1270px;
   }
 }
 @media screen and (max-width: 340px) {
@@ -216,9 +216,9 @@ body #presentation #presentation-content #profile-picture img {
     height: 15em;
   }
   body #presentation #presentation-content #profile-picture img {
-    transform: scale(0.3);
-    bottom: -350px;
-    left: -515px;
+    transform: scale(0.1);
+    bottom: -2050px;
+    left: -1295px;
   }
 }
 @media screen and (max-width: 1300px) {
